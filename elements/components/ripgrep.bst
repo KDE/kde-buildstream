@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/ripgrep/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: cargo
 
 description: A search tool that combines the usability of ag with the raw speed of grep
 
 build-depends:
 - freedesktop-sdk.bst:bootstrap/stripper.bst
 - freedesktop-sdk.bst:components/rust.bst
+- freedesktop-sdk.bst:components/gcc.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

@@ -2,16 +2,25 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/gping/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: cargo
 
 description: Ping, but with a graph
 
 build-depends:
 - freedesktop-sdk.bst:bootstrap/stripper.bst
 - freedesktop-sdk.bst:components/rust.bst
+- freedesktop-sdk.bst:components/gcc.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cargo-install-flags: >-
+    %{cargo-install-global}
+    %{cargo-install-local}
+    --frozen
+    --path ./gping
+    --root '%{install-root}%{prefix}'
 
 sources:
 - kind: tar

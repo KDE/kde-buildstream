@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/mcfly/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: cargo
 
 description: Fly through your shell history
 
 build-depends:
 - freedesktop-sdk.bst:bootstrap/stripper.bst
 - freedesktop-sdk.bst:components/rust.bst
+- freedesktop-sdk.bst:components/gcc.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

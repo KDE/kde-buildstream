@@ -1,13 +1,14 @@
 # SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleixpol@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-kind: manual
+kind: cargo
 
 description: Cat clone with syntax highlighting and git integration
 
 build-depends:
 - freedesktop-sdk.bst:bootstrap/stripper.bst
 - freedesktop-sdk.bst:components/rust.bst
+- freedesktop-sdk.bst:components/gcc.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

@@ -2,13 +2,18 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/fd/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: cargo
 
 description: Simple, fast and user-friendly alternative to find
 
 build-depends:
 - freedesktop-sdk.bst:bootstrap/stripper.bst
 - freedesktop-sdk.bst:components/rust.bst
+- freedesktop-sdk.bst:components/gcc.bst
+- freedesktop-sdk.bst:components/sed.bst # for tikv-jemalloc-sys
+- freedesktop-sdk.bst:components/grep.bst # for tikv-jemalloc-sys
+- freedesktop-sdk.bst:components/gawk.bst # for tikv-jemalloc-sys
+- freedesktop-sdk.bst:components/make.bst # for tikv-jemalloc-sys
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
