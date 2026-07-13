@@ -32,6 +32,7 @@ depends:
 - freedesktop-sdk.bst:components/git.bst
 - freedesktop-sdk.bst:components/elfutils.bst # heaptrack
 - freedesktop-sdk.bst:components/libunwind.bst # heaptrack
+- freedesktop-sdk.bst:components/hwdata.bst # pretty hardware info in kwin
 - os/deps-core.bst
 - os/deps-middleware.bst
 - os/deps-apps.bst
