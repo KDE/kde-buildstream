@@ -4,7 +4,7 @@
 
 set -eux
 
-if [ "$KDECI_BUILD" = "TRUE" ]; then
+if [ "${KDECI_BUILD:-}" = "TRUE" ]; then
     sudo pacman --sync --refresh --noconfirm lzip # lzip needed by the gettext element
 
     python3 -m venv .venv --system-site-packages
