@@ -84,6 +84,7 @@ depends:
 - components/open-vm-tools.bst # open-vm-tools: Integration for VMWare virtualization software
 - gnome-build-meta.bst:gnomeos-deps/qemu-user.bst # qemu-guest-agent: Integration for QEMU
 - components/virtualbox-guest-utils.bst # virtualbox-guest-utils: integration for VirtualBox
+- freedesktop-sdk.bst:components/mtools.bst # mtools: Manipulating FAT filesystems; used by our build system
 
 (?):
 - arch == 'x86_64':
