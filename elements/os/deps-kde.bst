@@ -59,6 +59,7 @@ depends:
 - components/py-setproctitle.bst
 - components/qcoro.bst # konsole
 - qt.bst
+- components/xsettingsd.bst # needed by kwin for X11 apps to get the right theme, font, scale etc.
 
 # KDE Linux needs GCC and such installed so that it can build calamares
 - components/yamlcpp.bst
