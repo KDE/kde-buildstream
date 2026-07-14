@@ -15,6 +15,7 @@ variables:
   make-install-args: DESTDIR="%{install-root}" %{make-args} install
 
 sources:
-- kind: tar
-  url: github:LMDB/lmdb/archive/LMDB_0.9.22.tar.gz
-  ref: f3927859882eb608868c8c31586bb7eb84562a40a6bf5cc3e13b6b564641ea28
+- kind: git_repo
+  url: github:LMDB/lmdb.git
+  track: 'LMDB_*'
+  ref: LMDB_1.0.0-branch-0-g340f04593e3a05db615b3444fac9f3572ed75e3f

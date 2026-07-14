@@ -13,6 +13,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:containers/podman-compose/archive/v1.6.0.tar.gz
-  ref: dffdec88deb6da8437a86d82340e213c3a616933807fe3fd5978f0c8c325e5e2
+- kind: git_repo
+  url: github:containers/podman-compose.git
+  track: 'v*'
+  ref: v1.6.0-0-g0f6537e9cfa38f6035ac57c1716b6d55dbaf3ca4

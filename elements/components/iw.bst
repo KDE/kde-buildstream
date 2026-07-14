@@ -6,7 +6,7 @@ kind: make
 sources:
 - kind: git_repo
   url: sipsolutions:iw.git
-  track: v5.19
+  track: 'v*'
   ref: v5.19-0-g79f20cbf1a333a23e3b041d502277d240aedb840
 
 build-depends:

@@ -47,5 +47,5 @@ config:
 sources:
 - kind: git_repo
   url: github:tuxera/ntfs-3g.git
-  track: 2026.2.25
+  track: '*'
   ref: 2026.2.25-0-gd1cb9e825d059ef5db0ccd30d5bce202edbd69dc

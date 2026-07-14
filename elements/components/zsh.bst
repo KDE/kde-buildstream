@@ -10,8 +10,11 @@ build-depends:
 - freedesktop-sdk.bst:bootstrap/ncurses.bst
 - freedesktop-sdk.bst:bootstrap/pcre2.bst
 - freedesktop-sdk.bst:components/gdbm.bst
+- freedesktop-sdk.bst:components/groff.bst
 - freedesktop-sdk.bst:components/libcap.bst
 - freedesktop-sdk.bst:components/stripper.bst
+- freedesktop-sdk.bst:components/util-linux.bst
+- components/yodl.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -57,8 +60,9 @@ config:
     (>):
     - install -Dm644 zprofile "%{install-root}%{sysconfdir}/zsh/zprofile"
     - |
-      rm "%{install-root}%{bindir}/zsh"
-      ln -s zsh-5.9.1 "%{install-root}%{bindir}/zsh"
+      cd "%{install-root}%{bindir}"
+      rm zsh
+      ln -s zsh-* zsh
 
 public:
   bst:
@@ -68,8 +72,9 @@ public:
         - '%{includedir}/zsh/**'
 
 sources:
-- kind: tar
-  url: https://www.zsh.org/pub/zsh-5.9.1.tar.xz
-  ref: 5d20bec03f981dc4e9a09ec245e7415388ff641f79c5c5c416b5042e58d8280d
+- kind: git_repo
+  url: sourceforge_git:zsh/code
+  track: 'zsh-*'
+  ref: zsh-5.9.2-0-gddee3e7a751a4f03d5a1041fd44bb7af7bc0cebb
 - kind: local
   path: files/zsh/zprofile

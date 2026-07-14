@@ -16,5 +16,5 @@ depends:
 sources:
 - kind: git_repo
   url: github:pyudev/pyudev.git
-  track: v0.24.4
+  track: 'v*'
   ref: v0.24.4-0-g643027533a9a5dee7f80c0a7348ad85fbae7f0fa

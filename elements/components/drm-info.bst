@@ -18,6 +18,7 @@ depends:
 - freedesktop-sdk.bst:components/pciutils.bst
 
 sources:
-- kind: tar
-  url: https://gitlab.freedesktop.org/emersion/drm_info/-/archive/v2.9.0/drm_info-v2.9.0.tar.gz
-  ref: b1000e95eb4f57cfe7819c5b8afd880ac07dde25d9c3839ec52e0aeadeb83234
+- kind: git_repo
+  url: fdo:emersion/drm_info.git
+  track: 'v*'
+  ref: v2.10.0-0-g462458e0f292145b2a9d5a8b65c392eaeef7362d

@@ -47,6 +47,7 @@ variables:
     -Wno-dev
 
 sources:
-- kind: tar
-  url: github:fastfetch-cli/fastfetch/archive/refs/tags/2.64.2.tar.gz
-  ref: 28db81d6568f28281d9aab9e88d5a4c7892d519c54b8739eef17953cce6802d0
+- kind: git_repo
+  url: github:fastfetch-cli/fastfetch.git
+  track: '*'
+  ref: 2.66.0-0-g08698098579bb8b043b0a343159b8018f5cea4fc

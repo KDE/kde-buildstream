@@ -13,6 +13,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:andreafrancia/trash-cli/archive/0.24.5.26.tar.gz
-  ref: 1d7dec1ad8f0264ceb1b0211d25fffee99c9409cd2e1d36dcc82ac5540f39ce5
+- kind: git_repo
+  url: github:andreafrancia/trash-cli.git
+  track: '*'
+  ref: 0.24.5.26-0-gc02fd350e6346da91404985e2d23fd5ab5256259

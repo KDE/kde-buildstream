@@ -13,6 +13,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:docker/compose/archive/v5.1.4.tar.gz
-  ref: 363ce6ccca46f836648f5f4ec9ecfdb6f631daa126570cc3fc69140edeed6794
+- kind: git_repo
+  url: github:docker/compose.git
+  track: 'v*'
+  ref: v5.3.1-0-gf32009d4a2c687dd405398cc7975d12dccaf8dff

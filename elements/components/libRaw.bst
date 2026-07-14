@@ -4,7 +4,8 @@
 
 kind: autotools
 
-description: A library for reading RAW files from digital cameras (CRW/CR2, NEF, RAF, DNG, and others)
+description: A library for reading RAW files from digital cameras (CRW/CR2, NEF,
+  RAF, DNG, and others)
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
@@ -24,5 +25,5 @@ config:
 sources:
 - kind: git_repo
   url: github:LibRaw/LibRaw.git
-  track: 0.22.1
+  track: '*'
   ref: 0.22.1-0-gb860248a89d9082b8e0a1e202e516f46af9adb29

@@ -28,5 +28,5 @@ config:
 sources:
 - kind: git_repo
   url: github:ckolivas/lrzip.git
-  track: v0.660
+  track: 'v*'
   ref: v0.660-0-gb9e8784d8d6806e733d0b4207731bf895d1c14db

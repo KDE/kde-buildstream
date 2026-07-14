@@ -15,7 +15,7 @@ variables:
 sources:
 - kind: git_repo
   url: github:pwr-Solaar/Solaar.git
-  track: 1.1.19
+  track: '*'
 
   ref: 1.1.19-0-g4bda869542ea0b2e54f24decd4cca65113679e25
 config:

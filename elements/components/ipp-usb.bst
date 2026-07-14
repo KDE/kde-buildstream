@@ -4,7 +4,8 @@
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/ipp-usb/-/raw/main/PKGBUILD?ref_type=heads
 kind: make
 
-description: allows using the IPP protocol, normally designed for network printers, to be used with USB printers as well
+description: allows using the IPP protocol, normally designed for network 
+  printers, to be used with USB printers as well
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
@@ -29,6 +30,7 @@ variables:
     rmdir "%{install-root}/lib"
 
 sources:
-- kind: tar
-  url: github:OpenPrinting/ipp-usb/archive/0.9.34.tar.gz
-  ref: 4f0ada8593fda3f4239a50fcf24a625842143039de97708281e7b8c0cdff201a
+- kind: git_repo
+  url: github:OpenPrinting/ipp-usb.git
+  track: '*'
+  ref: 0.9.34-0-g057c7ac8739e557d12796378f3c180136cb3e274

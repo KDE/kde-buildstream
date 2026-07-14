@@ -24,6 +24,7 @@ variables:
     --prefix="%{prefix}"
 
 sources:
-- kind: tar
-  url: pypi:source/s/sentry-sdk/sentry_sdk-2.62.0.tar.gz
-  ref: 3c870b9f50d9fd15b58c817dbde1c7cfaa9fe3f05df0a4c6edd5571cb82f5491
+- kind: git_repo
+  url: github:getsentry/sentry-python.git
+  track: '*'
+  ref: 3.0.0a7-0-g7d96f392ae6738505b6f605bf72fc3d7b406a111

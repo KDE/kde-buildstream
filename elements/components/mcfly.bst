@@ -15,9 +15,10 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:cantino/mcfly/archive/v0.9.4.tar.gz
-  ref: 31cdd76bfab3b05b4873bc20f03eb022e5a5d68f6595bc6df5dd9fce4b519e53
+- kind: git_repo
+  url: github:cantino/mcfly.git
+  track: 'v*'
+  ref: v0.9.4-0-g17f03db47b5ba9141d7b5df9f652a421b6fb99be
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

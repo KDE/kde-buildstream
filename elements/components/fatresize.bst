@@ -19,5 +19,5 @@ variables:
 sources:
 - kind: git_repo
   url: github:ya-mouse/fatresize.git
-  track: v1.1.0
+  track: 'v*'
   ref: v1.1.0-0-g316981e43b14f42a9aa7b461c97e1f61f6f2390b

@@ -26,6 +26,7 @@ config:
     - autoreconf -fiv
 
 sources:
-- kind: tar
-  url: https://github.com/lsof-org/lsof/archive/refs/tags/4.99.6.tar.gz
-  ref: 2ce65158694e9c44dfc54916f5b843d887763c03128e0a1c77d62ae106537009
+- kind: git_repo
+  url: github:lsof-org/lsof.git
+  track: '*'
+  ref: 4.99.7-0-g646395f8e893edb5572405b2311a079f55f269f2

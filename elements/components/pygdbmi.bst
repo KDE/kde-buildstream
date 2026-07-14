@@ -5,14 +5,15 @@
 kind: pip
 
 sources:
-- kind: tar
-  url: https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
-  ref: 7a286be2fcf25650d9f66e11adc46e972cf078a466864a700cd44739ad261fb0
-
+- kind: git_repo
+  url: github:cs01/pygdbmi.git
+  track: "*"
+  ref: 0.10.0.0-0-g23358b9bf6b4957eaac70b579b6858fa4395538a
 build-depends:
 - freedesktop-sdk.bst:components/python3-setuptools.bst
 - freedesktop-sdk.bst:components/python3-pip.bst
 - freedesktop-sdk.bst:bootstrap/stripper.bst
+
 
 depends:
 - freedesktop-sdk.bst:components/python3.bst

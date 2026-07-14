@@ -19,9 +19,10 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:sharkdp/fd/archive/v10.4.2.tar.gz
-  ref: 3a7e027af8c8e91c196ac259c703d78cd55c364706ddafbc66d02c326e57a456
+- kind: git_repo
+  url: github:sharkdp/fd.git
+  track: 'v*'
+  ref: v10.4.2-0-g7027d45303b412be6fa9c09d689cc6276748fb38
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

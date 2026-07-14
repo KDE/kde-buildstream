@@ -18,5 +18,5 @@ config:
 sources:
 - kind: git_repo
   url: github:zsh-users/zsh-completions.git
-  track: 0.36.0
+  track: '*'
   ref: 0.36.0-0-g28c5bdcaf81bb89e56d0df8267d822c3b8aed9e0

@@ -24,6 +24,7 @@ config:
       -exec install -Dm644 -t "%{install-root}%{datadir}/fonts/noto" {} +
 
 sources:
-- kind: tar
-  url: github:notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-2026.05.01.tar.gz
-  ref: 6caa6ea6231842639119d4a9fefd80caed8cd58a49f73d4531b060412005c58d
+- kind: git_repo
+  url: github:notofonts/notofonts.github.io.git
+  track: 'noto-monthly-release-*'
+  ref: noto-monthly-release-2026.07.01-0-g7baf6d8e43c5d2613dcbcaacdeb114f633b86069

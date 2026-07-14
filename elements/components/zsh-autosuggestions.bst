@@ -14,10 +14,11 @@ variables:
 
 config:
   install-commands:
-  - install -Dm644 zsh-autosuggestions.zsh "%{install-root}%{datadir}/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  - install -Dm644 zsh-autosuggestions.zsh 
+    "%{install-root}%{datadir}/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 sources:
 - kind: git_repo
   url: github:zsh-users/zsh-autosuggestions.git
-  track: v0.7.1
+  track: 'v*'
   ref: v0.7.1-0-ge52ee8ca55bcc56a17c828767a3f98f22a68d4eb

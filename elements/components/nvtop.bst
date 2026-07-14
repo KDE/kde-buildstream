@@ -29,5 +29,5 @@ variables:
 sources:
 - kind: git_repo
   url: github:Syllo/nvtop.git
-  track: 3.3.2
+  track: '*'
   ref: 3.3.2-0-g76890233d759199f50ad3bdb57a0c0988e96fc44

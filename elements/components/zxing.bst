@@ -24,6 +24,7 @@ public:
         - '**/libZXing.so/**'
 
 sources:
-- kind: tar
-  url: github:zxing-cpp/zxing-cpp/archive/v2.3.0.tar.gz
-  ref: 64e4139103fdbc57752698ee15b5f0b0f7af9a0331ecbdc492047e0772c417ba
+- kind: git_repo
+  url: github:zxing-cpp/zxing-cpp.git
+  track: v2.3.0
+  ref: v2.3.0-0-gd6068bcebeb8fd9f0d35a99b00d202be86a14dbe

@@ -5,10 +5,10 @@
 kind: make
 
 sources:
-- kind: tar
-  url: github:hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
-  ref: c6a0587e565778a40d88891928bf8943f27d353f382d5b745a997d635978a8f0
-
+- kind: git_repo
+  url: github:hramrach/lm-sensors.git
+  track: 'V*'
+  ref: V3-6-2-0-g5c3ba50f806dea27c3b1e368966191c735459111
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 - freedesktop-sdk.bst:components/flex.bst

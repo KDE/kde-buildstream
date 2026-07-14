@@ -15,6 +15,7 @@ depends:
 - components/python3-boolean.py.bst
 
 sources:
-- kind: tar
-  url: pypi:source/l/license-expression/license_expression-30.4.4.tar.gz
-  ref: 73448f0aacd8d0808895bdc4b2c8e01a8d67646e4188f887375398c761f340fd
+- kind: git_repo
+  url: github:aboutcode-org/license-expression.git
+  track: 'v*'
+  ref: v30.4.4-0-ga3c00c09986bcca1240afd5b1844b56de3f581c1

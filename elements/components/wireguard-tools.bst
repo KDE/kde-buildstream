@@ -33,5 +33,5 @@ config:
 sources:
 - kind: git_repo
   url: https://git.zx2c4.com/wireguard-tools
-  track: v1.0.20260223
+  track: 'v*'
   ref: v1.0.20260223-0-g49ce333da02056ae7b22ee2aeb6afe8aaed79b19

@@ -13,6 +13,7 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 sources:
-- kind: tar
-  url: pypi:source/b/boolean.py/boolean_py-5.0.tar.gz
-  ref: 60cbc4bad079753721d32649545505362c754e121570ada4658b852a3a318d95
+- kind: git_repo
+  url: github:bastikr/boolean.py.git
+  track: 'v*'
+  ref: v5.0-0-g8a443837e68dc027004294fb17fe1857cf783410

@@ -4,7 +4,8 @@
 
 kind: autotools
 
-description: inotify-tools is a C library and a set of command-line programs for Linux providing a simple interface to inotify.
+description: inotify-tools is a C library and a set of command-line programs for
+  Linux providing a simple interface to inotify.
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
@@ -23,6 +24,7 @@ config:
       ./autogen.sh
 
 sources:
-- kind: tar
-  url: https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.25.9.0.tar.gz
-  ref: d33a4fd24c72c2d08893f129d724adf725b93dae96c359e4f4e9f32573cc853b
+- kind: git_repo
+  url: github:inotify-tools/inotify-tools.git
+  track: '*'
+  ref: 4.25.9.0-0-g81c6c9881edf4844f2b8250e63f82da9cb7f5444

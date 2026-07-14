@@ -14,6 +14,7 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 sources:
-- kind: tar
-  url: pypi:source/p/python-magic/python-magic-0.4.27.tar.gz
-  ref: c1ba14b08e4a5f5c31a302b7721239695b2f0f058d125bd5ce1ee36b9d9d3c3b
+- kind: git_repo
+  url: github:ahupp/python-magic.git
+  track: '*'
+  ref: 0.4.27-0-gb443195104d89363b93a547584c1a12fce3b57ec

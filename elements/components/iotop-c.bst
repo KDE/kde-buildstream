@@ -25,5 +25,5 @@ variables:
 sources:
 - kind: git_repo
   url: github:Tomas-M/iotop.git
-  track: v1.30
+  track: 'v*'
   ref: v1.30-0-gc3366a8a235f9c8ddc4797625f22cfdf12ba2c36
