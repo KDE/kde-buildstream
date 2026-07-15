@@ -85,6 +85,7 @@ depends:
 - gnome-build-meta.bst:gnomeos-deps/qemu-user.bst # qemu-guest-agent: Integration for QEMU
 - components/virtualbox-guest-utils.bst # virtualbox-guest-utils: integration for VirtualBox
 - freedesktop-sdk.bst:components/mtools.bst # mtools: Manipulating FAT filesystems; used by our build system
+- gnome-build-meta.bst:core-deps/accountsservice.bst # accountsservice: D-Bus interface for user account management (kinda on the way out but used by flatpak and our user kcm!)
 
 (?):
 - arch == 'x86_64':
