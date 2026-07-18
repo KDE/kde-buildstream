@@ -15,6 +15,6 @@ depends:
 
 sources:
 - kind: git_repo
-  url: http://git.sesse.net/bmusb
+  url: sesse:bmusb
   ref: 0.7.8-0-g3615574c0d8c8564e1e091c8270f19138357777e
   track: '*.*.*'
