@@ -9,6 +9,7 @@ build-depends:
 - freedesktop-sdk.bst:sdk.bst
 
 sources:
-- kind: tar
-  url: https://salsa.debian.org/gnome-team/libcanberra/-/archive/upstream/0.30/libcanberra-upstream-0.30.tar.bz2
-  ref: cdceb79c79ce6c56e38fa2075c7fd3a2a5213d65db92483e179eb952a4e138fa
+- kind: git_repo
+  url: salsa:gnome-team/libcanberra.git
+  track: upstream/0.30
+  ref: upstream/0.30-0-g7143556495c7b61d9875631ddde6ba2658ace3d5

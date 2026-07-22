@@ -19,10 +19,9 @@ build-depends:
 - freedesktop-sdk.bst:components/asciidoc.bst
 
 sources:
-- kind: tar
-  url: github:tesseract-ocr/tesseract/archive/5.5.2/tesseract-5.5.2.tar.gz
-  ref: 6235ea0dae45ea137f59c09320406f5888383741924d98855bd2ce0d16b54f21
-
+- kind: git_repo
+  url: github:tesseract-ocr/tesseract.git
+  track: 5.5.2
 config:
   build-commands:
     (>):
