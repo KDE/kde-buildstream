@@ -15,9 +15,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:BurntSushi/ripgrep/archive/15.1.0/ripgrep-15.1.0.tar.gz
-  ref: 046fa01a216793b8bd2750f9d68d4ad43986eb9c0d6122600f993906012972e8
+- kind: git_repo
+  url: github:BurntSushi/ripgrep.git
+  track: 15.1.0
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

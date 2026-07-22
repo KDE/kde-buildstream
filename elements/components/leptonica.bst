@@ -18,6 +18,6 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 
 sources:
-- kind: tar
-  url: github:DanBloomberg/leptonica/archive/1.87.0/leptonica-1.87.0.tar.gz
-  ref: fa2b40c5caea96d1bb93a97486262aed8731b69ce25a84a6bf5d25323e33f631
+- kind: git_repo
+  url: github:DanBloomberg/leptonica.git
+  track: 1.87.0

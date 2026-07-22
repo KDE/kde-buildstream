@@ -45,6 +45,6 @@ config:
       python3 -m compileall -o 0 -o 1 -o 2 -d "%{indep-libdir}" "%{install-root}%{indep-libdir}"
 
 sources:
-- kind: tar
-  url: github:redhat-performance/tuned/archive/v2.27.0/tuned-2.27.0.tar.gz
-  ref: 24414ad043f2a75edb803ca8daf8fb93f03d42410f05f744d68d59f09ac2d29d
+- kind: git_repo
+  url: github:redhat-performance/tuned.git
+  track: v*

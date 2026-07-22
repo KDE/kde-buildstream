@@ -24,6 +24,6 @@ config:
     shared-install
 
 sources:
-- kind: tar
-  url: github:google/re2/archive/2025-11-05/re2-2025-11-05.tar.gz
-  ref: 87f6029d2f6de8aa023654240a03ada90e876ce9a4676e258dd01ea4c26ffd67
+- kind: git_repo
+  url: github:google/re2.git
+  track: '2025-11-05'

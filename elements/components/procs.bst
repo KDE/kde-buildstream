@@ -15,9 +15,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:dalance/procs/archive/v0.14.11/procs-0.14.11.tar.gz
-  ref: 3d6b3561ce05362a092ea8488458f552d6636d3a280290e21f841c432cadf91a
+- kind: git_repo
+  url: github:dalance/procs.git
+  track: v*
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

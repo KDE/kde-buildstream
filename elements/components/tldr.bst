@@ -13,6 +13,6 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: github:tldr-pages/tldr-python-client/archive/3.4.4/tldr-3.4.4.tar.gz
-  ref: 374e01c62148bb7142fdf79a8756dbd08408b3db2117b9f8c51e1ccab5f75d06
+- kind: git_repo
+  url: github:tldr-pages/tldr-python-client.git
+  track: 3.4.4
