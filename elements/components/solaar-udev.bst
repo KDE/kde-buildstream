@@ -18,7 +18,12 @@ sources:
   url: github:pwr-Solaar/Solaar.git
   track: '*'
 
-  ref: 1.1.20rc3-0-g898349c403e9ab3d39e112265e4ffda795809b4a
+  ref: 1.1.20-0-gb2afd88129533997eb3112fe9b8e75e6d9e2b1b4
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
+
 config:
   install-commands:
   - |

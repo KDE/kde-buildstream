@@ -22,7 +22,7 @@ variables:
 
 sources:
 - url: kde:frameworks/kcoreaddons.git
-  kind: git
-  track: v6.27.0
-  ref: 10fc1d72eb96e775e9cb2e829f485a8596609b3c
+  kind: git_repo
+  track: v*
+  ref: d53d3c756db6832893b6af6eeef6cc10982cc9d6
   ref-format: sha1

@@ -15,7 +15,7 @@ variables:
 
 sources:
 - url: kde:libraries/polkit-qt-1.git
-  kind: git
-  track: v0.201.1
+  kind: git_repo
+  track: v*
   ref: 328a4c8615c7207e1297b776026657a77c6a71b6
   ref-format: sha1

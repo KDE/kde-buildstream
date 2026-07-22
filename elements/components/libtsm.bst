@@ -16,8 +16,8 @@ variables:
     -Dgtktsm=false
 
 sources:
-- kind: git
+- kind: git_repo
   url: github:kmscon/libtsm.git
-  track: v4.5.0
-  ref: 556373437d1c5f57f4dfc7c6cc1330e5088a4174
+  track: v*
+  ref: e1e4d296f0963d1641456f1f778f0ac090429a3e
   ref-format: sha1

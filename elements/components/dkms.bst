@@ -7,9 +7,9 @@ kind: manual
 description: yaml-cpp C++ YAML parser and emitter library
 
 sources:
-- kind: git
+- kind: git_repo
   url: github:dkms-project/dkms.git
-  ref: 43f222144e8b8a556335fc5cfa97758ff58a8442
+  ref: v3.4.2-0-g43f222144e8b8a556335fc5cfa97758ff58a8442
   track: main
 
 build-depends:
