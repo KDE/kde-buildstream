@@ -22,3 +22,6 @@ sources:
   url: github:zsh-users/zsh-history-substring-search.git
   track: 'v*'
   ref: v1.1.0-0-g400e58a87f72ecec14f783fbd29bc6be4ff1641c
+  exclude:
+  - '*alpha*'
+  - '*beta*'

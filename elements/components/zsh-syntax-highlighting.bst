@@ -24,3 +24,6 @@ sources:
   url: github:zsh-users/zsh-syntax-highlighting.git
   track: '*'
   ref: 0.8.0-0-gdb085e4661f6aafd24e5acb5b2e17e4dd5dddf3e
+  exclude:
+  - '*alpha*'
+  - '*beta*'
