@@ -18,6 +18,7 @@ sources:
 - kind: git_repo
   url: github:dalance/procs.git
   track: v*
+  ref: v0.14.12-0-g8ad5da5ef0c33a7c9dbe30625548469f88e824d8
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

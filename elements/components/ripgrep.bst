@@ -17,7 +17,8 @@ depends:
 sources:
 - kind: git_repo
   url: github:BurntSushi/ripgrep.git
-  track: 15.1.0
+  track: '*'
+  ref: 15.2.0-0-ge89fff89ac9af12e8d4ce9d5fd07beb408ca730f
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

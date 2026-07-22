@@ -22,7 +22,7 @@ variables:
 
 sources:
 - url: kde:frameworks/ki18n.git
-  kind: git
-  track: v6.27.0
+  kind: git_repo
+  track: v*
   ref: ec42da6c553a0f6f6b8334d6a141220457f9c16f
   ref-format: sha1

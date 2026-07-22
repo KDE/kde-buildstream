@@ -19,7 +19,7 @@ public:
 
 sources:
 - url: kde:frameworks/extra-cmake-modules.git
-  kind: git
-  track: v6.27.0
-  ref: fa262097a48f0f84529498741afcc7040e93b271
+  kind: git_repo
+  track: v*
+  ref: 01dc9a0c05dd4851b01b93e961c9aa33b1e96056
   ref-format: sha1

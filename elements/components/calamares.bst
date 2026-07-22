@@ -28,7 +28,7 @@ variables:
     -DWITH_QT6=ON
 
 sources:
-- kind: git
+- kind: git_repo
   url: https://codeberg.org/Calamares/calamares.git
-  track: v3.4.0
-  ref: 78d4208a03b0abdfb68e94c9c08a28f37a473ee6
+  track: v*
+  ref: v3.4.2-0-g36d30c492e5c7b5d6d32fed5c5d9790522e1eea3

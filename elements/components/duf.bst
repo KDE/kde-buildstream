@@ -16,3 +16,4 @@ sources:
 - kind: git_repo
   url: github:muesli/duf.git
   track: v*
+  ref: v0.9.1-0-gb2f01a1ecbfd1af63015b83296c50a95260f97b1

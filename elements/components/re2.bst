@@ -27,3 +27,4 @@ sources:
 - kind: git_repo
   url: github:google/re2.git
   track: '2025-11-05'
+  ref: 2025-11-05-0-g927f5d53caf8111721e734cf24724686bb745f55

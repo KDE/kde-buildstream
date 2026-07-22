@@ -14,7 +14,7 @@ variables:
 
 sources:
 - url: https://github.com/AcademySoftwareFoundation/openexr.git
-  kind: git
-  track: v3.4.13
+  kind: git_repo
+  track: v*
   ref: c1194b2cb23a1bdf76fe5e756b22e8436b9a98c9
   ref-format: sha1

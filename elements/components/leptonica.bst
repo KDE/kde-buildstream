@@ -20,4 +20,5 @@ build-depends:
 sources:
 - kind: git_repo
   url: github:DanBloomberg/leptonica.git
-  track: 1.87.0
+  track: '*'
+  ref: 1.87.0-pre1-0-g2d889876a6700e9591c4a0e60390250372dd8b62

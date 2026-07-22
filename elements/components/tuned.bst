@@ -48,3 +48,4 @@ sources:
 - kind: git_repo
   url: github:redhat-performance/tuned.git
   track: v*
+  ref: v2.27.0-rc.1-0-gd6ff9254d19c79d10c73e00897bbcd2bb447cc4b

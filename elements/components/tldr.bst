@@ -15,4 +15,5 @@ depends:
 sources:
 - kind: git_repo
   url: github:tldr-pages/tldr-python-client.git
-  track: 3.4.4
+  track: '*'
+  ref: 3.4.4-0-g548854517e524d027fc903a20aa4d50028106750

@@ -22,7 +22,7 @@ variables:
 
 sources:
 - url: kde:frameworks/kwidgetsaddons.git
-  kind: git
-  track: v6.27.0
-  ref: 7e19d066d8b51fd348f24ca9e1a74258ba54fbcb
+  kind: git_repo
+  track: v*
+  ref: 0e7b826043dfcf96aef53565d164d40a467f4c19
   ref-format: sha1

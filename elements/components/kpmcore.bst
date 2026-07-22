@@ -31,7 +31,7 @@ variables:
     -DBUILD_TESTING=OFF
 
 sources:
-- kind: git
+- kind: git_repo
   url: kde:system/kpmcore
-  track: v25.12.3
-  ref: b348efa14a9511ec4c0c3c523bb255a910b402d0
+  track: v*
+  ref: v26.07.80-0-ga7d0416bf381386371cccc4ab4b608c759576036

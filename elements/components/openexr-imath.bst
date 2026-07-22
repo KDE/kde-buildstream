@@ -9,7 +9,7 @@ build-depends:
 
 sources:
 - url: https://github.com/AcademySoftwareFoundation/Imath.git
-  kind: git
-  track: v3.2.2
+  kind: git_repo
+  track: v*
   ref: 1e480d11cb98b032a2dece9b9a8730512effc7f6
   ref-format: sha1

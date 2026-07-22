@@ -32,8 +32,8 @@ variables:
     -Dvideo_drm3d=disabled
 
 sources:
-- kind: git
+- kind: git_repo
   url: https://github.com/kmscon/kmscon.git
-  track: v9.3.5
+  track: v*
   ref: a8832afb1dcca5bb4c0476d4c13c7239fecbd93a
   ref-format: sha1

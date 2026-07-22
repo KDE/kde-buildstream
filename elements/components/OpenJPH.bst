@@ -12,7 +12,7 @@ variables:
 
 sources:
 - url: https://github.com/aous72/OpenJPH.git
-  kind: git
-  track: 0.22.0
-  ref: be997ab52ffc73e0fd9d66108ad786925a1c712c
+  kind: git_repo
+  track: '*'
+  ref: 1ce857c7f14dd78dd8f4bdfabe43dc17f8408a42
   ref-format: sha1

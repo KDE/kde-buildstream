@@ -9,9 +9,9 @@ kind: cmake
 description: yaml-cpp C++ YAML parser and emitter library
 
 sources:
-- kind: git
+- kind: git_repo
   url: https://github.com/jbeder/yaml-cpp.git
-  ref: 3a1c96f2180814a13587144b7f162f1e38ddda7d
+  ref: yaml-cpp-0.9.0-50-g356643ba267039367d87fa70ce3d8f87144f55e9
   track: master
 
 build-depends:
