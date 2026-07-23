@@ -29,6 +29,9 @@ depends:
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
+runtime-depends:
+- components/containerd.bst
+
 config:
   build-commands:
   - |
