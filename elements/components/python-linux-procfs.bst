@@ -1,11 +1,9 @@
 # SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleixpol@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-# Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/python-pyudev/-/raw/main/PKGBUILD?ref_type=heads
-
 kind: pyproject
 
-description: Python bindings to libudev
+description: Linux /proc abstraction classes for Python
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-python-setuptools.bst
@@ -16,6 +14,6 @@ depends:
 
 sources:
 - kind: git_repo
-  url: github:pyudev/pyudev.git
+  url: kernel:pub/scm/libs/python/python-linux-procfs/python-linux-procfs.git
   track: 'v*'
-  ref: v0.24.4-0-g643027533a9a5dee7f80c0a7348ad85fbae7f0fa
+  ref: v0.7.4-0-g2765211a5f123573cf61025b6572dbaf03e587d2
