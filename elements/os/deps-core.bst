@@ -24,6 +24,7 @@ depends:
 - freedesktop-sdk.bst:components/hosts.bst
 - freedesktop-sdk.bst:components/bash-config.bst
 - freedesktop-sdk.bst:components/flatpak.bst # flatpak: Flatpak apps
+- freedesktop-sdk.bst:components/avahi.bst # avahi: mDNS/DNS-SD tools such as avahi-browse
 - freedesktop-sdk.bst:components/plymouth.bst
 - freedesktop-sdk.bst:components/sudo.bst
 - freedesktop-sdk.bst:components/cups-daemon.bst # cups: Basic printing infrastructure
