@@ -49,6 +49,7 @@ depends:
 - freedesktop-sdk.bst:components/python3-pyyaml.bst # python-yaml: For kde-builder
 - freedesktop-sdk.bst:components/ruby.bst # ruby: For the torrent script in the repo
 - freedesktop-sdk.bst:components/strace.bst # strace: instrument running executables
+- components/socat.bst # socat: multipurpose socket relay
 - components/systemd-bootchart.bst # systemd-bootchart: Boot profiling tools
 - components/subversion.bst # subversion: VCS needed for cloning old repos that don't use git
 - freedesktop-sdk.bst:components/vulkan-icd-loader.bst
