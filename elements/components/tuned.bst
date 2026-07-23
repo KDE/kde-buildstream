@@ -22,6 +22,7 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 runtime-depends:
+- components/python-linux-procfs.bst
 - components/python-pyudev.bst
 
 variables:
