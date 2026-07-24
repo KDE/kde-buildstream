@@ -19,7 +19,6 @@ depends:
 - components/networkmanager-vpn-plugin-openvpn.bst # networkmanager-vpn-plugin-openvpn: VPN support for NetworkManager
 # - components/networkmanager-vpn-plugin-pptp.bst # networkmanager-vpn-plugin-pptp: VPN support for NetworkManager
 - components/networkmanager-vpn-plugin-vpnc.bst # networkmanager-vpn-plugin-vpnc: VPN support for NetworkManager
-- components/nfs-utils.bst # nfs-utils: Support harness for NFS mounting
 - components/ufw.bst # ufw: Simple firewall; consider switching to firewalld once the KCM supports zones
 # - components/pipewire-ffado.bst # pipewire-ffado: FireWire/IEEE 1394 audio
 # - components/pipewire-roc.bst # pipewire-roc: ROC streaming
