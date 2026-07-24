@@ -11,7 +11,7 @@ description: yaml-cpp C++ YAML parser and emitter library
 sources:
 - kind: git
   url: https://github.com/jbeder/yaml-cpp.git
-  ref: 3a1c96f2180814a13587144b7f162f1e38ddda7d
+  ref: 356643ba267039367d87fa70ce3d8f87144f55e9
   track: master
 
 build-depends:

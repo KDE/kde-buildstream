@@ -34,7 +34,7 @@ sources:
 - kind: git_repo
   url: github:junegunn/fzf.git
   track: 'v*'
-  ref: v0.74.0-0-g6765f464a60e39afc20775f54f7ba40896bf1b81
+  ref: v0.74.1-0-geae8d9d27eaeffc777699c01bf8f8b8c071908c1
 - kind: go_module
   url: github:charlievieth/fastwalk.git
   module: github.com/charlievieth/fastwalk

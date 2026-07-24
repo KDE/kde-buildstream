@@ -14,13 +14,11 @@ variables:
 
 config:
   install-commands:
-  - install -Dm644 zsh-syntax-highlighting.zsh 
-    "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-  - cp -a highlighters 
-    "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/"
+  - install -Dm644 zsh-syntax-highlighting.zsh "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  - cp -a highlighters "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/"
 
 sources:
 - kind: git_repo
   url: github:zsh-users/zsh-syntax-highlighting.git
   track: '*'
-  ref: 0.8.0-0-gdb085e4661f6aafd24e5acb5b2e17e4dd5dddf3e
+  ref: 0.8.0-alpha1-pre-redrawhook-0-g00a5fd11eb9d1c163fb49da5310c8f4b09fb3022

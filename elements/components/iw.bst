@@ -7,7 +7,7 @@ sources:
 - kind: git_repo
   url: sipsolutions:iw.git
   track: 'v*'
-  ref: v5.19-0-g79f20cbf1a333a23e3b041d502277d240aedb840
+  ref: v6.17-0-ga52bda09d7d314f4d4ed333a0c5da51bfbaeafaf
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
