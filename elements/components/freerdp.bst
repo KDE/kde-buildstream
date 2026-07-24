@@ -8,7 +8,7 @@ sources:
 - kind: git_repo
   url: github:freerdp/freerdp.git
   track: '*.*.*'
-  ref: 3.28.0-0-g5370fb26fbf034ecd11d3026b6ad639b5fff493f
+  ref: 3.30.0-0-g6b107f0aadbabc47941c5a5b893b88c01792af6d
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst

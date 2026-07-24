@@ -48,4 +48,4 @@ sources:
 - kind: git_repo
   url: github:tuxera/ntfs-3g.git
   track: '*'
-  ref: 2026.2.25-0-gd1cb9e825d059ef5db0ccd30d5bce202edbd69dc
+  ref: 2026.7.7-0-gd327833ec1d5eb1358b6f2c37139f10a3460944d
