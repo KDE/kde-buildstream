@@ -1,0 +1,8 @@
+version = 1
+
+[[annotations]]
+# I rather prefer license files but because freedesktop-sdk is a patch_queue and
+# that tries to apply all files indiscriminately it has to be a toml declaration
+path = "patches/freedesktop-sdk/*"
+SPDX-License-Identifier = "MIT"
+SPDX-FileCopyrightText = "2026 Harald Sitter <sitter@kde.org>"
