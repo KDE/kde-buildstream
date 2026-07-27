@@ -6,7 +6,7 @@ kind: manual
 description: Zsh port of Fish history search
 
 depends:
-- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 - components/zsh.bst
 
 variables:
@@ -14,7 +14,7 @@ variables:
 
 config:
   install-commands:
-  - install -Dm644 zsh-history-substring-search.zsh 
+  - install -Dm644 zsh-history-substring-search.zsh
     "%{install-root}%{datadir}/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 sources:

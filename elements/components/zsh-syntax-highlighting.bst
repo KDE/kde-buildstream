@@ -6,7 +6,7 @@ kind: manual
 description: Fish shell-like syntax highlighting for zsh
 
 depends:
-- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 - components/zsh.bst
 
 variables:
@@ -14,9 +14,9 @@ variables:
 
 config:
   install-commands:
-  - install -Dm644 zsh-syntax-highlighting.zsh 
+  - install -Dm644 zsh-syntax-highlighting.zsh
     "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-  - cp -a highlighters 
+  - cp -a highlighters
     "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/"
 
 sources:

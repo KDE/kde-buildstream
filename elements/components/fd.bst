@@ -14,6 +14,7 @@ build-depends:
 - freedesktop-sdk.bst:components/grep.bst # for tikv-jemalloc-sys
 - freedesktop-sdk.bst:components/gawk.bst # for tikv-jemalloc-sys
 - freedesktop-sdk.bst:components/make.bst # for tikv-jemalloc-sys
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

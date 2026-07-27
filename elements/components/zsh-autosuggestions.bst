@@ -8,13 +8,14 @@ description: Fish-like autosuggestions for zsh
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - components/zsh.bst
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 
 variables:
   strip-binaries: ''
 
 config:
   install-commands:
-  - install -Dm644 zsh-autosuggestions.zsh 
+  - install -Dm644 zsh-autosuggestions.zsh
     "%{install-root}%{datadir}/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 sources:

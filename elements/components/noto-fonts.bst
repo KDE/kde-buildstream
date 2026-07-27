@@ -5,6 +5,7 @@ kind: manual
 
 build-depends:
 - freedesktop-sdk.bst:components/findutils.bst
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

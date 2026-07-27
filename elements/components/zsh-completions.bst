@@ -9,6 +9,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - components/zsh.bst
 - freedesktop-sdk.bst:bootstrap/stripper.bst
+- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 
 config:
   install-commands:
