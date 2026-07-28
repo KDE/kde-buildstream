@@ -10,6 +10,9 @@ build-depends:
 - freedesktop-sdk.bst:sdk.bst
 - components/icmake.bst
 
+runtime-depends:
+- freedesktop-sdk.bst:components/util-linux.bst
+
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
