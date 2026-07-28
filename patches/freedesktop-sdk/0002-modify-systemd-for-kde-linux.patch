@@ -1,0 +1,38 @@
+From 373c688587d11f6336a22048acecee1224d80065 Mon Sep 17 00:00:00 2001
+From: Harald Sitter <sitter@kde.org>
+Date: Mon, 27 Jul 2026 20:41:19 +0200
+Subject: [PATCH 2/3] modify systemd for kde-linux
+
+---
+ elements/components/_private/systemd-base.bst | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/elements/components/_private/systemd-base.bst b/elements/components/_private/systemd-base.bst
+index d605cbacd..ee68fc98d 100644
+--- a/elements/components/_private/systemd-base.bst
++++ b/elements/components/_private/systemd-base.bst
+@@ -65,6 +65,7 @@ variables:
+       bpf-framework: 'enabled'
+ 
+   meson-local: >-
++    -Dfallback-hostname='kde-linux'
+     -Dmode=release
+     -Dsysvinit-path=%{sysconfdir}/init.d
+     -Daudit=enabled
+@@ -94,10 +95,10 @@ variables:
+     -Dapparmor=enabled
+     -Dtpm=true
+     -Dtpm2=enabled
+-    -Dsbat-distro=freedesktop-sdk
++    -Dsbat-distro=kde-linux
+     -Dsbat-distro-generation=1
+-    -Dsbat-distro-summary="Freedesktop SDK"
+-    -Dsbat-distro-url=https://gitlab.com/freedesktop-sdk/freedesktop-sdk/
++    -Dsbat-distro-summary="KDE Linux"
++    -Dsbat-distro-url=https://linux.kde.org
+     -Dversion-tag="$(git describe --abbrev=7 | sed "s/^v//")"
+     -Dqrencode=enabled
+     -Dxkbcommon=enabled
+-- 
+2.55.0
+
