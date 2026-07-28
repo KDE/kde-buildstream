@@ -1,7 +1,7 @@
 From 373c688587d11f6336a22048acecee1224d80065 Mon Sep 17 00:00:00 2001
 From: Harald Sitter <sitter@kde.org>
 Date: Mon, 27 Jul 2026 20:41:19 +0200
-Subject: [PATCH 2/3] modify systemd for kde-linux
+Subject: [PATCH 2/4] modify systemd for kde-linux
 
 ---
  elements/components/_private/systemd-base.bst | 7 ++++---
