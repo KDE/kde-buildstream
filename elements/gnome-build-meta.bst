@@ -17,7 +17,6 @@ config:
     sdk/vala.bst: freedesktop-sdk.bst:components/vala.bst
     sdk/gtk+-3.bst: freedesktop-sdk.bst:components/gtk3.bst
     core-deps/spice.bst: components/spice.bst
-    core-deps/libnma.bst: components/libnma.bst
     gnomeos-deps/openvpn.bst: components/openvpn.bst
     core-deps/NetworkManager.bst: freedesktop-sdk.bst:components/networkmanager.bst
     sdk/at-spi2-core.bst: freedesktop-sdk.bst:components/at-spi2-core.bst
@@ -47,3 +46,7 @@ sources:
   track: sam/fdsdk-26.08
 - kind: patch
   path: files/gnome-build-meta/swtpm-add-python-build-dependency.patch
+- kind: junction_override
+  path: elements/junction-overrides/libnma.bst
+- kind: junction_override
+  path: elements/junction-overrides/xdg-desktop-portal-gtk.bst

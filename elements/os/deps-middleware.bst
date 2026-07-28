@@ -39,4 +39,4 @@ depends:
 - gnome-build-meta.bst:core-deps/samba.bst # samba: For sharing local folders via Samba
 - components/switcheroo-control.bst # switcheroo-control: kio, for launching apps on non-default GPU
 - components/unrar.bst # unrar: ark, for RAR decompression support
-- components/xdg-desktop-portal-gtk.bst # xdg-desktop-portal-gtk: GTK/Flatpak icon settings syncing
+- gnome-build-meta.bst:core-deps/xdg-desktop-portal-gtk.bst # GTK/Flatpak icon settings syncing
