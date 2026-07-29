@@ -7,10 +7,20 @@ kind: manual
 description: Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
+- freedesktop-sdk.bst:components/gettext.bst
+- freedesktop-sdk.bst:components/python3-setuptools.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:components/iptables.bst
+- freedesktop-sdk.bst:components/python3.bst
+
+config:
+  build-commands:
+  - make mo
+  install-commands:
+  - python3 setup.py install --root="%{install-root}" --prefix="%{prefix}"
 
 sources:
 - kind: git_repo
