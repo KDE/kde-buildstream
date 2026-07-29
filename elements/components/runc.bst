@@ -16,6 +16,9 @@ depends:
 - freedesktop-sdk.bst:components/libseccomp.bst
 - components/libpathrs.bst
 
+variables:
+  make-install: make -j1 BINDIR=%{install-root}/bin %{make-install-args}
+
 sources:
 - kind: git_repo
   url: github:opencontainers/runc.git
