@@ -12,6 +12,12 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
+config:
+  install-commands:
+  - |
+    install -Dm755 prime-run "%{install-root}%{bindir}/prime-run"
+    install -Dm644 LICENSE "%{install-root}%{datadir}/licenses/nvidia-prime/LICENSE"
+
 sources:
 - kind: remote
   url: https://gitlab.archlinux.org/archlinux/packaging/packages/nvidia-prime/-/raw/main/prime-run?ref_type=heads

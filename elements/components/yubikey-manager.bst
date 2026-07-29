@@ -2,15 +2,16 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/yubikey-manager/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: pyproject
 
 description: Python library and command line tool for configuring a YubiKey
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-python-poetry.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:components/python3.bst
 
 sources:
 - kind: tar

@@ -2,15 +2,16 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # Inspired by ArchLinux's PKGBUILD: https://gitlab.archlinux.org/archlinux/packaging/packages/trash-cli/-/raw/main/PKGBUILD?ref_type=heads
-kind: manual
+kind: pyproject
 
 description: Command line trashcan (recycle bin) interface
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-python-setuptools.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:components/python3.bst
 
 sources:
 - kind: git_repo
