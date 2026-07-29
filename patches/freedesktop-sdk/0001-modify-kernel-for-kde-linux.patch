@@ -1,13 +1,54 @@
-From bc8bac0013d086b8cd00fdb036a00c93d84108c6 Mon Sep 17 00:00:00 2001
+From a3576acf46c0b5a023f0f667238a1f1e8e6e4038 Mon Sep 17 00:00:00 2001
 From: Harald Sitter <sitter@kde.org>
 Date: Mon, 27 Jul 2026 15:27:50 +0200
 Subject: [PATCH 1/4] modify kernel for kde linux
 
 ---
- files/linux/config-utils.sh |    7 +-
- files/linux/fdsdk-config.sh | 3088 ++++++++++++++++++++++++++++++++++-
- 2 files changed, 3093 insertions(+), 2 deletions(-)
+ elements/components/linux.bst |   22 +-
+ files/linux/config-utils.sh   |    7 +-
+ files/linux/fdsdk-config.sh   | 3088 ++++++++++++++++++++++++++++++++-
+ 3 files changed, 3114 insertions(+), 3 deletions(-)
 
+diff --git a/elements/components/linux.bst b/elements/components/linux.bst
+index 71a8c8bd6..ee4e22ac3 100644
+--- a/elements/components/linux.bst
++++ b/elements/components/linux.bst
+@@ -59,6 +59,25 @@ variables:
+       kernel_arch: riscv
+   - target_arch == "loongarch64":
+       kernel_arch: loongarch
++  strip-binaries: |
++    OPTS=()
++    if ! "%{optimize-debug}"; then
++      OPTS+=("-n")
++    fi
++    if ! "%{compress-debug}"; then
++      OPTS+=("-p")
++    fi
++    for p in %{toolchain-prefixes}; do
++      OPTS+=("-t" "${p}")
++    done
++    freedesktop-sdk-stripper \
++        "${OPTS[@]}" \
++        "%{build-root}" \
++        "%{sourcedir}/%{stripdir-suffix}" \
++        "%{debugdatadir}/dwz/%{stripdir-suffix}" \
++        "%{debugdir}" \
++        "%{install-root}"
++    make -j1 INSTALL_MOD_PATH="%{install-root}%{prefix}" vdso_install
+ 
+ config:
+   configure-commands:
+@@ -98,7 +117,8 @@ config:
+     install -Dm644 vmlinux "%{install-root}%{indep-libdir}/modules/${release}/vmlinux"
+     install -Dm644 System.map "%{install-root}%{indep-libdir}/modules/${release}/System.map"
+     install -Dm644 .config "%{install-root}%{indep-libdir}/modules/${release}/config"
+-    make -j1 INSTALL_MOD_PATH="%{install-root}%{prefix}" modules_install
++    # Squeeze as much as possible and make sure to strip symbols so the modules are as small as possible
++    ZSTD_CLEVEL=19 make -j1 INSTALL_MOD_PATH="%{install-root}%{prefix}" INSTALL_MOD_STRIP=1 modules_install
+ 
+   - |
+     release=$(make -s kernelrelease)
 diff --git a/files/linux/config-utils.sh b/files/linux/config-utils.sh
 index d892084a9..169437ed5 100644
 --- a/files/linux/config-utils.sh
