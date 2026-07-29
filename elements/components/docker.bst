@@ -31,6 +31,7 @@ depends:
 
 runtime-depends:
 - components/containerd.bst
+- components/runc.bst
 
 config:
   build-commands:
