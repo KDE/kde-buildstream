@@ -17,7 +17,7 @@ depends:
 - components/libpathrs.bst
 
 variables:
-  make-install: make -j1 BINDIR=%{install-root}/bin %{make-install-args}
+  make-install: make -j1 BINDIR=%{prefix}/bin %{make-install-args}
 
 sources:
 - kind: git_repo
