@@ -17,6 +17,8 @@ depends:
 - components/libpathrs.bst
 
 variables:
+  # overriding BINDIR so it doesn't create a directory for sbin, which we want
+  # to be a symlink instead.
   make-install: make -j1 BINDIR=%{prefix}/bin %{make-install-args}
 
 sources:
