@@ -19,6 +19,10 @@ depends:
 - freedesktop-sdk.bst:components/libseccomp.bst
 
 config:
+  configure-commands:
+  - |
+    # Use correct paths, we don't install to /usr/local
+    sed -i 's,/sbin,/usr/bin,;s,/usr/local,/usr,' containerd.service
   build-commands:
   - |
     export GOFLAGS='-trimpath -mod=vendor -modcacherw'
