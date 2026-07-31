@@ -7,6 +7,11 @@ include:
       - /gitlab-templates/reuse-lint.yml
       - /gitlab-templates/blocks/workflow.yml
 
+default:
+  before_script:
+    - mkdir ~/.config
+    - cp buildstream.conf.readable ~/.config/buildstream.conf
+
 variables:
   KDECI_BUILD: "TRUE"
 
@@ -26,3 +31,44 @@ build:
     access: all
     paths:
       - ${CI_PROJECT_DIR}/artifacts/
+
+spdx_sbom_report:
+  stage: publish
+  timeout: 120 minutes
+  image: storage.kde.org/vm-images/buildstream
+  tags:
+    - VM
+    - amd64
+  script:
+    - python3 -m pip install buildstream-sbom
+    - sh utils/generate-spdx-sbom-report.sh kde-buildstream --with-licenses --spdx-comment "KDE BuildStream" os/deps.bst
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/sbom-reports"
+  needs: [build]
+
+cve_report:
+  stage: publish
+  image: storage.kde.org/vm-images/buildstream
+  tags:
+    - VM
+    - amd64
+  script:
+    - sh utils/generate-cve-report.sh kde-linux
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/cve-reports"
+  needs: [build]
+
+markdown_manifest:
+  stage: publish
+  image: storage.kde.org/vm-images/buildstream
+  tags:
+    - VM
+    - amd64
+  script:
+    - sh utils/generate-manifest.sh
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/manifest/usr/"
+  needs: [build]
