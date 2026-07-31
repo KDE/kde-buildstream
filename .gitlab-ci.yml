@@ -7,6 +7,11 @@ include:
       - /gitlab-templates/reuse-lint.yml
       - /gitlab-templates/blocks/workflow.yml
 
+default:
+  before_script:
+    - mkdir ~/.config
+    - cp buildstream.conf.readable ~/.config/buildstream.conf
+
 variables:
   KDECI_BUILD: "TRUE"
 
@@ -26,3 +31,53 @@ build:
     access: all
     paths:
       - ${CI_PROJECT_DIR}/artifacts/
+
+.report:
+  stage: publish
+  image: s3.kde.org/ci-vm-images/buildstream
+  tags:
+    - VM
+    - amd64
+  before_script:
+    - !reference [default, before_script]
+    - git init buildstream-management
+    - git -C buildstream-management fetch --depth=1 https://invent.kde.org/sysadmin/buildstream-management.git 1d4feeb4443ee3b242e2a49534e5e072d5354102
+    - git -C buildstream-management checkout --detach FETCH_HEAD
+  needs: [build]
+
+spdx_sbom_report:
+  extends: .report
+  timeout: 120 minutes
+  script:
+    - python3 -m pip install buildstream-sbom
+    - mkdir -p sbom sbom-reports
+    - sh buildstream-management/utils/generate-spdx-sbom-report.sh kde-buildstream --spdx-comment "KDE BuildStream" os/deps.bst # TODO: add --with-licenses after 26.08 is ready and we can get askalono
+    - mv sbom/sbom-reports.json sbom-reports/kde-buildstream.spdx.json
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/sbom-reports"
+
+cve_report:
+  extends: .report
+  script:
+    - bash buildstream-management/utils/generate-cve-report.sh
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/cve/cve-reports"
+
+markdown_manifest:
+  extends: .report
+  script:
+    - python3 -m pip install buildstream-sbom
+    - bst build manifests/manifest.bst
+    - bst artifact checkout --force manifests/manifest.bst --directory manifest/
+    - mkdir -p sbom
+    - sh buildstream-management/utils/generate-spdx-sbom-report.sh kde-buildstream --spdx-comment "KDE BuildStream" --deps all os/deps.bst
+    - mv sbom/sbom-reports.json manifest/usr/manifest.spdx.json
+    - sdk_sources=$(mktemp -d)
+    - trap 'rm -rf "$sdk_sources"' EXIT
+    - bst source checkout --directory "$sdk_sources" freedesktop-sdk.bst
+    - python3 "$sdk_sources/freedesktop-sdk/utils/spdxtomd.py" manifest/usr/manifest.spdx.json
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/manifest/usr/"
