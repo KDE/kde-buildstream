@@ -10,6 +10,8 @@ sources:
   ref: freedesktop-sdk-26.08.1-20-g05d3f958efdef66ceb8d78ba661f17005129fd84
 - kind: patch_queue
   path: patches/freedesktop-sdk
+- kind: junction_override
+  path: elements/junction-overrides/systemd.bst
 
 config:
   options:
