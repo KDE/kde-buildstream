@@ -27,4 +27,4 @@ sources:
 - kind: git_repo
   url: github:zxing-cpp/zxing-cpp.git
   track: v*
-  ref: v2.3.0-0-gd6068bcebeb8fd9f0d35a99b00d202be86a14dbe
+  ref: v3.1.1-0-g287c85df6f961c8efbfb5ffd736cd9457b8b890e

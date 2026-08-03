@@ -16,4 +16,4 @@ sources:
 - kind: git_repo
   url: github:docker/buildx.git
   track: 'v*'
-  ref: v0.36.0-rc1-0-g4e15a5aca0e63b9c504b8a1c4e67993bc3e289b3
+  ref: v0.36.0-rc2-0-g02d2e61fcfafa40eeba04155440fd0decc1f2de0

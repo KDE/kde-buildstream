@@ -24,5 +24,5 @@ sources:
 - url: kde:frameworks/ki18n.git
   kind: git_repo
   track: v*
-  ref: ec42da6c553a0f6f6b8334d6a141220457f9c16f
+  ref: f7356ac9b6eaa53460f0471b9c1dba744ddc0cd8
   ref-format: sha1

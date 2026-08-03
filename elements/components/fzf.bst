@@ -34,7 +34,7 @@ sources:
 - kind: git_repo
   url: github:junegunn/fzf.git
   track: 'v*'
-  ref: v0.74.1-0-geae8d9d27eaeffc777699c01bf8f8b8c071908c1
+  ref: v0.74.2-0-g3337be9d450cd349e99273a2d3985ceaf5f3753f
 - kind: go_module
   url: github:charlievieth/fastwalk.git
   module: github.com/charlievieth/fastwalk
@@ -60,8 +60,8 @@ sources:
   url: github:mattn/go-isatty.git
   module: github.com/mattn/go-isatty
   ref:
-    go-version: v0.0.22
-    git-ref: v0.0.22-0-g9a68506e239465d922dc18c0cd331c49b411fdb2
+    go-version: v0.0.24
+    git-ref: v0.0.24-0-gc44dc0b9c702c76577fdb7898032969e0611efc2
     explicit: True
 - kind: go_module
   url: github:rivo/uniseg.git
