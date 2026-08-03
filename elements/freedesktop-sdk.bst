@@ -13,10 +13,20 @@ sources:
 - kind: local
   path: files/linux/kde-linux.config
   directory: files/linux
+- kind: local
+  path: files/freedesktop-sdk/elements/components/_private/dos2unix.bst
+  directory: elements/components/_private
+- kind: local
+  path: files/freedesktop-sdk/files/shim/sbat.kde-linux.csv
+  directory: files/shim
 - kind: junction_override
   path: elements/junction-overrides/systemd.bst
 - kind: junction_override
   path: elements/junction-overrides/linux.bst
+- kind: junction_override
+  path: elements/junction-overrides/fwupd-efi.bst
+- kind: junction_override
+  path: elements/junction-overrides/shim.bst
 
 config:
   options:
