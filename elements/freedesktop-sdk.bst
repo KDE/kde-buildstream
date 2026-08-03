@@ -10,8 +10,13 @@ sources:
   ref: freedesktop-sdk-26.08beta.1-27-g71e7606393d0881011b6bf20fdf3bf7808054150
 - kind: patch_queue
   path: patches/freedesktop-sdk
+- kind: local
+  path: files/linux/kde-linux.config
+  directory: files/linux
 - kind: junction_override
   path: elements/junction-overrides/systemd.bst
+- kind: junction_override
+  path: elements/junction-overrides/linux.bst
 
 config:
   options:
