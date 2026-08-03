@@ -16,4 +16,4 @@ sources:
 - kind: git_repo
   url: kernel:pub/scm/libs/python/python-linux-procfs/python-linux-procfs.git
   track: 'v*'
-  ref: v0.7.4-0-g2765211a5f123573cf61025b6572dbaf03e587d2
+  ref: v0.7.4-0-g702d6360ce082d8328e0cfd84f6415b0c94ca6dd
