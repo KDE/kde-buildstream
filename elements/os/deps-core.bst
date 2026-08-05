@@ -99,4 +99,5 @@ depends:
       - components/nvidia-prime.bst # nvidia-prime: prime-run command; used in kio via Dolphin, Plasma, KRunner
       - gnome-build-meta.bst:gnomeos-deps/nvidia-drivers-modules.bst # nvidia-open: Open kernel modules for NVIDIA GPUs
       - gnome-build-meta.bst:gnomeos-deps/nvidia-drivers-libs.bst # nvidia-utils: NVIDIA userspace libraries and Vulkan support
+      - components/nvidia-persistenced-config.bst # Only start nvidia-persistenced when an NVIDIA GPU exists
       - gnome-build-meta.bst:gnomeos-deps/intel-ucode.bst
