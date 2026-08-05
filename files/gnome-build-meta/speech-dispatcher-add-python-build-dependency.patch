@@ -1,0 +1,12 @@
+diff --git a/elements/core-deps/speech-dispatcher.bst b/elements/core-deps/speech-dispatcher.bst
+index 6a54c1f50..74ffb9e12 100644
+--- a/elements/core-deps/speech-dispatcher.bst
++++ b/elements/core-deps/speech-dispatcher.bst
+@@ -8,6 +8,7 @@ sources:
+ build-depends:
+ - (@): include/gcc-for-recc.yml
+ - buildsystems/autotools.bst
++- freedesktop-sdk.bst:components/python3.bst
+ - freedesktop-sdk.bst:components/systemd.bst
+ - freedesktop-sdk.bst:components/texinfo.bst
+ 

@@ -15,6 +15,7 @@ depends:
 - freedesktop-sdk.bst:components/gtk3.bst
 - freedesktop-sdk.bst:components/pygobject.bst
 - freedesktop-sdk.bst:components/itstool.bst
+- gnome-build-meta.bst:core-deps/speech-dispatcher.bst
 
 sources:
 - kind: git_repo
