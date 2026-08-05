@@ -19,6 +19,6 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.com/accounts-sso/libaccounts-glib
+  url: gitlab:accounts-sso/libaccounts-glib
   track: VERSION_*
   ref: VERSION_1.27-0-g26c54322304e9df598b2ba67427433a2e68b823e
