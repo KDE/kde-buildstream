@@ -41,7 +41,7 @@ spdx_sbom_report:
     - amd64
   script:
     - python3 -m pip install buildstream-sbom
-    - sh utils/generate-spdx-sbom-report.sh kde-buildstream --with-licenses --spdx-comment "KDE BuildStream" os/deps.bst
+    - sh utils/generate-spdx-sbom-report.sh kde-buildstream --spdx-comment "KDE BuildStream" os/deps.bst # TODO: add --with-licenses after 26.08 is ready and we can get askalono
   artifacts:
     paths:
       - "${CI_PROJECT_DIR}/sbom-reports"

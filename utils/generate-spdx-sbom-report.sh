@@ -7,7 +7,7 @@ set -eux
 name=$1
 shift
 
-BST=bst buildstream-sbom \
+buildstream-sbom \
     --spdx-name $name \
     --spdx-namespace https://linux.kde.org/spdxdocs/$name.spdx.json-${UUID-$name} \
     --output "sbom-reports" "$@"
