@@ -22,6 +22,11 @@ sources:
 - kind: git_repo
   url: github:tesseract-ocr/tesseract.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
+  - '*dev*'
   ref: 5.5.2-0-g6e1d56a847e697de07b38619356550e5cf4e8633
 config:
   build-commands:

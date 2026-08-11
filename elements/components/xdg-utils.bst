@@ -27,4 +27,7 @@ sources:
 - kind: git_repo
   url: fdo:xdg/xdg-utils.git
   track: 'v*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
   ref: v1.2.1-0-g356c380ad6fecc9ce6bea1f6a77986ba67402c80

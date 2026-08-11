@@ -7,6 +7,8 @@ sources:
 - kind: git_repo
   url: github:alsa-project/alsa-utils.git
   track: v*
+  exclude:
+  - '*rc*'
   ref: v1.2.16-0-g9feb22ba45b48729729c8d194aaf1bc082a6842a
 
 build-depends:

@@ -28,6 +28,8 @@ sources:
 - kind: git_repo
   url: github:ReimuNotMoe/ydotool.git
   track: 'v*'
+  exclude:
+  - '*alpha*'
   ref: v1.0.4-0-g57ba7d0af525e82da2de0e275d169477f293b197
 - kind: local
   path: files

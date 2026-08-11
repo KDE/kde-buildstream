@@ -17,4 +17,6 @@ sources:
 - kind: git_repo
   url: github:bup/bup
   track: '*'
+  exclude:
+  - '*rc*'
   ref: 0.33.10-0-g0fd0f5a8e928c9c93900f9d6f54fec61c855614a

@@ -75,6 +75,9 @@ sources:
 - kind: git_repo
   url: sourceforge_git:zsh/code
   track: 'zsh-*'
+  exclude:
+  - '*pre*'
+  - '*dev*'
   ref: zsh-5.9.2-0-gddee3e7a751a4f03d5a1041fd44bb7af7bc0cebb
 - kind: local
   path: files/zsh/zprofile

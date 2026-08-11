@@ -23,6 +23,8 @@ sources:
 - kind: git_repo
   url: github:docker/buildx.git
   track: 'v*'
+  exclude:
+  - "*rc*"
   ref: v0.36.1-0-g1d8dde89b8aba914e05e45366770736fea1fd690
 - kind: go_module
   url: github:Masterminds/semver.git

@@ -26,4 +26,7 @@ sources:
 - kind: git_repo
   url: https://git.launchpad.net/ufw
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*pre*'
   ref: 0.36.2-0-g2ed44c38ea83e86af99ee51abc2bf9393c07a39a

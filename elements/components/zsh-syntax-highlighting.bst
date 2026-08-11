@@ -27,3 +27,5 @@ sources:
   exclude:
   - '*alpha*'
   - '*beta*'
+  - '*rc*'
+  - '*pre*'

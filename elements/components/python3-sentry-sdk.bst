@@ -28,4 +28,7 @@ sources:
 - kind: git_repo
   url: github:getsentry/sentry-python.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
   ref: 3.0.0a7-0-g7d96f392ae6738505b6f605bf72fc3d7b406a111

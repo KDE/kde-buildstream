@@ -16,4 +16,6 @@ sources:
 - kind: git_repo
   url: github:bastikr/boolean.py.git
   track: 'v*'
+  exclude:
+  - '*dev*'
   ref: v5.0-0-g8a443837e68dc027004294fb17fe1857cf783410

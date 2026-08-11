@@ -31,4 +31,8 @@ sources:
 - kind: git_repo
   url: https://codeberg.org/Calamares/calamares.git
   track: v*
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: v3.4.2-0-g36d30c492e5c7b5d6d32fed5c5d9790522e1eea3

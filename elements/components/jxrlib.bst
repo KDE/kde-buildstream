@@ -20,4 +20,7 @@ sources:
 - kind: git_repo
   url: github:mircomir/jxrlib
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
   ref: 1.4.2-0-g568cc2c4e09cf04412bc53a3e03e678ecd1d4693

@@ -22,4 +22,8 @@ sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/orca.git
   track: '48.*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: 48.9-0-g4b964097f586446b3c74a98d0d309fb4b87ceb70

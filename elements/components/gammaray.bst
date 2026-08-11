@@ -24,4 +24,6 @@ sources:
 - kind: git_repo
   url: github:KDAB/GammaRay
   track: 'v*'
+  exclude:
+  - '*beta*'
   ref: v3.4.0-0-g731f7cdbf742470ad11ba9598a6bc47f40d7f943

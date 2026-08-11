@@ -16,5 +16,9 @@ sources:
 - url: https://github.com/AcademySoftwareFoundation/openexr.git
   kind: git_repo
   track: v*
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: c1194b2cb23a1bdf76fe5e756b22e8436b9a98c9
   ref-format: sha1

@@ -15,8 +15,16 @@ sources:
 - kind: git_repo
   url: github:opencv/opencv.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: 5.0.0-alpha-0-g616fd509478bce17749cbc94852a1cc50d1e8f06
 - kind: git_repo
   url: github:opencv/opencv_contrib.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: 5.0.0-alpha-0-g712f9758c57edcefa99fc5ff6674352decc3cf31

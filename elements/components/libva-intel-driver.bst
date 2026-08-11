@@ -21,4 +21,9 @@ sources:
 - kind: git_repo
   url: github:irql-notlessorequal/intel-vaapi-driver.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
+  - '*pre*'
   ref: 2.4.5-0-g0b648be50cd80e16469c135c76ff61bbd2f2d12b

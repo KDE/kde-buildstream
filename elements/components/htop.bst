@@ -30,4 +30,7 @@ sources:
 - kind: git_repo
   url: github:htop-dev/htop.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
   ref: 3.5.2-0-g393b224603620e62a693628ac50b9f4e4424a851

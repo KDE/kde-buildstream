@@ -24,5 +24,7 @@ sources:
 - url: kde:frameworks/kwidgetsaddons.git
   kind: git_repo
   track: v*
+  exclude:
+  - '*rc*'
   ref: 0e7b826043dfcf96aef53565d164d40a467f4c19
   ref-format: sha1

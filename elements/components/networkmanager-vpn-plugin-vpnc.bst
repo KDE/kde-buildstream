@@ -20,4 +20,8 @@ sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/NetworkManager-vpnc.git
   track: '*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*dev*'
   ref: 1.4.1-dev-0-g2c7a5e161f6fd169b2afc7af04122c288ce3ee8e

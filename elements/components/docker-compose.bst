@@ -16,4 +16,6 @@ sources:
 - kind: git_repo
   url: github:docker/compose.git
   track: 'v*'
+  exclude:
+  - '*rc*'
   ref: v5.3.1-0-gf32009d4a2c687dd405398cc7975d12dccaf8dff

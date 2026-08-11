@@ -92,16 +92,23 @@ sources:
 - kind: git_repo
   url: github:docker/cli.git
   track: 'v*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
   ref: v29.6.2-0-gdfc4efb1e2ab8c06d70d2a1366ad448d2f917e90
   directory: cli
 - kind: git_repo
   url: github:moby/moby.git
   track: 'docker-v*'
+  exclude:
+  - '*rc*'
   ref: docker-v29.6.2-0-g3d80467678f6e36325fa9ae3dd486fe91e5652e3
   directory: moby
 - kind: git_repo
   url: github:krallin/tini.git
   track: 'v*'
+  exclude:
+  - '*pre*'
   ref: v0.19.0-0-gde40ad007797e0dcd8b7126f27bb87401d224240
   directory: tini
 - kind: remote

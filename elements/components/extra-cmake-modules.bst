@@ -21,5 +21,7 @@ sources:
 - url: kde:frameworks/extra-cmake-modules.git
   kind: git_repo
   track: v*
+  exclude:
+  - '*rc*'
   ref: 01dc9a0c05dd4851b01b93e961c9aa33b1e96056
   ref-format: sha1

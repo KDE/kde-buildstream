@@ -41,4 +41,8 @@ sources:
 - kind: git_repo
   url: github:containerd/containerd.git
   track: 'v*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*alpha*'
   ref: v2.3.3-0-gaad11006b869517fcd3009450b6f82da282e1a9b

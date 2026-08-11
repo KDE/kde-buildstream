@@ -22,4 +22,8 @@ sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/NetworkManager-openvpn.git
   track: '*.*'
+  exclude:
+  - '*rc*'
+  - '*beta*'
+  - '*dev*'
   ref: 1.12.5-0-gd03d6a636866e9be9fbec7977ef377c191fb2988

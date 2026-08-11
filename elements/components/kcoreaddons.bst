@@ -24,5 +24,7 @@ sources:
 - url: kde:frameworks/kcoreaddons.git
   kind: git_repo
   track: v*
+  exclude:
+  - '*rc*'
   ref: d53d3c756db6832893b6af6eeef6cc10982cc9d6
   ref-format: sha1

@@ -20,4 +20,7 @@ sources:
 - kind: git_repo
   url: github:intel/thermal_daemon.git
   track: 'v*'
+  exclude:
+  - '*rc*'
+  - '*pre*'
   ref: v2.15.10-0-g88369b42ec523787081b9bf8811b364e2a3d5f2d

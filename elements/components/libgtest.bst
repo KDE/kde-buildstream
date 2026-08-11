@@ -7,6 +7,8 @@ sources:
 - kind: git_repo
   url: github:google/googletest.git
   track: 'v*'
+  exclude:
+  - '*pre*'
   ref: v1.17.0-0-g52eb8108c5bdec04579160ae17225d66034bd723
 
 build-depends:
