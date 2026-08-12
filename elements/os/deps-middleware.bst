@@ -26,6 +26,7 @@ depends:
 - components/appmenu-gtk-module.bst # appmenu-gtk-module: plasma-desktop, for global menu support in GTK 3 apps
 - components/bup.bst # bup: kup, for one of the backends
 - components/catdoc.bst # catdoc: kfilemetadata, for indexing old MS word docs
+- components/gocryptfs.bst # gocryptfs: Needed to mount Plasma Vaults
 - components/jxrlib.bst # jxrlib: kimageformats
 - components/libRaw.bst # libraw: kimageformats
 - components/lrzip.bst # lrzip: ark, for lzma, rzip, and zpaq compressed archives
