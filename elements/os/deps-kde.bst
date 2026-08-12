@@ -58,6 +58,7 @@ depends:
 - components/python3-sentry-sdk.bst # drkonqi
 - components/py-setproctitle.bst
 - components/qcoro.bst # konsole
+- components/libqalculate.bst # krunner
 - qt.bst
 - components/xsettingsd.bst # needed by kwin for X11 apps to get the right theme, font, scale etc.
 
