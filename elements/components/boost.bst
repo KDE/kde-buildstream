@@ -9,7 +9,7 @@ build-depends:
 
 config:
   install-commands:
-  - ./bootstrap.sh --prefix=%{install-root}/usr --with-libraries=filesystem,system,program_options,iostreams,container
+  - ./bootstrap.sh --prefix=%{install-root}/usr --with-libraries=filesystem,system,program_options,iostreams,container,thread
   - ./b2 headers
   - ./b2 install
 
