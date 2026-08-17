@@ -4,9 +4,11 @@
 kind: manual
 
 sources:
-- kind: tar
-  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.31.tar.gz
-  ref: b9c4d58b2614b8611ae03a95a6d60ed996f4b311ef3cd5a937b92f1825ecc564
+- kind: cpan
+  index: 'cpan:'
+  name: 'URI::Escape'
+  suffix: authors/id/O/OA/OALDERS/URI-5.31.tar.gz
+  sha256sum: b9c4d58b2614b8611ae03a95a6d60ed996f4b311ef3cd5a937b92f1825ecc564
 
 depends:
 - freedesktop-sdk.bst:sdk.bst
