@@ -18,6 +18,9 @@ config:
   - make -j1 DESTDIR="%{install-root}" installroot="%{install-root}" install
 
 sources:
-- kind: tar
-  url: http://ftp.wagner.pp.ru/pub/catdoc/catdoc-0.95.tar.gz
-  ref: 514a84180352b6bf367c1d2499819dfa82b60d8c45777432fa643a5ed7d80796
+- kind: anitya
+  project-id: 13398
+  url: 'http://ftp.wagner.pp.ru/pub/catdoc/catdoc-{version}.tar.gz'
+  ref:
+    version: '0.95'
+    sha256sum: 514a84180352b6bf367c1d2499819dfa82b60d8c45777432fa643a5ed7d80796

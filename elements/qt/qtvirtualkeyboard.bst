@@ -18,6 +18,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtvirtualkeyboard-everywhere-src-6.11.1.tar.xz
-  ref: a1c6967b326243b2ca8d50bc7b7f7852c3975d9aa6ce4b186ebdf35bb1007e1c
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: a1c6967b326243b2ca8d50bc7b7f7852c3975d9aa6ce4b186ebdf35bb1007e1c

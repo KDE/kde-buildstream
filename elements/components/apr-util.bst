@@ -23,6 +23,9 @@ variables:
     --without-crypto
 
 sources:
-- kind: tar
-  url: https://downloads.apache.org/apr/apr-util-1.6.3.tar.bz2
-  ref: a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
+- kind: anitya
+  project-id: 96
+  url: 'https://downloads.apache.org/apr/apr-util-{version}.tar.bz2'
+  ref:
+    version: 1.6.5
+    sha256sum: 96de1dd6f6a0476d2d2e7964926d8c1ddc3bb0e210e1b1812d3ba5a454a392e2

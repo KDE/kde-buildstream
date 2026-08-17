@@ -39,6 +39,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qttranslations-everywhere-src-6.11.1.tar.xz
-  ref: 37c02c81206594c7bb4edca85ac93e8e55a9836b70c960fde6cb0f8623ec5677
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qttranslations-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 37c02c81206594c7bb4edca85ac93e8e55a9836b70c960fde6cb0f8623ec5677

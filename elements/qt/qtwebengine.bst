@@ -35,6 +35,9 @@ variables:
     # -DQT_FEATURE_webengine_system_openh264=ON
 
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtwebengine-everywhere-src-6.11.1.tar.xz
-  ref: 679c66ccc6c158fc215e9c58ef160331ecd29974232e345c05161889f8667083
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtwebengine-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 679c66ccc6c158fc215e9c58ef160331ecd29974232e345c05161889f8667083

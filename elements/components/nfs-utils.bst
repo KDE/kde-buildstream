@@ -37,6 +37,9 @@ variables:
     rm -rf "%{install-root}/sbin"
 
 sources:
-- kind: tar
-  url: https://www.kernel.org/pub/linux/utils/nfs-utils/2.9.1/nfs-utils-2.9.1.tar.xz
-  ref: 302846343bf509f8f884c23bdbd0fe853b7f7cbb6572060a9082279d13b21a2c
+- kind: anitya
+  project-id: 2081
+  url: 'https://www.kernel.org/pub/linux/utils/nfs-utils/{version}/nfs-utils-{version}.tar.xz'
+  ref:
+    version: 2.9.1
+    sha256sum: 302846343bf509f8f884c23bdbd0fe853b7f7cbb6572060a9082279d13b21a2c

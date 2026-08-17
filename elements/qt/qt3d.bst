@@ -37,6 +37,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qt3d-everywhere-src-6.11.1.tar.xz
-  ref: a66d8c8e049d1ee7a7687b34940f3555d0d7084858b6dc78d1e1cb7df40a0107
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qt3d-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: a66d8c8e049d1ee7a7687b34940f3555d0d7084858b6dc78d1e1cb7df40a0107

@@ -14,9 +14,12 @@ depends:
 - freedesktop-sdk.bst:components/systemd.bst
 
 sources:
-- kind: tar
-  url: github:bus1/dbus-broker/releases/download/v37/dbus-broker-37.tar.xz
-  ref: f819a8db8795fa08c767612e3823fd594694a0990f2543ecf35d6a1a6bf2ab5b
+- kind: anitya
+  project-id: 271475
+  url: 'github:bus1/dbus-broker/releases/download/v{version}/dbus-broker-{version}.tar.xz'
+  ref:
+    version: '37'
+    sha256sum: f819a8db8795fa08c767612e3823fd594694a0990f2543ecf35d6a1a6bf2ab5b
 
 config:
   install-commands:

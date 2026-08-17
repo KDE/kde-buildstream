@@ -23,6 +23,9 @@ variables:
     sed -i 's|/usr/sbin/usb_modeswitch|%{bindir}/usb_modeswitch|g' "%{install-root}%{prefix}/lib/udev/usb_modeswitch"
 
 sources:
-- kind: tar
-  url: http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-2.6.2.tar.bz2
-  ref: f7abd337784a9d1bd39cb8a587518aff6f2a43d916145eafd80b1b8b7146db66
+- kind: anitya
+  project-id: 5059
+  url: 'http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-{version}.tar.bz2'
+  ref:
+    version: 2.6.2
+    sha256sum: f7abd337784a9d1bd39cb8a587518aff6f2a43d916145eafd80b1b8b7146db66

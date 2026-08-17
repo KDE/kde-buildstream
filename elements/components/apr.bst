@@ -12,6 +12,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: https://downloads.apache.org/apr/apr-1.7.6.tar.bz2
-  ref: 49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32
+- kind: anitya
+  project-id: 95
+  url: 'https://www.apache.org/dist/apr/apr-{version}.tar.bz2'
+  ref:
+    version: 1.7.6
+    sha256sum: 49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32

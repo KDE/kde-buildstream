@@ -14,6 +14,9 @@ depends:
 - freedesktop-sdk.bst:components/openssl.bst
 
 sources:
-- kind: tar
-  url: https://download.strongswan.org/strongswan-6.0.7.tar.bz2
-  ref: e518e34e159514f4c6ba80d1f926cb151e0dd4e3a1d94213171234b8b9ae6f55
+- kind: anitya
+  project-id: 4899
+  url: 'https://download.strongswan.org/strongswan-{version}.tar.bz2'
+  ref:
+    version: 6.0.7
+    sha256sum: e518e34e159514f4c6ba80d1f926cb151e0dd4e3a1d94213171234b8b9ae6f55

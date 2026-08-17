@@ -36,6 +36,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtcharts-everywhere-src-6.11.1.tar.xz
-  ref: 3fe3ed318c2a86d1417c5c29cf7494275e8fd4b537cd37453f5599c57365515c
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtcharts-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 3fe3ed318c2a86d1417c5c29cf7494275e8fd4b537cd37453f5599c57365515c

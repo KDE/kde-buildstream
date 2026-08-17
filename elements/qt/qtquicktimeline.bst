@@ -43,6 +43,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtquicktimeline-everywhere-src-6.11.1.tar.xz
-  ref: af53f643fd9e4045e1b9ba919998e5c048ca877452c08036c9c8c5ee07ea8c27
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtquicktimeline-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: af53f643fd9e4045e1b9ba919998e5c048ca877452c08036c9c8c5ee07ea8c27

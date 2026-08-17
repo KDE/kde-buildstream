@@ -33,6 +33,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtserialport-everywhere-src-6.11.1.tar.xz
-  ref: 9af31a898ffd9a7e4faf6fed845d29e783c716885789055cbe319f3e072d3974
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtserialport-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 9af31a898ffd9a7e4faf6fed845d29e783c716885789055cbe319f3e072d3974

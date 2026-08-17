@@ -15,6 +15,9 @@ depends:
 - freedesktop-sdk.bst:components/xmlto.bst
 
 sources:
-- kind: tar
-  url: github:OpenPrinting/system-config-printer/releases/download/v1.5.18/system-config-printer-1.5.18.tar.xz
-  ref: b1a69e1b4ec2add569a87aeca811a37c5361ee6ae327ec852b79e64223e34bee
+- kind: anitya
+  project-id: 8855
+  url: 'github:OpenPrinting/system-config-printer/releases/download/v{version}/system-config-printer-{version}.tar.xz'
+  ref:
+    version: 1.5.18
+    sha256sum: b1a69e1b4ec2add569a87aeca811a37c5361ee6ae327ec852b79e64223e34bee

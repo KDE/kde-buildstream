@@ -14,6 +14,9 @@ config:
   - ./b2 install
 
 sources:
-- kind: tar
-  url: https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2
-  ref: 85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a
+- kind: anitya
+  project-id: 6845
+  url: 'https://archives.boost.io/release/{version}/source/boost_{major}_{minor}_{patch}.tar.bz2'
+  ref:
+    version: 1.89.0
+    sha256sum: 85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a

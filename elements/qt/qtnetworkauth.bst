@@ -38,6 +38,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtnetworkauth-everywhere-src-6.11.1.tar.xz
-  ref: 9f1d5bf22ccc033e42076186b964f9d4d4179fd0312a2c0f1aa19db42516563d
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtnetworkauth-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 9f1d5bf22ccc033e42076186b964f9d4d4179fd0312a2c0f1aa19db42516563d

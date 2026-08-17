@@ -29,9 +29,12 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtbase-everywhere-src-6.11.1.tar.xz
-  ref: d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtbase-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
 - kind: patch
   path: elements/qt/patch/qtbase-find_package-paths.patch
 - kind: patch

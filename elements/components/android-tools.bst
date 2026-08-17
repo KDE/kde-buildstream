@@ -27,9 +27,12 @@ variables:
     -Dprotobuf_MODULE_COMPATIBLE=ON
 
 sources:
-- kind: tar
-  url: github:nmeum/android-tools/releases/download/35.0.2/android-tools-35.0.2.tar.xz
-  ref: d2c3222280315f36d8bfa5c02d7632b47e365bfe2e77e99a3564fb6576f04097
+- kind: anitya
+  project-id: 226905
+  url: 'github:nmeum/android-tools/releases/download/{version}/android-tools-{version}.tar.xz'
+  ref:
+    version: 35.0.2
+    sha256sum: d2c3222280315f36d8bfa5c02d7632b47e365bfe2e77e99a3564fb6576f04097
 - kind: patch
   path: elements/components/patch/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
 - kind: patch

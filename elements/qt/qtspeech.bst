@@ -28,6 +28,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtspeech-everywhere-src-6.11.1.tar.xz
-  ref: c035c318012025875a653245701a23d3807e8e46b8bf7987877842219c273f14
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtspeech-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: c035c318012025875a653245701a23d3807e8e46b8bf7987877842219c273f14

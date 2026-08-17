@@ -14,6 +14,9 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 sources:
-- kind: tar
-  url: pypi:source/p/python-debian/python_debian-1.1.1.tar.gz
-  ref: fe4fc3dc798dbf1f0ef5865e2b1b4f7cc0352b6a511b25ab7594906c64a73629
+- kind: anitya
+  project-id: 91473
+  url: 'pypi:source/p/python-debian/python_debian-{version}.tar.gz'
+  ref:
+    version: 1.1.1
+    sha256sum: fe4fc3dc798dbf1f0ef5865e2b1b4f7cc0352b6a511b25ab7594906c64a73629

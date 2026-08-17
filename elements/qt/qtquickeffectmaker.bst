@@ -47,6 +47,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtquickeffectmaker-everywhere-src-6.11.1.tar.xz
-  ref: cfe63e70e88bdd126a175762d3eeb38eb336e45beceedcbd027bc5362744136b
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtquickeffectmaker-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: cfe63e70e88bdd126a175762d3eeb38eb336e45beceedcbd027bc5362744136b

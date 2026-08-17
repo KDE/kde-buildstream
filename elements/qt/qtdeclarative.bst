@@ -25,6 +25,9 @@ public:
         - '**/lib/plugins/qmltooling'
         - '**/lib/plugins/qmltooling/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtdeclarative-everywhere-src-6.11.1.tar.xz
-  ref: 52e670f670b0304f534b24f98c47ceb8a41bb710464414ebc9527ec71cc86aa4
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtdeclarative-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 52e670f670b0304f534b24f98c47ceb8a41bb710464414ebc9527ec71cc86aa4

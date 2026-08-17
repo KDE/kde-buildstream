@@ -13,6 +13,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: https://downloads.sourceforge.net/sourceforge/linuxquota/quota-4.11.tar.gz
-  ref: 0a51b8f920254d8e83c34a4c3082b7d241f5d6fd65188afadf29859d5223ef78
+- kind: anitya
+  project-id: 4145
+  url: 'https://downloads.sourceforge.net/sourceforge/linuxquota/quota-{version}.tar.gz'
+  ref:
+    version: '4.11'
+    sha256sum: 0a51b8f920254d8e83c34a4c3082b7d241f5d6fd65188afadf29859d5223ef78

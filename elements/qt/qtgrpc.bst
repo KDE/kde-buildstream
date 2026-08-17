@@ -25,8 +25,11 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtgrpc-everywhere-src-6.11.1.tar.xz
-  ref: 437b04f0c550ccdb1739ca5f9119b73dfa0376564815e8bfc199890643e2a250
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtgrpc-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 437b04f0c550ccdb1739ca5f9119b73dfa0376564815e8bfc199890643e2a250
 - kind: patch
   path: elements/qt/patch/qtgrpc-find_program-paths.patch

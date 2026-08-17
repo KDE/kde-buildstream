@@ -21,6 +21,9 @@ public:
         - '**/lib/plugins/qmltooling'
         - '**/lib/plugins/qmltooling/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtshadertools-everywhere-src-6.11.1.tar.xz
-  ref: 2075052f9b23bcf9de045bbd180037084942f82cce870aab14a1454902c982fc
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtshadertools-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 2075052f9b23bcf9de045bbd180037084942f82cce870aab14a1454902c982fc

@@ -31,6 +31,9 @@ variables:
     --with-utf8proc=internal
 
 sources:
-- kind: tar
-  url: https://downloads.apache.org/subversion/subversion-1.14.5.tar.bz2
-  ref: e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1
+- kind: anitya
+  project-id: 4905
+  url: 'https://downloads.apache.org/subversion/subversion-{version}.tar.bz2'
+  ref:
+    version: 1.14.5
+    sha256sum: e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1

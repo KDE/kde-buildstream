@@ -29,6 +29,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtsensors-everywhere-src-6.11.1.tar.xz
-  ref: 23617062da7be526d023dec7f9b76231001a1098a7e5f94c646f2e4f87cfcf8f
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtsensors-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 23617062da7be526d023dec7f9b76231001a1098a7e5f94c646f2e4f87cfcf8f

@@ -15,6 +15,9 @@ depends:
 - freedesktop-sdk.bst:components/icu.bst
 
 sources:
-- kind: tar
-  url: https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.3.0.tar.gz
-  ref: 9555f1d06f82987fbb4658862705515740414fd34b4db6ad2ed76a2dc08d3bde
+- kind: anitya
+  project-id: 5182
+  url: 'https://www.apache.org/dist/xerces/c/{major}/sources/xerces-c-{version}.tar.gz'
+  ref:
+    version: 3.3.0
+    sha256sum: 9555f1d06f82987fbb4658862705515740414fd34b4db6ad2ed76a2dc08d3bde

@@ -23,6 +23,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtpositioning-everywhere-src-6.11.1.tar.xz
-  ref: d5e6b91801ae286e7630016caea3bdc5e1978b4291d6741d0d64c125650f78f5
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtpositioning-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: d5e6b91801ae286e7630016caea3bdc5e1978b4291d6741d0d64c125650f78f5

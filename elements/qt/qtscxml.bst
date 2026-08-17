@@ -35,6 +35,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtscxml-everywhere-src-6.11.1.tar.xz
-  ref: 8e495245e5d1fe75de612c8a07e4043635407a1979bb1dd588f1751d1390203f
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtscxml-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 8e495245e5d1fe75de612c8a07e4043635407a1979bb1dd588f1751d1390203f

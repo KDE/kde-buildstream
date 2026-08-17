@@ -15,6 +15,9 @@ depends:
 - freedesktop-sdk.bst:components/openssl.bst
 
 sources:
-- kind: tar
-  url: github:lsh123/xmlsec/releases/download/1.3.12/xmlsec1-1.3.12.tar.gz
-  ref: 24045199af12d93fe5fdbbbf7e386e823e4842071e9432e2b90ac108b889a923
+- kind: anitya
+  project-id: 5200
+  url: 'github:lsh123/xmlsec/releases/download/{version}/xmlsec1-{version}.tar.gz'
+  ref:
+    version: 1.3.12
+    sha256sum: 24045199af12d93fe5fdbbbf7e386e823e4842071e9432e2b90ac108b889a923

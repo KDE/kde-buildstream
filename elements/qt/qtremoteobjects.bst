@@ -40,6 +40,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtremoteobjects-everywhere-src-6.11.1.tar.xz
-  ref: 40629895c69531a687a9c0258316cee3f04c2d18b2bf2ad36dc83e76a58f111a
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtremoteobjects-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 40629895c69531a687a9c0258316cee3f04c2d18b2bf2ad36dc83e76a58f111a

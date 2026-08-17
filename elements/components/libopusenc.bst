@@ -16,6 +16,9 @@ depends:
 - freedesktop-sdk.bst:components/opus.bst
 
 sources:
-- kind: tar
-  url: https://ftp.osuosl.org/pub/xiph/releases/opus/libopusenc-0.3.tar.gz
-  ref: f616d3aff9b2034547894ccb8ab56c36cf1a4acb0d922c5d7119f97bbe58642c
+- kind: anitya
+  project-id: 17877
+  url: 'https://downloads.xiph.org/releases/opus/libopusenc-{version}.tar.gz'
+  ref:
+    version: '0.3'
+    sha256sum: f616d3aff9b2034547894ccb8ab56c36cf1a4acb0d922c5d7119f97bbe58642c

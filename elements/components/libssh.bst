@@ -11,6 +11,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
-- kind: tar
-  url: https://www.libssh.org/files/0.12/libssh-0.12.0.tar.xz
-  ref: 1a6af424d8327e5eedef4e5fe7f5b924226dd617ac9f3de80f217d82a36a7121
+- kind: anitya
+  project-id: 1729
+  url: 'https://www.libssh.org/files/{major}.{minor}/libssh-{version}.tar.xz'
+  ref:
+    version: 0.12.0
+    sha256sum: 1a6af424d8327e5eedef4e5fe7f5b924226dd617ac9f3de80f217d82a36a7121

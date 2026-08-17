@@ -34,6 +34,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtwebsockets-everywhere-src-6.11.1.tar.xz
-  ref: 243e3aa11924c8c5c1645e892f62d013caa3766c57512ca926d5b58146646fbf
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtwebsockets-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 243e3aa11924c8c5c1645e892f62d013caa3766c57512ca926d5b58146646fbf

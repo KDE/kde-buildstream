@@ -30,6 +30,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtimageformats-everywhere-src-6.11.1.tar.xz
-  ref: b2bf6c6845ac175ed7f819145483ba4676f617aaa6a5012c8efee63c8bbac413
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtimageformats-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: b2bf6c6845ac175ed7f819145483ba4676f617aaa6a5012c8efee63c8bbac413

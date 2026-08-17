@@ -17,6 +17,9 @@ variables:
     rm -rf "%{install-root}/bin"
 
 sources:
-- kind: tar
-  url: https://www.rarlab.com/rar/unrarsrc-7.2.6.tar.gz
-  ref: d1afa67ef4121ebc5986815699e05db0ce8648499e5dca854f282a4c3f72c003
+- kind: anitya
+  project-id: 13306
+  url: 'https://www.rarlab.com/rar/unrarsrc-{version}.tar.gz'
+  ref:
+    version: 7.2.6
+    sha256sum: d1afa67ef4121ebc5986815699e05db0ce8648499e5dca854f282a4c3f72c003

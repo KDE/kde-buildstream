@@ -31,6 +31,9 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 sources:
-- kind: tar
-  url: qt:6.11/6.11.1/submodules/qtconnectivity-everywhere-src-6.11.1.tar.xz
-  ref: 2105289ea414b46ed5fa53ba8782230045b9e47cc8156b5940c9e31e3980e591
+- kind: anitya
+  project-id: 7927
+  url: 'qt:{major}.{minor}/{version}/submodules/qtconnectivity-everywhere-src-{version}.tar.xz'
+  ref:
+    version: 6.11.1
+    sha256sum: 2105289ea414b46ed5fa53ba8782230045b9e47cc8156b5940c9e31e3980e591
