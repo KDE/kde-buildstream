@@ -41,3 +41,4 @@ depends:
 - components/switcheroo-control.bst # switcheroo-control: kio, for launching apps on non-default GPU
 - components/unrar.bst # unrar: ark, for RAR decompression support
 - components/xdg-desktop-portal-gtk.bst # xdg-desktop-portal-gtk: GTK/Flatpak icon settings syncing
+- components/dmidecode.bst # inxi uses it to inspect the hardware configuration
