@@ -23,6 +23,7 @@ depends:
 
 runtime-depends:
 - components/python-linux-procfs.bst
+- components/python-pyinotify.bst
 - components/python-pyudev.bst
 
 variables:
