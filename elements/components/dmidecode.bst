@@ -18,6 +18,7 @@ variables:
 
 sources:
 - kind: tar
+  # GNU Savannah's primary download source is down, switched to the mirror. We should probably go back to the main one once they restore it
   # url: https://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.7.tar.xz
   url: http://download-mirror.savannah.gnu.org/releases/dmidecode/dmidecode-3.7.tar.xz
   ref: 2c3aed12c85a1e6a9410d406d5e417c455466dc1bc7c89278bb32cf7cad91e8a
