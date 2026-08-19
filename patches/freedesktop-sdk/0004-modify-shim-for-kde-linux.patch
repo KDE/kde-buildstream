@@ -1,4 +1,4 @@
-From c873ab6e0a6da331c1f9d7d813ccdf48c4ceed6e Mon Sep 17 00:00:00 2001
+From 9962fe17920fb341081d8b4c766a18dd37234d76 Mon Sep 17 00:00:00 2001
 From: Harald Sitter <sitter@kde.org>
 Date: Tue, 28 Jul 2026 04:55:34 +0200
 Subject: [PATCH 4/4] modify shim for kde-linux

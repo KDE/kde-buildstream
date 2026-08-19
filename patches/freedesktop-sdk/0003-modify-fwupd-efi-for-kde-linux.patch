@@ -1,4 +1,4 @@
-From efb97ec43b7772c0fb8f1240c5e266c13e25ff72 Mon Sep 17 00:00:00 2001
+From a022c151b95cf56ecd6f8b6d5599958727fc20bd Mon Sep 17 00:00:00 2001
 From: Harald Sitter <sitter@kde.org>
 Date: Mon, 27 Jul 2026 20:43:48 +0200
 Subject: [PATCH 3/4] modify fwupd-efi for kde-linux

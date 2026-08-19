@@ -1,16 +1,16 @@
-From a3576acf46c0b5a023f0f667238a1f1e8e6e4038 Mon Sep 17 00:00:00 2001
+From a29826492832a171787992aa8945d32307eb9d29 Mon Sep 17 00:00:00 2001
 From: Harald Sitter <sitter@kde.org>
 Date: Mon, 27 Jul 2026 15:27:50 +0200
 Subject: [PATCH 1/4] modify kernel for kde linux
 
 ---
- elements/components/linux.bst |   22 +-
+ elements/components/linux.bst |   19 +
  files/linux/config-utils.sh   |    7 +-
  files/linux/fdsdk-config.sh   | 3088 ++++++++++++++++++++++++++++++++-
- 3 files changed, 3114 insertions(+), 3 deletions(-)
+ 3 files changed, 3112 insertions(+), 2 deletions(-)
 
 diff --git a/elements/components/linux.bst b/elements/components/linux.bst
-index 71a8c8bd6..ee4e22ac3 100644
+index 447565c62..8312011a5 100644
 --- a/elements/components/linux.bst
 +++ b/elements/components/linux.bst
 @@ -59,6 +59,25 @@ variables:
@@ -39,16 +39,6 @@ index 71a8c8bd6..ee4e22ac3 100644
  
  config:
    configure-commands:
-@@ -98,7 +117,8 @@ config:
-     install -Dm644 vmlinux "%{install-root}%{indep-libdir}/modules/${release}/vmlinux"
-     install -Dm644 System.map "%{install-root}%{indep-libdir}/modules/${release}/System.map"
-     install -Dm644 .config "%{install-root}%{indep-libdir}/modules/${release}/config"
--    make -j1 INSTALL_MOD_PATH="%{install-root}%{prefix}" modules_install
-+    # Squeeze as much as possible and make sure to strip symbols so the modules are as small as possible
-+    ZSTD_CLEVEL=19 make -j1 INSTALL_MOD_PATH="%{install-root}%{prefix}" INSTALL_MOD_STRIP=1 modules_install
- 
-   - |
-     release=$(make -s kernelrelease)
 diff --git a/files/linux/config-utils.sh b/files/linux/config-utils.sh
 index d892084a9..169437ed5 100644
 --- a/files/linux/config-utils.sh
@@ -74,7 +64,7 @@ index d892084a9..169437ed5 100644
    scripts/config --keep-case -e "${1}"
  }
 diff --git a/files/linux/fdsdk-config.sh b/files/linux/fdsdk-config.sh
-index 5ae4df559..70614cca1 100644
+index 90d6d0a91..01db9cce6 100644
 --- a/files/linux/fdsdk-config.sh
 +++ b/files/linux/fdsdk-config.sh
 @@ -6,6 +6,9 @@
@@ -97,7 +87,7 @@ index 5ae4df559..70614cca1 100644
  module CRYPTO_BLOWFISH
  module CRYPTO_CAMELLIA
  module CRYPTO_CAST5
-@@ -2842,3 +2846,3085 @@ enable MPTCP_IPV6
+@@ -2851,3 +2855,3085 @@ enable MPTCP_IPV6
  if has HAVE_ARCH_TRANSPARENT_HUGEPAGE; then
      enable TRANSPARENT_HUGEPAGE
  fi
