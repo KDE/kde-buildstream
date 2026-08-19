@@ -3,11 +3,12 @@
 
 """Track and stage release archives listed by release-monitoring.org."""
 
+import os
 import posixpath
 import tarfile
 
 import requests
-from buildstream import DownloadableFileSource, Node, Source, SourceError
+from buildstream import DownloadableFileSource, Node, Source, SourceError, utils
 
 
 class AnityaSource(DownloadableFileSource):
@@ -21,9 +22,12 @@ class AnityaSource(DownloadableFileSource):
 
         self.project_id = node.get_int("project-id")
         self.url_template = node.get_str("url")
+        self.url_prefix = self.url_template.partition("{")[0]
 
         self.version = None
         self.ref = None
+
+        super().configure(Node.from_dict({"url": self.url_prefix}))
         self.load_ref(node)
 
     def load_ref(self, node):
@@ -106,12 +110,19 @@ class AnityaSource(DownloadableFileSource):
 
     def _set_version(self, version):
         self.version = version
-        config = {"url": self._render_url(self.url_template, version)}
-        if self.ref is not None:
-            config["ref"] = self.ref
-        if version is not None:
-            config["version"] = version
-        super().configure(Node.from_dict(config))
+        self.original_url = self._render_url(self.url_template, version)
+        suffix = self.original_url.removeprefix(self.url_prefix)
+
+        extra_data = {}
+        self.url = self.translate_url(
+            self.url_prefix, suffix=suffix, extra_data=extra_data
+        )
+        self.bearer_auth = extra_data.get("http-auth") == "bearer"
+        self._mirror_dir = os.path.join(
+            self.get_mirror_directory(),
+            utils.url_directory_name(self.original_url),
+        )
+        self._version = version
 
     def _get_versions(self):
         try:
