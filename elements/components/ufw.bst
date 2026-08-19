@@ -30,3 +30,5 @@ sources:
   - '*rc*'
   - '*pre*'
   ref: 0.36.2-0-g2ed44c38ea83e86af99ee51abc2bf9393c07a39a
+- kind: patch
+  path: patches/ufw/01-move-from-lib-to-usr-lib.patch
