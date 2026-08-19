@@ -23,4 +23,4 @@ sources:
   track: '*'
   exclude:
   - '*pre*'
-  ref: 1.87.0-pre1-0-g2d889876a6700e9591c4a0e60390250372dd8b62
+  ref: 1.87.0-0-g13275a278eb55b5746e33f95fbf5a2c8f604b3ab

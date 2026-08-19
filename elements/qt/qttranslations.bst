@@ -43,5 +43,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qttranslations-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 37c02c81206594c7bb4edca85ac93e8e55a9836b70c960fde6cb0f8623ec5677
+    version: 6.11.2
+    sha256sum: 021684c1a7937a9fabc3b056a6698ad5978794caf9ac190fd6cc11399e67c014

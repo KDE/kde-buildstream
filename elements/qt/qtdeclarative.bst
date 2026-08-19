@@ -29,5 +29,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtdeclarative-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 52e670f670b0304f534b24f98c47ceb8a41bb710464414ebc9527ec71cc86aa4
+    version: 6.11.2
+    sha256sum: 215b7b70517e380123eabc6b92243f3c47b6f016a91d126057dbe53551c6b430

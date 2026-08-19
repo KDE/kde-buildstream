@@ -30,5 +30,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtsvg-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 7f3cf02f4824bf03c2c5859ea6db173bf1482a1daf24e6cdf7bc78cfa26a8a94
+    version: 6.11.2
+    sha256sum: d594337feca84c26fb67fe87b85e6a5c12fda404b611d905f9d138210c311876

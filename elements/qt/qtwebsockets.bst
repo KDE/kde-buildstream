@@ -38,5 +38,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtwebsockets-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 243e3aa11924c8c5c1645e892f62d013caa3766c57512ca926d5b58146646fbf
+    version: 6.11.2
+    sha256sum: 2bfe25c383c37f7690e3c59b02c9907d2744cf8527b1f3f1fc2c785b2ff3c9a3

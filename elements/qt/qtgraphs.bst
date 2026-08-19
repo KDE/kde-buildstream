@@ -49,5 +49,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtgraphs-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 84b1138ab68a8e2956439895a4b85eb68dda48ac169da673f67191873b1e0462
+    version: 6.11.2
+    sha256sum: 9f2109854afa45dd144116c11461989c411a17065c63da5068441a1200fb8b21

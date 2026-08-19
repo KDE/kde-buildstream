@@ -19,7 +19,7 @@ sources:
   - '*rc*'
   - '*beta*'
   - '*alpha*'
-  ref: 5.0.0-alpha-0-g616fd509478bce17749cbc94852a1cc50d1e8f06
+  ref: 5.0.0-0-g40738fb16ceddb5fb3fea747585f7ce6abb0605b
 - kind: git_repo
   url: github:opencv/opencv_contrib.git
   track: '*'
@@ -27,4 +27,4 @@ sources:
   - '*rc*'
   - '*beta*'
   - '*alpha*'
-  ref: 5.0.0-alpha-0-g712f9758c57edcefa99fc5ff6674352decc3cf31
+  ref: 5.0.0-0-g755e50675d97db9b7d449d8bd6b09888646f6c6e

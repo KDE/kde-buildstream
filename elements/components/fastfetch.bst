@@ -50,4 +50,4 @@ sources:
 - kind: git_repo
   url: github:fastfetch-cli/fastfetch.git
   track: '*'
-  ref: 2.66.0-0-g08698098579bb8b043b0a343159b8018f5cea4fc
+  ref: 2.67.1-0-g4dd2f2d34bf80f3e66b26d3869467de88ee1ca52

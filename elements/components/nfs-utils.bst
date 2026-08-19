@@ -41,5 +41,5 @@ sources:
   project-id: 2081
   url: 'https://www.kernel.org/pub/linux/utils/nfs-utils/{version}/nfs-utils-{version}.tar.xz'
   ref:
-    version: 2.9.1
-    sha256sum: 302846343bf509f8f884c23bdbd0fe853b7f7cbb6572060a9082279d13b21a2c
+    version: 2.9.2
+    sha256sum: e1dd8a9c95af15492065942cc3b52b1339ffd586baa2280ed86c9d3dc4097e8c

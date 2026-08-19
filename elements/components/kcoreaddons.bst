@@ -26,5 +26,5 @@ sources:
   track: v*
   exclude:
   - '*rc*'
-  ref: d53d3c756db6832893b6af6eeef6cc10982cc9d6
+  ref: 8ce411949768ea1d41ab090cb9a9f3089ee73233
   ref-format: sha1

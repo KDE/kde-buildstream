@@ -23,8 +23,8 @@ sources:
   project-id: 358810
   url: 'https://cdn.kernel.org/pub/linux/kernel/v{major}.x/linux-{version}.tar.xz'
   ref:
-    version: 7.1.1
-    sha256sum: 5215fa3541dc7e7f5bcd51bf7e57f169cec6fce508ca54e3dc85fdee14371d7d
+    version: 7.2
+    sha256sum: f9fef3d14c0df53819026f4be74459835c2a0b0dcbf5b5bbd9ea19f0829402b3
 - kind: remote
   url: https://gitlab.archlinux.org/archlinux/packaging/packages/linux-tools/-/raw/main/usbipd.service?ref_type=heads
   ref: 2e187734d8aec58a3046d79883510d779aa93fb3ab20bd3132c1a607ebe5498f

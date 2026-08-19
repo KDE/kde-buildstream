@@ -34,5 +34,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtimageformats-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: b2bf6c6845ac175ed7f819145483ba4676f617aaa6a5012c8efee63c8bbac413
+    version: 6.11.2
+    sha256sum: cecd8900f34b6550076309bc94f62f828008b633a4239e0a08c86788f41001f8

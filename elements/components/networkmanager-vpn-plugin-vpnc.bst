@@ -24,4 +24,4 @@ sources:
   - '*rc*'
   - '*beta*'
   - '*dev*'
-  ref: 1.4.1-dev-0-g2c7a5e161f6fd169b2afc7af04122c288ce3ee8e
+  ref: 1.4.0-0-ge915b09ed53edda9536858cab9a67ec491c2e2f2

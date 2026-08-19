@@ -19,5 +19,5 @@ sources:
 - kind: git_repo
   url: github:kmscon/libtsm.git
   track: v*
-  ref: e1e4d296f0963d1641456f1f778f0ac090429a3e
+  ref: ef0a1a40c30d164913f413c47de5bbd8383a6daa
   ref-format: sha1

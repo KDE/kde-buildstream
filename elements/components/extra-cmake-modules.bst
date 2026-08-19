@@ -23,5 +23,5 @@ sources:
   track: v*
   exclude:
   - '*rc*'
-  ref: 01dc9a0c05dd4851b01b93e961c9aa33b1e96056
+  ref: 42f0170593df4920068946494c6978ca7005217b
   ref-format: sha1

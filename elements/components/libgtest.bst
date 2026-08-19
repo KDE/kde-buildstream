@@ -9,7 +9,7 @@ sources:
   track: 'v*'
   exclude:
   - '*pre*'
-  ref: v1.17.0-0-g52eb8108c5bdec04579160ae17225d66034bd723
+  ref: v1.18.0-0-g063de7e9578f82b369302001269680b4b1553359
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst

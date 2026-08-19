@@ -27,5 +27,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtpositioning-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: d5e6b91801ae286e7630016caea3bdc5e1978b4291d6741d0d64c125650f78f5
+    version: 6.11.2
+    sha256sum: d8cf15ad43a3b1520adac64cec5900028525cf75f01a4c82a0002e7ac1ae7499

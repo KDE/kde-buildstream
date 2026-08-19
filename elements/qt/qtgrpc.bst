@@ -29,7 +29,7 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtgrpc-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 437b04f0c550ccdb1739ca5f9119b73dfa0376564815e8bfc199890643e2a250
+    version: 6.11.2
+    sha256sum: 44414617f0058ff34965fa852027bfcc7e4f71eefca8cd4406c96af22c64ad93
 - kind: patch
   path: elements/qt/patch/qtgrpc-find_program-paths.patch

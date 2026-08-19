@@ -45,5 +45,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qt5compat-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: cfcb9fdaa051aad54b0e61b24ac5693b4887a86e07609f665fea67328a6f161b
+    version: 6.11.2
+    sha256sum: 68c320fe3391096a9f2d870170edf1b67dac8af1d0e51c0c9e5343807f114287

@@ -39,5 +39,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtscxml-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 8e495245e5d1fe75de612c8a07e4043635407a1979bb1dd588f1751d1390203f
+    version: 6.11.2
+    sha256sum: f594c4bba7f8bffb20857973c72895669d6e54df08c8d897f50d15251cec35ff

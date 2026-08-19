@@ -19,5 +19,5 @@ sources:
   project-id: 67946
   url: 'github:Yubico/yubikey-manager/releases/download/{version}/yubikey_manager-{version}.tar.gz'
   ref:
-    version: 5.9.1
-    sha256sum: 83bda2a4bbb6a93bc07e5de73a0f30e5a8b811c85a9116aaca6dd3eed8abb0eb
+    version: 5.9.2
+    sha256sum: 9584c7377449e6487140da6c3f13a289e618b0023c8414be91c1c212fce3c473

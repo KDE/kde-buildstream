@@ -44,5 +44,5 @@ sources:
   project-id: 7927
   url: 'qt:{major}.{minor}/{version}/submodules/qtremoteobjects-everywhere-src-{version}.tar.xz'
   ref:
-    version: 6.11.1
-    sha256sum: 40629895c69531a687a9c0258316cee3f04c2d18b2bf2ad36dc83e76a58f111a
+    version: 6.11.2
+    sha256sum: 5e0c9681799ec2b1179a712506266fb01fb2491e94bd2dba942b72fdef797cfd
