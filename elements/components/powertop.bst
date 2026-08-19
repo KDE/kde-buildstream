@@ -2,24 +2,20 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-kind: autotools
+kind: meson
 
 description: PowerTOP
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+- freedesktop-sdk.bst:components/sed.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:bootstrap/ncurses.bst
 - freedesktop-sdk.bst:components/libnl.bst
 - freedesktop-sdk.bst:components/pciutils.bst
-
-config:
-  configure-commands:
-    (<):
-    - |
-      ./autogen.sh
+- components/libtracefs.bst
 
 sources:
 - kind: git_repo
