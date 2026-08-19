@@ -29,3 +29,6 @@ sources:
   url: github:libratbag/libratbag.git
   track: 'v*'
   ref: v0.18-0-g9f4789f8746188a75cd3090e94adf984f0ac4cc6
+- kind: patch
+  # upstream https://github.com/libratbag/libratbag/commit/1f4efda9553a5efbbd5be49def22f993ef1410ca.patch
+  path: patches/libratbag/1f4efda9553a5efbbd5be49def22f993ef1410ca.patch
