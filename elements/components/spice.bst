@@ -4,7 +4,7 @@
 kind: meson
 
 build-depends:
-- gnome-build-meta.bst:core-deps/python-pyparsing.bst
+- freedesktop-sdk.bst:components/python3-pyparsing.bst
 - gnome-build-meta.bst:core-deps/spice-protocol.bst
 - freedesktop-sdk.bst:components/sed.bst
 - freedesktop-sdk.bst:components/gcc.bst

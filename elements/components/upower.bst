@@ -15,7 +15,7 @@ depends:
 - freedesktop-sdk.bst:components/libusb.bst
 - freedesktop-sdk.bst:components/polkit-gobject.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- gnome-build-meta.bst:core-deps/libimobiledevice.bst
+- freedesktop-sdk.bst:components/libimobiledevice.bst
 
 sources:
 - kind: git_repo

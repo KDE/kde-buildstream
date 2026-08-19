@@ -79,7 +79,7 @@ depends:
 - components/thermald.bst # thermald: Improved thermal management and performance for Intel CPUs
 - components/udev-hid-bpf.bst # udev-hid-bpf: Many drawing tablets
 - components/usb_modeswitch.bst # usb_modeswitch: WiFi dongles that have a flash storage mode preventing use OOTB
-- gnome-build-meta.bst:core-deps/libusbmuxd.bst # usbmuxd: Apple iOS devices via USB
+- freedesktop-sdk.bst:components/libusbmuxd.bst # usbmuxd: Apple iOS devices via USB
 - components/btrfsmaintenance.bst # btrfsmaintenance: Provides Systemd Services for BTRFS Operations like scrubbing and balancing
 - components/snapper.bst # snapper: Snapshot management for the per-user home subvolumes
 - components/efibootmgr.bst # efibootmgr: EFI dump/management tools; needs low-level access to work

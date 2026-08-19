@@ -32,7 +32,7 @@ depends:
 - components/lrzip.bst # lrzip: ark, for lzma, rzip, and zpaq compressed archives
 - components/lzop.bst # lzop: ark, for lzo compressed archives
 - components/noto-fonts.bst # noto-fonts: Our base font, Noto
-- gnome-build-meta.bst:gnomeos-deps/noto-cjk.bst # noto-fonts-cjk: Noto CJK scripts
+- freedesktop-sdk.bst:components/noto-cjk.bst # noto-fonts-cjk: Noto CJK scripts
 - freedesktop-sdk.bst:components/noto-emoji.bst # noto-fonts-emoji: Noto emojis
 - components/openexr.bst # openexr: kimageformats
 - components/opus-tools.bst # opus-tools: audiocd-kio, opus encoding

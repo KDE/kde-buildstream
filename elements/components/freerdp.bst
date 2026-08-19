@@ -17,7 +17,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- gnome-build-meta.bst:sdk/krb5.bst
+- freedesktop-sdk.bst:components/krb5.bst
 - freedesktop-sdk.bst:components/cups.bst
 - freedesktop-sdk.bst:components/ffmpeg.bst
 - freedesktop-sdk.bst:components/jansson.bst

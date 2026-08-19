@@ -11,7 +11,7 @@ build-depends:
 - qt/qtpositioning.bst
 - qt/qtwebchannel.bst
 - freedesktop-sdk-extra.bst:components/nodejs.bst
-- gnome-build-meta.bst:sdk/krb5.bst
+- freedesktop-sdk.bst:components/krb5.bst
 - components/python-html5lib.bst
 - components/re2.bst
 
