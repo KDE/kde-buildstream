@@ -61,6 +61,7 @@ depends:
 - components/libqalculate.bst # krunner
 - qt.bst
 - components/xsettingsd.bst # needed by kwin for X11 apps to get the right theme, font, scale etc.
+- components/ddcutil.bst # requested by powerdevil
 
 # KDE Linux needs GCC and such installed so that it can build calamares
 - components/yamlcpp.bst
