@@ -3,7 +3,7 @@
 
 kind: pyproject
 
-description: Python module used for monitoring filesystems events on Linux platforms with inotify.
+description: Make asyncore available for Python 3.12 onwards
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-python-setuptools.bst
@@ -12,11 +12,8 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
-runtime-depends:
-- components/python-pyasyncore.bst
-
 sources:
 - kind: git_repo
-  url: github:seb-m/pyinotify.git
-  track: '*'
-  ref: 0.9.6-0-g2d716e5ceef8ade1a60eff0bac30de939afb2b8d
+  url: github:simonrob/pyasyncore.git
+  track: v*
+  ref: v1.0.5-0-g0efd128e882c5f02bb587560ff6fb3066bf5982b
