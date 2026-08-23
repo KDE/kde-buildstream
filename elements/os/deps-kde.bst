@@ -50,7 +50,6 @@ depends:
 - components/libstemmer.bst
 - components/canberra.bst
 - components/perl-uri-escape.bst
-- components/opencv.bst # spectacle
 - components/qrencode.bst # prison
 - components/libdmtx.bst # prison
 - components/zxing.bst # prison
