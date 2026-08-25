@@ -12,8 +12,13 @@ build-depends:
 - qt/qtwebchannel.bst
 - freedesktop-sdk-extra.bst:components/nodejs.bst
 - freedesktop-sdk.bst:components/krb5.bst
+- freedesktop-sdk.bst:components/llvm.bst
 - components/python-html5lib.bst
 - components/re2.bst
+
+environment:
+  CC: /usr/bin/clang
+  CXX: /usr/bin/clang++
 
 public:
   bst:
@@ -24,6 +29,8 @@ public:
         - '%{prefix}/bin/**'
 
 variables:
+  optimize-debug: false # otherwise it fails on dmz
+
   cmake-local: >-
     -DQT_FEATURE_webengine_system_icu=ON
     -DQT_FEATURE_webengine_proprietary_codecs=ON
