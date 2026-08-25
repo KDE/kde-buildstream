@@ -38,6 +38,4 @@ sources:
     version: 35.0.2
     sha256sum: d2c3222280315f36d8bfa5c02d7632b47e365bfe2e77e99a3564fb6576f04097
 - kind: patch
-  path: elements/components/patch/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
-- kind: patch
-  path: elements/components/patch/android-tools-35.0.2-gcc-16.patch
+  path: elements/components/patch/android-tools-37.0.0-protobuf-36.patch

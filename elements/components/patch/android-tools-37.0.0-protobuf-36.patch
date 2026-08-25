@@ -1,0 +1,39 @@
+--- a/vendor/adb/client/mdns_tracker.cpp
++++ b/vendor/adb/client/mdns_tracker.cpp
+@@ -14,12 +14,11 @@
+  * limitations under the License.
+  */
+ 
+-#include "mdns_tracker.h"
+-
+ #include <list>
+ #include <string>
+ 
+ #include <google/protobuf/text_format.h>
+ #include "adb_host.pb.h"
++#include "mdns_tracker.h"
+ #include "adb_mdns.h"
+ #include "adb_trace.h"
+--- a/vendor/adb/transport.cpp
++++ b/vendor/adb/transport.cpp
+@@ -16,6 +16,11 @@
+ 
+ #define TRACE_TAG TRANSPORT
+ 
++#if ADB_HOST
++#include <google/protobuf/text_format.h>
++#include "adb_host.pb.h"
++#endif
++
+ #include "sysdeps.h"
+ 
+ #include "transport.h"
+@@ -57,8 +62,6 @@
+ #include "sysdeps/chrono.h"
+ 
+ #if ADB_HOST
+-#include <google/protobuf/text_format.h>
+-#include "adb_host.pb.h"
+ #include "client/detach.h"
+ #include "client/usb.h"
+ #endif
