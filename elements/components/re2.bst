@@ -5,6 +5,7 @@ kind: manual
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
+- freedesktop-sdk.bst:components/pkg-config.bst
 - freedesktop-sdk.bst:components/abseil-cpp.bst
 
 depends:

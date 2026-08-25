@@ -33,11 +33,11 @@ variables:
 
   cmake-local: >-
     -DQT_FEATURE_webengine_system_icu=ON
+    -DQT_FEATURE_webengine_system_re2=ON
     -DQT_FEATURE_webengine_proprietary_codecs=ON
     -DQT_FEATURE_webengine_kerberos=ON
     -DQT_FEATURE_webengine_webrtc_pipewire=ON
 
-    # -DQT_FEATURE_webengine_system_re2=ON
     # -DQT_FEATURE_webengine_system_ffmpeg=ON
     # -DQT_FEATURE_webengine_system_openh264=ON
 
