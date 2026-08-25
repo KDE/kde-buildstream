@@ -1,7 +1,11 @@
 # SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleixpol@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-"""Track and stage release archives listed by release-monitoring.org."""
+"""Track and stage release archives listed by release-monitoring.org.
+
+Archive members may be omitted with ``exclude`` globs. It allows workarounding
+broken links in tarballs.
+"""
 
 import os
 import posixpath
@@ -15,7 +19,7 @@ class AnityaSource(DownloadableFileSource):
     BST_MIN_VERSION = "2.5"
 
     API_URL = "https://release-monitoring.org/api/v2/"
-    KEYS = ["project-id", "url", "ref"] + Source.COMMON_CONFIG_KEYS
+    KEYS = ["project-id", "url", "ref", "exclude"] + Source.COMMON_CONFIG_KEYS
 
     def configure(self, node):
         node.validate_keys(self.KEYS)
@@ -23,12 +27,16 @@ class AnityaSource(DownloadableFileSource):
         self.project_id = node.get_int("project-id")
         self.url_template = node.get_str("url")
         self.url_prefix = self.url_template.partition("{")[0]
+        self.exclude = node.get_str_list("exclude", [])
 
         self.version = None
         self.ref = None
 
         super().configure(Node.from_dict({"url": self.url_prefix}))
         self.load_ref(node)
+
+    def get_unique_key(self):
+        return super().get_unique_key() + [self.exclude]
 
     def load_ref(self, node):
         ref = node.get_mapping("ref", None)
@@ -90,6 +98,11 @@ class AnityaSource(DownloadableFileSource):
                         continue
 
                     member.name = path.removeprefix(prefix)
+                    if any(
+                        any(utils.glob([member.name], pattern))
+                        for pattern in self.exclude
+                    ):
+                        continue
                     if member.islnk():
                         member.linkname = posixpath.normpath(
                             member.linkname

@@ -30,6 +30,10 @@ sources:
 - kind: anitya
   project-id: 226905
   url: 'github:nmeum/android-tools/releases/download/{version}/android-tools-{version}.tar.xz'
+  # 37.0.0 ships this unused formatter symlink with one ".." too many,
+  # causing it to escape the staging directory and fail safe extraction.
+  exclude:
+  - vendor/adb/rustfmt.toml
   ref:
     version: 35.0.2
     sha256sum: d2c3222280315f36d8bfa5c02d7632b47e365bfe2e77e99a3564fb6576f04097
