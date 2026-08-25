@@ -2,3 +2,4 @@
 # SPDX-FileCopyrightText: none
 
 /.bst/
+__pycache__/
