@@ -53,13 +53,13 @@ depends:
 - freedesktop-sdk.bst:components/xdg-user-dirs.bst
 - freedesktop-sdk.bst:components/xfsprogs.bst # xfsprogs: Manipulating XFS filesystems; used by kpmcore
 - freedesktop-sdk.bst:extensions/vainfo/libva-utils.bst # libva-utils: CLI tools for interacting with and debugging GPU acceleration
-- gnome-build-meta.bst:core-deps/sane-backends.bst # sane: scanner udev rules - everything else in the package is deleted later
-- gnome-build-meta.bst:gnomeos-deps/android-udev-rules.bst # android-udev: udev rules for accessing Android devices
-- gnome-build-meta.bst:gnomeos-deps/mokutil.bst # mokutil: To manage the Machine Owner Key (MOK) list for Shim (only for advanced users); needs low-level access to work
-- gnome-build-meta.bst:gnomeos-deps/spice-vdagent.bst # spice-vdagent: QEMU's SPICE counterpart to enable desktop integration (e.g. clipboard sharing, dynamic resolution, etc)
-- gnome-build-meta.bst:gnomeos-deps/swtpm.bst # swtpm: TPM emulator used by Incus VMs
-- gnome-build-meta.bst:gnomeos-deps/virtiofsd.bst # virtiofsd: Enables access to host folders from virt-manager and incus VMs
-- gnome-build-meta.bst:gnomeos-deps/zram-generator.bst # zram-generator: use compressed zram for swap
+- freedesktop-sdk-extra.bst:components/sane-backends.bst # sane: scanner udev rules - everything else in the package is deleted later
+- freedesktop-sdk-extra.bst:components/android-udev-rules.bst # android-udev: udev rules for accessing Android devices
+- freedesktop-sdk-extra.bst:components/mokutil.bst # mokutil: To manage the Machine Owner Key (MOK) list for Shim (only for advanced users); needs low-level access to work
+- freedesktop-sdk-extra.bst:components/spice-vdagent.bst # spice-vdagent: QEMU's SPICE counterpart to enable desktop integration (e.g. clipboard sharing, dynamic resolution, etc)
+- freedesktop-sdk-extra.bst:components/swtpm.bst # swtpm: TPM emulator used by Incus VMs
+- freedesktop-sdk-extra.bst:components/virtiofsd.bst # virtiofsd: Enables access to host folders from virt-manager and incus VMs
+- freedesktop-sdk-extra.bst:components/zram-generator.bst # zram-generator: use compressed zram for swap
 - components/cups-browsed.bst # cups-browsed: Pre-2012 network printer auto-discovery
 - components/ipp-usb.bst # ipp-usb: Connect to post-2012 driverless printers over USB
 - components/system-config-printer.bst # system-config-printer: Local printer auto-discovery
@@ -84,12 +84,15 @@ depends:
 - components/snapper.bst # snapper: Snapshot management for the per-user home subvolumes
 - components/efibootmgr.bst # efibootmgr: EFI dump/management tools; needs low-level access to work
 - components/open-vm-tools.bst # open-vm-tools: Integration for VMWare virtualization software
-- gnome-build-meta.bst:gnomeos-deps/qemu-user.bst # qemu-guest-agent: Integration for QEMU
+- freedesktop-sdk-extra.bst:components/qemu-user.bst # qemu-guest-agent: Integration for QEMU
 - components/virtualbox-guest-utils.bst # virtualbox-guest-utils: integration for VirtualBox
 - freedesktop-sdk.bst:components/mtools.bst # mtools: Manipulating FAT filesystems; used by our build system
-- gnome-build-meta.bst:core-deps/accountsservice.bst # accountsservice: D-Bus interface for user account management (kinda on the way out but used by flatpak and our user kcm!)
+- freedesktop-sdk-extra.bst:components/accountsservice.bst # accountsservice: D-Bus interface for user account management (kinda on the way out but used by flatpak and our user kcm!)
 - components/dkms.bst # dkms: needed for building kernel modules like virtualbox, evdi etc.
 - components/pinentry.bst # pinentry: Ask securely for a secret
+- freedesktop-sdk-extra.bst:components/nvidia-drivers-modules-maybe.bst # nvidia-open: Open kernel modules for NVIDIA GPUs
+- freedesktop-sdk-extra.bst:components/nvidia-drivers-libs-maybe.bst # nvidia-utils: NVIDIA userspace libraries and Vulkan support
+- freedesktop-sdk-extra.bst:components/intel-ucode-maybe.bst
 
 (?):
 - arch == 'x86_64':
@@ -99,6 +102,3 @@ depends:
       - components/libva-intel-driver.bst # libva-intel-driver: Hardware accelerated video on old Intel GPUs
       - freedesktop-sdk.bst:extensions/platform-vaapi-nvidia/nvidia-vaapi-driver.bst # libva-nvidia-driver: Hardware accelerated video on NVIDIA GPUs
       - components/nvidia-prime.bst # nvidia-prime: prime-run command; used in kio via Dolphin, Plasma, KRunner
-      - gnome-build-meta.bst:gnomeos-deps/nvidia-drivers-modules.bst # nvidia-open: Open kernel modules for NVIDIA GPUs
-      - gnome-build-meta.bst:gnomeos-deps/nvidia-drivers-libs.bst # nvidia-utils: NVIDIA userspace libraries and Vulkan support
-      - gnome-build-meta.bst:gnomeos-deps/intel-ucode.bst

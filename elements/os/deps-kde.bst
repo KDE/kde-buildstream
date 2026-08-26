@@ -39,7 +39,7 @@ depends:
 - os/deps-cli.bst
 - components/lm-sensors.bst
 - components/tesseract.bst # Spectacle OCR
-- gnome-build-meta.bst:core-deps/libgit2.bst # kup
+- freedesktop-sdk-extra.bst:components/libgit2.bst # kup
 - components/libssh.bst # konsole
 - components/freerdp.bst # krdp
 - components/boost.bst

@@ -11,7 +11,7 @@ build-depends:
 - freedesktop-sdk.bst:components/docbook-xsl.bst
 - freedesktop-sdk.bst:components/libxslt.bst
 - freedesktop-sdk.bst:components/systemd.bst
-- gnome-build-meta.bst:core-deps/intltool.bst
+- freedesktop-sdk-extra.bst:components/intltool.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

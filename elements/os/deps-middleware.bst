@@ -11,11 +11,11 @@ depends:
 - freedesktop-sdk.bst:components/libva.bst # libva: Hardware accelerated video in general
 - freedesktop-sdk.bst:components/fwupd.bst # fwupd: for Discover backend
 - freedesktop-sdk.bst:components/rsync.bst # rsync: kup, for one of the backends
-- gnome-build-meta.bst:core-deps/dnsmasq.bst # dnsmasq: Hotspot creation and networking in VMs
-- gnome-build-meta.bst:gnomeos-deps/nss-mdns.bst # nss-mdns: Needed for Avahi mDNS for local domain resolving etc.
+- freedesktop-sdk-extra.bst:components/dnsmasq.bst # dnsmasq: Hotspot creation and networking in VMs
+- freedesktop-sdk-extra.bst:components/nss-mdns.bst # nss-mdns: Needed for Avahi mDNS for local domain resolving etc.
 - components/networkmanager-strongswan.bst # networkmanager-strongswan: VPN support for NetworkManager
 - components/networkmanager-vpn-plugin-l2tp.bst # networkmanager-vpn-plugin-l2tp: VPN support for NetworkManager
-# - gnome-build-meta.bst:gnomeos-deps/NetworkManager-openconnect.bst # networkmanager-vpn-plugin-openconnect: VPN support for NetworkManager
+# - freedesktop-sdk-extra.bst:components/NetworkManager-openconnect.bst # networkmanager-vpn-plugin-openconnect: VPN support for NetworkManager
 - components/networkmanager-vpn-plugin-openvpn.bst # networkmanager-vpn-plugin-openvpn: VPN support for NetworkManager
 # - components/networkmanager-vpn-plugin-pptp.bst # networkmanager-vpn-plugin-pptp: VPN support for NetworkManager
 - components/networkmanager-vpn-plugin-vpnc.bst # networkmanager-vpn-plugin-vpnc: VPN support for NetworkManager
@@ -37,7 +37,7 @@ depends:
 - components/openexr.bst # openexr: kimageformats
 - components/opus-tools.bst # opus-tools: audiocd-kio, opus encoding
 - components/quota-tools.bst # quota-tools: kdeplasma-addons, for Disk Quota widget
-- gnome-build-meta.bst:core-deps/samba.bst # samba: For sharing local folders via Samba
+- freedesktop-sdk-extra.bst:components/samba.bst # samba: For sharing local folders via Samba
 - components/switcheroo-control.bst # switcheroo-control: kio, for launching apps on non-default GPU
 - components/unrar.bst # unrar: ark, for RAR decompression support
 - components/xdg-desktop-portal-gtk.bst # xdg-desktop-portal-gtk: GTK/Flatpak icon settings syncing

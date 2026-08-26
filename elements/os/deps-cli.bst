@@ -29,7 +29,7 @@ depends:
 - freedesktop-sdk.bst:components/flatpak-builder.bst
 - freedesktop-sdk.bst:components/git.bst # git: It's git
 - freedesktop-sdk.bst:components/git-lfs.bst # git-lfs: Git extension needed for versioning large files
-- gnome-build-meta.bst:core-deps/intltool.bst # intltool: make dependency for purpose, plasma-desktop, and kio-gdrive
+- freedesktop-sdk-extra.bst:components/intltool.bst # intltool: make dependency for purpose, plasma-desktop, and kio-gdrive
 - freedesktop-sdk.bst:components/jq.bst # jq: JSON processor
 - freedesktop-sdk.bst:components/less.bst
 - components/lldb.bst # debugger for llvm based languages (odin, zig..) as well as c/c++ and usual suspects
@@ -44,7 +44,7 @@ depends:
 - freedesktop-sdk.bst:components/podman.bst
 - components/podman-compose.bst
 - components/python-atspi.bst # python-atspi: For selenium
-- gnome-build-meta.bst:core-deps/qemu.bst
+- freedesktop-sdk-extra.bst:components/qemu.bst
 - components/reuse.bst # reuse: optional make dependency for a bunch of KDE projects
 - freedesktop-sdk.bst:components/python3-pyyaml.bst # python-yaml: For kde-builder
 - freedesktop-sdk.bst:components/ruby.bst # ruby: For the torrent script in the repo
@@ -64,16 +64,16 @@ depends:
 - components/zsh-syntax-highlighting.bst # zsh-syntax-highlighting: fish-like syntax highlighting
 - components/alsa-utils.bst # alsa-utils: alsamixer and other useful audio debugging tools
 - components/iw.bst # iw: Kernel-level wireless configuration
-- gnome-build-meta.bst:core-deps/espeak-ng.bst # espeak-ng: CLI-invoked speech; accessible automation feedback
-- gnome-build-meta.bst:gnomeos-deps/distrobox.bst
+- freedesktop-sdk-extra.bst:components/espeak-ng.bst # espeak-ng: CLI-invoked speech; accessible automation feedback
+- freedesktop-sdk-extra.bst:components/distrobox.bst
 - components/android-tools.bst # android-tools: Tools for working with Android devices
 - components/bat.bst # bat: Opinionated fancy cat
 - components/cpupower.bst # cpupower: For more granular tuning of CPU limits; needs to touch the kernel
-- gnome-build-meta.bst:gnomeos-deps/nvme-cli.bst # nvme-cli: NVMe SSD support tooling
-- gnome-build-meta.bst:gnomeos-deps/toolbox.bst
-- gnome-build-meta.bst:gnomeos-deps/wl-clipboard.bst
-- gnome-build-meta.bst:gnomeos-deps/words.bst # words: Dictionaries in /usr/share/dict
-- gnome-build-meta.bst:sdk-deps/sassc.bst # sassc: make dependency for breeze-gtk and kde-gtk-config
+- freedesktop-sdk-extra.bst:components/nvme-cli.bst # nvme-cli: NVMe SSD support tooling
+- freedesktop-sdk-extra.bst:components/toolbox.bst
+- freedesktop-sdk-extra.bst:components/wl-clipboard.bst
+- freedesktop-sdk-extra.bst:components/words.bst # words: Dictionaries in /usr/share/dict
+- freedesktop-sdk-extra.bst:components/sassc.bst # sassc: make dependency for breeze-gtk and kde-gtk-config
 - components/drm-info.bst # drm-info: for debugging KWin and other graphics issues
 - components/duf.bst # duf: Opinionated fancy df
 - components/fastfetch.bst # fastfetch: For showing off on r/unixporn

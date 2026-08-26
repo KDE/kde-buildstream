@@ -6,8 +6,8 @@ kind: junction
 sources:
 - kind: git_repo
   url: gitlab:freedesktop-sdk/freedesktop-sdk-extra.git
-  track: main
-  ref: f68ac67b38a4e42c59d7d56f2db2d3662ea9c33b
+  track: aleixpol/from-gnome-build-meta
+  ref: 0daac986cf73ac69566124352f6c63b71ca258c1
 
 config:
   options:
