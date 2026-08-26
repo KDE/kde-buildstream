@@ -45,7 +45,7 @@ depends:
 - components/podman-compose.bst
 - components/python-atspi.bst # python-atspi: For selenium
 - freedesktop-sdk-extra.bst:components/qemu.bst
-- components/reuse.bst # reuse: optional make dependency for a bunch of KDE projects
+- freedesktop-sdk-extra.bst:components/reuse.bst # reuse: optional make dependency for a bunch of KDE projects
 - freedesktop-sdk.bst:components/python3-pyyaml.bst # python-yaml: For kde-builder
 - freedesktop-sdk.bst:components/ruby.bst # ruby: For the torrent script in the repo
 - freedesktop-sdk.bst:components/strace.bst # strace: instrument running executables
@@ -62,7 +62,7 @@ depends:
 - components/zsh-completions.bst
 - components/zsh-history-substring-search.bst # zsh-history-substring-search: fish-like history search
 - components/zsh-syntax-highlighting.bst # zsh-syntax-highlighting: fish-like syntax highlighting
-- components/alsa-utils.bst # alsa-utils: alsamixer and other useful audio debugging tools
+- freedesktop-sdk-extra.bst:components/alsa-utils.bst # alsa-utils: alsamixer and other useful audio debugging tools
 - components/iw.bst # iw: Kernel-level wireless configuration
 - freedesktop-sdk-extra.bst:components/espeak-ng.bst # espeak-ng: CLI-invoked speech; accessible automation feedback
 - freedesktop-sdk-extra.bst:components/distrobox.bst

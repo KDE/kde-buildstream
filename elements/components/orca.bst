@@ -16,7 +16,7 @@ depends:
 - freedesktop-sdk.bst:components/pygobject.bst
 - freedesktop-sdk.bst:components/itstool.bst
 - freedesktop-sdk-extra.bst:components/speech-dispatcher.bst
-- components/sonic.bst
+- freedesktop-sdk-extra.bst:components/sonic.bst
 
 sources:
 - kind: git_repo

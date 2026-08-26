@@ -22,7 +22,7 @@ depends:
 - freedesktop-sdk.bst:components/libxml2.bst
 - freedesktop-sdk.bst:components/util-linux.bst
 - freedesktop-sdk.bst:components/zlib.bst
-- components/boost.bst
+- freedesktop-sdk-extra.bst:components/boost.bst
 
 variables:
   conf-local: >-

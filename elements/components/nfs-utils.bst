@@ -12,7 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/libtirpc.bst
 - freedesktop-sdk.bst:components/libxml2.bst
 - freedesktop-sdk.bst:components/util-linux.bst
-- components/rpcsvc-proto.bst
+- freedesktop-sdk-extra.bst:components/rpcsvc-proto.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

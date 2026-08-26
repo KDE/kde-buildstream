@@ -28,10 +28,10 @@ depends:
 - components/catdoc.bst # catdoc: kfilemetadata, for indexing old MS word docs
 - components/gocryptfs.bst # gocryptfs: Needed to mount Plasma Vaults
 - components/jxrlib.bst # jxrlib: kimageformats
-- components/libRaw.bst # libraw: kimageformats
+- freedesktop-sdk-extra.bst:components/libraw.bst # libraw: kimageformats
 - components/lrzip.bst # lrzip: ark, for lzma, rzip, and zpaq compressed archives
 - components/lzop.bst # lzop: ark, for lzo compressed archives
-- components/noto-fonts.bst # noto-fonts: Our base font, Noto
+- freedesktop-sdk.bst:components/noto-fonts.bst # noto-fonts: Our base font, Noto
 - freedesktop-sdk.bst:components/noto-cjk.bst # noto-fonts-cjk: Noto CJK scripts
 - freedesktop-sdk.bst:components/noto-emoji.bst # noto-fonts-emoji: Noto emojis
 - components/openexr.bst # openexr: kimageformats
@@ -41,4 +41,4 @@ depends:
 - components/switcheroo-control.bst # switcheroo-control: kio, for launching apps on non-default GPU
 - components/unrar.bst # unrar: ark, for RAR decompression support
 - components/xdg-desktop-portal-gtk.bst # xdg-desktop-portal-gtk: GTK/Flatpak icon settings syncing
-- components/dmidecode.bst # inxi uses it to inspect the hardware configuration
+- freedesktop-sdk.bst:components/dmidecode.bst # inxi uses it to inspect the hardware configuration

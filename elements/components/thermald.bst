@@ -14,7 +14,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/libevdev.bst
-- components/upower.bst
+- freedesktop-sdk.bst:components/upower.bst
 
 sources:
 - kind: git_repo

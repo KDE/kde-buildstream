@@ -42,7 +42,7 @@ depends:
 - freedesktop-sdk-extra.bst:components/libgit2.bst # kup
 - components/libssh.bst # konsole
 - components/freerdp.bst # krdp
-- components/boost.bst
+- freedesktop-sdk-extra.bst:components/boost.bst
 - components/exiv2.bst
 - components/corrosion.bst
 - components/lmdb.bst # baloo
@@ -50,7 +50,7 @@ depends:
 - components/libstemmer.bst
 - components/canberra.bst
 - components/perl-uri-escape.bst
-- components/qrencode.bst # prison
+- freedesktop-sdk.bst:components/libqrencode.bst # prison
 - components/libdmtx.bst # prison
 - components/zxing.bst # prison
 - components/pygdbmi.bst # drkonqi
