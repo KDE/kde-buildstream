@@ -6,8 +6,8 @@ Subject: [PATCH 1/4] modify kernel for kde linux
 ---
  elements/components/linux.bst |   19 +
  files/linux/config-utils.sh   |    7 +-
- files/linux/fdsdk-config.sh   | 3088 ++++++++++++++++++++++++++++++++-
- 3 files changed, 3112 insertions(+), 2 deletions(-)
+ files/linux/fdsdk-config.sh   | 3077 ++++++++++++++++++++++++++++++++-
+ 3 files changed, 3099 insertions(+), 4 deletions(-)
 
 diff --git a/elements/components/linux.bst b/elements/components/linux.bst
 index 447565c62..8312011a5 100644
@@ -87,7 +87,25 @@ index 90d6d0a91..01db9cce6 100644
  module CRYPTO_BLOWFISH
  module CRYPTO_CAMELLIA
  module CRYPTO_CAST5
-@@ -2851,3 +2855,3085 @@ enable MPTCP_IPV6
+@@ -270,7 +274,7 @@ module SND_VIRTIO
+ module I2C_VIRTIO
+ module LIBNVDIMM
+ module VIRTIO_VFIO_PCI
+-module VIRTIO_ANCHOR
++enable VIRTIO_ANCHOR
+ enable VIRTIO_PMEM
+ module VIRTIO_NET
+ module VIRTIO_BLK
+@@ -574,7 +578,7 @@ enable BNXT_FLOWER_OFFLOAD
+ enable BNXT_HWMON
+ enable BNXT_SRIOV
+ module CNIC
+-module NET_VENDOR_BROADCOM
++enable NET_VENDOR_BROADCOM
+ if has PCMCIA; then
+     module PCMCIA_XIRCOM
+ fi
+@@ -2851,3 +2855,3070 @@ enable MPTCP_IPV6
  if has HAVE_ARCH_TRANSPARENT_HUGEPAGE; then
      enable TRANSPARENT_HUGEPAGE
  fi
@@ -297,14 +315,12 @@ index 90d6d0a91..01db9cce6 100644
 +module APDS9306
 +module APDS9802ALS
 +module APDS9960
-+module APPLICOM
 +module AS21XXX_PHY
 +module AS3935
 +module AS73211
 +module ASYNC_RAID6_TEST
 +enable ASYNC_TX_DMA
 +module AT76C50X_USB
-+module ATALK
 +module ATA_GENERIC
 +module ATA_OVER_ETH
 +module ATA_PIIX
@@ -614,7 +630,6 @@ index 90d6d0a91..01db9cce6 100644
 +module DPOT_DAC
 +module DPS310
 +enable DRM_AMD_ISP
-+module DRM_ANALOGIX_ANX78XX
 +module DRM_APPLETBDRM
 +module DRM_AST
 +enable DRM_CLIENT_LOG
@@ -711,7 +726,6 @@ index 90d6d0a91..01db9cce6 100644
 +module EXTCON_USBC_CROS_EC
 +module EXTCON_USBC_TUSB320
 +module EXTCON_USB_GPIO
-+enable EZX_PCAP
 +enable F2FS_CHECK_FS
 +enable F2FS_FS_COMPRESSION
 +enable F2FS_FS_SECURITY
@@ -951,7 +965,6 @@ index 90d6d0a91..01db9cce6 100644
 +module IIO_BUFFER_HW_CONSUMER
 +module IIO_CONFIGFS
 +module IIO_CROS_EC_ACTIVITY
-+module IIO_INTERRUPT_TRIGGER
 +module IIO_KX022A_I2C
 +module IIO_KX022A_SPI
 +module IIO_MUX
@@ -1274,7 +1287,6 @@ index 90d6d0a91..01db9cce6 100644
 +module MAC80211
 +enable MAC80211_MESH
 +module MACB
-+module MACHZ_WDT
 +module MACSEC
 +module MACVLAN
 +module MAC_EMUMOUSEBTN
@@ -1521,7 +1533,7 @@ index 90d6d0a91..01db9cce6 100644
 +module NCT7201
 +module NETCONSOLE
 +module NETDEVSIM
-+module NETFILTER_NETLINK
++enable NETFILTER_NETLINK
 +enable NETFILTER_NETLINK_GLUE_CT
 +module NETFILTER_NETLINK_HOOK
 +module NETFILTER_NETLINK_LOG
@@ -1928,7 +1940,6 @@ index 90d6d0a91..01db9cce6 100644
 +enable RC_DECODERS
 +enable RC_DEVICES
 +module RDS
-+enable READ_ONLY_THP_FOR_FS
 +module REALTEK_PHY
 +enable REALTEK_PHY_HWMON
 +module REDMI_WMI
@@ -1964,8 +1975,6 @@ index 90d6d0a91..01db9cce6 100644
 +module ROHM_BU27034
 +module ROMFS_FS
 +module RPCSEC_GSS_KRB5
-+enable RPCSEC_GSS_KRB5_ENCTYPES_AES_SHA2
-+enable RPCSEC_GSS_KRB5_ENCTYPES_CAMELLIA
 +module RPMB
 +module RPMSG_QCOM_GLINK_RPM
 +module RPMSG_VIRTIO
@@ -2150,7 +2159,6 @@ index 90d6d0a91..01db9cce6 100644
 +module SENSORS_ADT7310
 +module SENSORS_ADT7410
 +module SENSORS_AHT10
-+module SENSORS_APDS990X
 +module SENSORS_AS370
 +module SENSORS_ASUS_ROG_RYUJIN
 +module SENSORS_AXI_FAN_CONTROL
@@ -2772,9 +2780,6 @@ index 90d6d0a91..01db9cce6 100644
 +module TSNEP
 +module TSYS01
 +module TSYS02D
-+enable TULIP_MMIO
-+enable TULIP_MWI
-+enable TULIP_NAPI
 +module TUXEDO_NB04_WMI_AB
 +enable TWL4030_CORE
 +enable TWL6040_CORE
@@ -2934,7 +2939,6 @@ index 90d6d0a91..01db9cce6 100644
 +module VFAT_FS
 +enable VFIO_DEBUGFS
 +enable VFIO_DEVICE_CDEV
-+enable VIA_RHINE_MMIO
 +module VIA_WDT
 +module VIDEO_AD5820
 +module VIDEO_ADP1653
@@ -3059,7 +3063,6 @@ index 90d6d0a91..01db9cce6 100644
 +module WILCO_EC
 +module WINMATE_FM07_KEYS
 +module WIZNET_W5100
-+module WIZNET_W5300
 +module WL1251
 +module WL12XX
 +module WL18XX
@@ -3175,4 +3178,3 @@ index 90d6d0a91..01db9cce6 100644
 +remove I2C_DESIGNWARE_AMDPSP
 -- 
 2.55.0
-
