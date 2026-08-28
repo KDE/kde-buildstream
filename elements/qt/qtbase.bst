@@ -6,6 +6,10 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
+
+depends:
+- freedesktop-sdk.bst:platform.bst
+
 variables:
   arch-cmake-local: ''
   cmake-local: -DINSTALL_ARCHDATADIR=lib -DQT_CREATE_VERSIONED_HARD_LINK=OFF -DQT_DISABLE_RPATH=ON -DBUILD_WITH_PCH=FALSE -DQT_FEATURE_openssl_linked=ON -DQT_FEATURE_system_sqlite=ON %{arch-cmake-local}
