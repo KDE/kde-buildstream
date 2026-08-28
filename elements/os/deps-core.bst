@@ -89,6 +89,7 @@ depends:
 - freedesktop-sdk.bst:components/mtools.bst # mtools: Manipulating FAT filesystems; used by our build system
 - gnome-build-meta.bst:core-deps/accountsservice.bst # accountsservice: D-Bus interface for user account management (kinda on the way out but used by flatpak and our user kcm!)
 - components/dkms.bst # dkms: needed for building kernel modules like virtualbox, evdi etc.
+- components/pinentry.bst # pinentry: Ask securely for a secret
 
 (?):
 - arch == 'x86_64':
