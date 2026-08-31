@@ -23,4 +23,4 @@ sources:
 - kind: git_repo
   url: kernel:pub/scm/libs/libtrace/libtracefs.git
   track: 'libtracefs-*'
-  ref: libtracefs-1.8.3-0-g74b0e2db1b90e2e9450d11016bc515c4b11a5d51
+  ref: libtracefs-1.8.3-0-g6fad6a14ba0d4c4b437d9e4eed7098d4bb07b4fc

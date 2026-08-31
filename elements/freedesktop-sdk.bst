@@ -7,7 +7,7 @@ sources:
 - kind: git_repo
   url: gitlab:freedesktop-sdk/freedesktop-sdk.git
   track: master # we need to track master because we bring dependencies from there
-  ref: freedesktop-sdk-26.08rc.1-0-ge076d4978ee6945763486f6ebd755d189460e4e7
+  ref: freedesktop-sdk-26.08rc.2-49-g0602fec5b2aa5284ca67d371797d239a8f1322f2
 - kind: patch_queue
   path: patches/freedesktop-sdk
 

@@ -34,4 +34,4 @@ sources:
 - kind: git_repo
   url: kde:system/kpmcore
   track: v*
-  ref: v26.07.90-0-g5249beec666d3b5131a7e37d0c416e8fde4056ca
+  ref: v26.08.0-0-gaa4b4a84e988ea84bd6ffff6910dacec85e45280

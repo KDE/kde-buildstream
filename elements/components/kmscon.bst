@@ -35,5 +35,5 @@ sources:
 - kind: git_repo
   url: https://github.com/kmscon/kmscon.git
   track: v*
-  ref: c9d0e23336c6bb7645a1f5f48a4a82f1d5a589d9
+  ref: baa2bcc5bde55318dcfbff0dd0090271e1f88674
   ref-format: sha1
