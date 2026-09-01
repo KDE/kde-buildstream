@@ -49,3 +49,5 @@ sources:
   path: files/gnome-build-meta/swtpm-add-python-build-dependency.patch
 - kind: patch
   path: files/gnome-build-meta/speech-dispatcher-add-python-build-dependency.patch
+- kind: patch
+  path: files/gnome-build-meta/gcr-disable-gtk4.patch

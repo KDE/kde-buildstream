@@ -26,5 +26,5 @@ depends:
 
 variables:
   meson-local: >-
-    -Dlibnma_gtk4=true
+    -Dlibnma_gtk4=false
     -Dvapi=false
