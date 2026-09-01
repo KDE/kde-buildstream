@@ -93,6 +93,10 @@ logging:
   # Be more verbose when things fail. In particular the kde-builder issue may be a ways back in the log.
   error-lines: 1000
 
+build:
+  # Rebuild failed artifacts when a CI job is retried.
+  retry-failed: true
+
 scheduler:
   # Push as much to the cache as possible to avoid rebuilding things that were already built
   on-error: continue
