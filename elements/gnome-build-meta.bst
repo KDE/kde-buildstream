@@ -43,8 +43,8 @@ config:
 sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/gnome-build-meta.git
-  ref: 49-branchpoint-839-ge589032ae00384ae751ebf7ab72f0657a12c2f7c
-  track: sam/fdsdk-26.08
+  ref: 49-branchpoint-927-g2a74a465768d6ddddbd4a6deaf06bb4a80f8a4ca
+  track: master
 - kind: patch
   path: files/gnome-build-meta/swtpm-add-python-build-dependency.patch
 - kind: patch
