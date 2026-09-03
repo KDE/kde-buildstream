@@ -31,6 +31,7 @@ config:
     sdk/gsettings-desktop-schemas.bst: freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
     sdk/gtk-doc.bst: freedesktop-sdk.bst:components/gtk-doc.bst
     sdk/json-glib.bst: freedesktop-sdk.bst:components/json-glib.bst
+    sdk/krb5.bst: freedesktop-sdk.bst:components/krb5.bst
     sdk/libibus.bst: freedesktop-sdk.bst:components/libibus.bst
     sdk/libnotify.bst: freedesktop-sdk.bst:components/libnotify.bst
     sdk/librsvg.bst: freedesktop-sdk.bst:components/librsvg.bst
