@@ -36,3 +36,5 @@ sources:
   - '*beta*'
   - '*alpha*'
   ref: v3.4.2-0-g36d30c492e5c7b5d6d32fed5c5d9790522e1eea3
+- kind: patch
+  path: patches/calamares/0001-modules-partition-use-typeForUntranslatedName.patch
