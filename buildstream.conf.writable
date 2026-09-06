@@ -100,3 +100,6 @@ build:
 scheduler:
   # Push as much to the cache as possible to avoid rebuilding things that were already built
   on-error: continue
+
+  # Retry network accesses because some sources might be spotty (e.g. github.com)
+  network-retries: 5

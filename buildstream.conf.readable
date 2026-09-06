@@ -62,3 +62,7 @@ projects:
 logging:
   # Be more verbose when things fail. In particular the kde-builder issue may be a ways back in the log.
   error-lines: 1000
+
+scheduler:
+  # Retry network accesses because some sources might be spotty (e.g. github.com)
+  network-retries: 5
