@@ -31,4 +31,4 @@ sources:
 - kind: git_repo
   url: gitlab:fbb-git/icmake.git
   track: 13.*
-  ref: 13.05.01-0-g650f438dd0f8bc9ea1fbf0bc1813c0cb7d2aa022
+  ref: 13.06.01-0-g09bd2a5aa58e90e10faa7ccb303412d24eef381d

@@ -27,7 +27,7 @@ sources:
 - kind: git_repo
   url: github:cyphar/libpathrs.git
   track: go-pathrs/v*
-  ref: go-pathrs/v0.2.5-0-g080908395e75a32a5c4dbe9b318bf93643429f9f
+  ref: go-pathrs/v0.2.6-0-g941f5488a93811bc6c00f6aa4f8c29095252f33b
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:
@@ -169,8 +169,8 @@ sources:
     sha: 5e5032e24019045c762d3c0f28f5b6b8bbf38563a65908389bf7978758920897
   - kind: registry
     name: memchr
-    version: 2.8.2
-    sha: 88904434abc2901f197fe8cc55f0445e7ded921dba5911dad2e2b39b48e663c4
+    version: 2.8.3
+    sha: cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98
   - kind: registry
     name: once_cell
     version: 1.20.3
@@ -237,8 +237,8 @@ sources:
     sha: b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190
   - kind: registry
     name: rustversion
-    version: 1.0.22
-    sha: b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d
+    version: 1.0.23
+    sha: cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f
   - kind: registry
     name: scopeguard
     version: 1.2.0
