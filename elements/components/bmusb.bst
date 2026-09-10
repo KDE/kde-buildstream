@@ -13,6 +13,9 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/libusb.bst
 
+environment:
+  UDEVDIR: "%{indep-libdir}/udev"
+
 sources:
 # NOTE sesse seems to be down and has been for a few days. It is where everyone gets the source code from.
 # In order to keep our system building and fresh, switch to Debian's source code cache until the DNS is addressed.
