@@ -28,11 +28,13 @@ depends:
 - freedesktop-sdk.bst:components/mtdev.bst
 - freedesktop-sdk.bst:components/python3-jinja2.bst
 - freedesktop-sdk.bst:components/python3-psutil.bst # drkonqi
+- freedesktop-sdk.bst:components/python3-ruamel-yaml.bst # union
 - freedesktop-sdk.bst:components/python3.bst
 - freedesktop-sdk.bst:components/git.bst
 - freedesktop-sdk.bst:components/elfutils.bst # heaptrack
 - freedesktop-sdk.bst:components/libunwind.bst # heaptrack
 - freedesktop-sdk.bst:components/hwdata.bst # pretty hardware info in kwin
+- freedesktop-sdk-extra.bst:components/python3-websockets.bst # kapsule
 - os/deps-core.bst
 - os/deps-middleware.bst
 - os/deps-apps.bst
@@ -55,6 +57,8 @@ depends:
 - components/zxing.bst # prison
 - components/pygdbmi.bst # drkonqi
 - components/python3-sentry-sdk.bst # drkonqi
+- components/python3-httpx.bst # kapsule
+- components/python3-dbus-fast.bst # kapsule
 - components/py-setproctitle.bst
 - components/qcoro.bst # konsole
 - components/libqalculate.bst # krunner

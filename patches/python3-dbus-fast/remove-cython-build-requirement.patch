@@ -1,0 +1,23 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: KDE Linux maintainers <kde-linux@kde.org>
+Date: Fri, 11 Sep 2026 16:00:00 +0000
+Subject: [PATCH] Build without optional Cython extension
+
+The SDK currently provides Cython 3.3, while dbus-fast 5.0.22 pins its
+build requirement below 3.3.  The extension is optional and is disabled by
+SKIP_CYTHON in the BuildStream element.
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index abcdef1..abcdef2 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -108,5 +108,5 @@
+ ignore_errors = true
+ ]
+ [build-system]
+-requires = ['setuptools>=65.4.1', 'wheel', 'Cython>=3,<3.3.0', "poetry-core>=1.0.0"]
++requires = ['setuptools>=65.4.1', 'wheel', "poetry-core>=1.0.0"]
+ build-backend = "poetry.core.masonry.api"
