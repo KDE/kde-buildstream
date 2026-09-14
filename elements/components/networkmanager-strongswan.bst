@@ -18,5 +18,5 @@ sources:
   project-id: 4899
   url: 'https://download.strongswan.org/strongswan-{version}.tar.bz2'
   ref:
-    version: 6.0.7
-    sha256sum: e518e34e159514f4c6ba80d1f926cb151e0dd4e3a1d94213171234b8b9ae6f55
+    version: 6.1.0
+    sha256sum: fe6c97481298767213cfc2e9a1da29fdd8018d481ff4cb9cf0283099654f20d4

@@ -21,5 +21,5 @@ sources:
   project-id: 13306
   url: 'https://www.rarlab.com/rar/unrarsrc-{version}.tar.gz'
   ref:
-    version: 7.2.7
-    sha256sum: 01d903a7dcf413cb2925696d7796e48e38d471f79bfe7ef3ad2aebf6c12dbefd
+    version: 7.3.1
+    sha256sum: 634900842a3737d9cc15bbcc71d4c74cc713437e0bca296a573424fe5f2660ab
