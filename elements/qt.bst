@@ -37,3 +37,4 @@ depends:
 - qt/qthttpserver.bst
 - qt/qtvirtualkeyboard.bst
 - qt/qtwebengine.bst
+- qt/qtwebview.bst
