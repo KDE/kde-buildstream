@@ -17,4 +17,4 @@ sources:
 - kind: git_repo
   url: github:andreafrancia/trash-cli.git
   track: '*'
-  ref: 0.24.5.26-0-gc02fd350e6346da91404985e2d23fd5ab5256259
+  ref: 0.26.9.14-0-g1905f16724e42bb8523147020a05341d8485f3ef

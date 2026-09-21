@@ -38,4 +38,4 @@ sources:
 - kind: git_repo
   url: github:nm-l2tp/NetworkManager-l2tp
   track: '*'
-  ref: 1.52.4-0-gef970e2f3bf3e219d99c949b7a91a6bb55ab6ef7
+  ref: 1.52.6-0-g116a35a934ed6b5567302593116bf91f709bacb5
