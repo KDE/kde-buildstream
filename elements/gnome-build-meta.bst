@@ -44,7 +44,7 @@ config:
 sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/gnome-build-meta.git
-  ref: 49-branchpoint-984-g024c0450912cdd561e2bd97035ef072516955000
+  ref: 49-branchpoint-996-g700b74abec70a95dbfdb3a730c5d2fdf55199529
   track: master
 - kind: patch
   path: files/gnome-build-meta/swtpm-add-python-build-dependency.patch

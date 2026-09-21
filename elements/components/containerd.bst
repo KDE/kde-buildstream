@@ -45,4 +45,4 @@ sources:
   - '*rc*'
   - '*beta*'
   - '*alpha*'
-  ref: v2.3.5-0-g1294c24a7da8e5a793ed378161673abe94118892
+  ref: v2.4.0-0-ga7fe631d96c08fb14cf8eff0afdc280e99c30a94
