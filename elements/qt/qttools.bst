@@ -6,8 +6,10 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
-
 depends:
+- freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- freedesktop-sdk.bst:components/zstd.bst
 - qt/qtbase.bst
 environment:
   INSTALL_ROOT: '%{install-root}'
@@ -50,7 +52,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: 'qt:{major}.{minor}/{version}/submodules/qttools-everywhere-src-{version}.tar.xz'
+  url: qt:{major}.{minor}/{version}/submodules/qttools-everywhere-src-{version}.tar.xz
   ref:
     version: 6.11.2
     sha256sum: 9ea75af35c512f7e09e61c8c3af3997f13b4d43bb099cf43fcec470126b4041e

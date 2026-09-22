@@ -6,8 +6,9 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
-
 depends:
+- freedesktop-sdk.bst:components/hunspell.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
 - qt/qtbase.bst
 - qt/qtdeclarative.bst
 - qt/qtmultimedia.bst
@@ -22,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: 'qt:{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz'
+  url: qt:{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz
   ref:
     version: 6.11.2
     sha256sum: 4c6a26734a5c4e4acd5ff9ae5f192a5b883bc4514118f9df2fcf12064e647c2f
