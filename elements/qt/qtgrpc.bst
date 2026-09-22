@@ -6,16 +6,10 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
-
 depends:
+- freedesktop-sdk.bst:components/libxkbcommon.bst
 - qt/qtbase.bst
-- qt/qttools.bst
-- qt/qtshadertools.bst
-- qt/qtlanguageserver.bst
 - qt/qtdeclarative.bst
-- qt/qtwebchannel.bst
-- qt/qtpositioning.bst
-- freedesktop-sdk.bst:components/grpc.bst
 environment:
   INSTALL_ROOT: '%{install-root}'
   FLATPAK_DEST: '%{prefix}'
@@ -29,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: 'qt:{major}.{minor}/{version}/submodules/qtgrpc-everywhere-src-{version}.tar.xz'
+  url: qt:{major}.{minor}/{version}/submodules/qtgrpc-everywhere-src-{version}.tar.xz
   ref:
     version: 6.11.2
     sha256sum: 44414617f0058ff34965fa852027bfcc7e4f71eefca8cd4406c96af22c64ad93
