@@ -63,7 +63,7 @@ depends:
 - components/zsh-completions.bst
 - components/zsh-history-substring-search.bst # zsh-history-substring-search: fish-like history search
 - components/zsh-syntax-highlighting.bst # zsh-syntax-highlighting: fish-like syntax highlighting
-- components/alsa-utils.bst # alsa-utils: alsamixer and other useful audio debugging tools
+- freedesktop-sdk-extra.bst:components/alsa-utils.bst # alsa-utils: alsamixer and other useful audio debugging tools
 - components/iw.bst # iw: Kernel-level wireless configuration
 - freedesktop-sdk-extra.bst:components/espeak-ng.bst # espeak-ng: CLI-invoked speech; accessible automation feedback
 - freedesktop-sdk-extra.bst:components/distrobox.bst

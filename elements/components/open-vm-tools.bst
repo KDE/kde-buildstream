@@ -24,7 +24,7 @@ depends:
 - freedesktop-sdk.bst:components/libxml2.bst
 - freedesktop-sdk.bst:components/linux-pam.bst
 - freedesktop-sdk.bst:components/procps.bst
-- components/rpcsvc-proto.bst
+- freedesktop-sdk-extra.bst:components/rpcsvc-proto.bst
 - components/xmlsec.bst
 
 variables:
