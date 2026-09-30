@@ -5,7 +5,7 @@ kind: meson
 
 build-depends:
 - freedesktop-sdk.bst:components/python3-pyparsing.bst
-- gnome-build-meta.bst:core-deps/spice-protocol.bst
+- freedesktop-sdk-extra.bst:components/spice-protocol.bst
 - freedesktop-sdk.bst:components/sed.bst
 - freedesktop-sdk.bst:components/gcc.bst
 - freedesktop-sdk.bst:components/stripper.bst
@@ -17,7 +17,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 
 depends:
-- gnome-build-meta.bst:core-deps/libcacard.bst
+- freedesktop-sdk-extra.bst:components/libcacard.bst
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/cyrus-sasl.bst
 - freedesktop-sdk.bst:components/gstreamer-plugins-base.bst

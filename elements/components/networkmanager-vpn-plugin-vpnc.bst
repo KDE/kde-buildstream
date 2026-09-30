@@ -8,7 +8,7 @@ kind: autotools
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
-- gnome-build-meta.bst:core-deps/intltool.bst
+- freedesktop-sdk-extra.bst:components/intltool.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

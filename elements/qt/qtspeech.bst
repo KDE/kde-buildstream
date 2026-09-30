@@ -8,7 +8,7 @@ build-depends:
 - freedesktop-sdk.bst:sdk.bst
 depends:
 - freedesktop-sdk.bst:components/libxkbcommon.bst
-- gnome-build-meta.bst:core-deps/speech-dispatcher.bst
+- freedesktop-sdk-extra.bst:components/speech-dispatcher.bst
 - qt/qtbase.bst
 - qt/qtdeclarative.bst
 - qt/qtmultimedia.bst

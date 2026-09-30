@@ -17,8 +17,8 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/networkmanager.bst
-- gnome-build-meta.bst:core-deps/mobile-broadband-provider-info.bst
-- gnome-build-meta.bst:sdk/gcr.bst
+- freedesktop-sdk-extra.bst:components/mobile-broadband-provider-info.bst
+- freedesktop-sdk-extra.bst:components/gcr.bst
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/gtk3.bst
 - freedesktop-sdk.bst:components/iso-codes.bst
