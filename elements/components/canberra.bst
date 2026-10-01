@@ -6,7 +6,11 @@ kind: autotools
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
-- freedesktop-sdk.bst:sdk.bst
+
+depends:
+- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:components/libpulse.bst
+- freedesktop-sdk.bst:components/libtool.bst
 
 sources:
 - kind: git_repo
