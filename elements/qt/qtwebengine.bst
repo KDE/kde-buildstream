@@ -6,6 +6,9 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
+- components/python-html5lib.bst
+- freedesktop-sdk-extra.bst:components/nodejs.bst
+
 depends:
 - components/re2.bst
 - freedesktop-sdk.bst:components/alsa-lib.bst
