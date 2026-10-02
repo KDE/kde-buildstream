@@ -74,7 +74,7 @@ variables:
     # -DQT_FEATURE_webengine_system_openh264=ON'
 sources:
 - kind: anitya
-  project-id: 7927
+  project-id: 239861
   url: qt:{major}.{minor}/{version}/submodules/qtwebengine-everywhere-src-{version}.tar.xz
   ref:
     version: 6.11.2
