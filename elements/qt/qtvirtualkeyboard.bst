@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 4c6a26734a5c4e4acd5ff9ae5f192a5b883bc4514118f9df2fcf12064e647c2f
+    version: 6.12.0
+    sha256sum: 2aae3628f4648f86959d7853e7e1f50ee96a7f1bb5497afb62b7deff6c350170

@@ -26,4 +26,4 @@ sources:
   track: 'v*'
   exclude:
   - '*beta*'
-  ref: v3.4.0-0-g731f7cdbf742470ad11ba9598a6bc47f40d7f943
+  ref: v3.4.1-0-g1ae8a5749850cc6f77f34cfa60cbc29bdbbda786

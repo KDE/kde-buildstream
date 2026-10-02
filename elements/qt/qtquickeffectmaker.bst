@@ -27,5 +27,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtquickeffectmaker-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 7923dc7284e933a5e36ae24a427564f04e0b27af8dfa38eee8092c01c2835cb7
+    version: 6.12.0
+    sha256sum: 290c8c3c9835e9d3991cbf7e8fe965992c8f7c8730e694f7cf90fb719c2c63ac

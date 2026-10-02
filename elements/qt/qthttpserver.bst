@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qthttpserver-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: f0f5763b2ba58f20f5cffdfbedb97e62e32b5c639df6d9a6378905028be7bd8e
+    version: 6.12.0
+    sha256sum: ede040264551d0930ea5f6c1a4c18a7a3dea59d635e71cd2e81f02567d7814a4

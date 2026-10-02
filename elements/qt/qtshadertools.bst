@@ -26,5 +26,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtshadertools-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 805046b8b7757665586890b375940047e874ae3ab00adb6d3f2b38fc6b200b1c
+    version: 6.12.0
+    sha256sum: c7d84f436e1aaef39fdcadebf2bd71bdf24dc69497e13f2e0198873cbbfea2ab

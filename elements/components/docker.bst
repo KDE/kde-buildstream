@@ -95,14 +95,14 @@ sources:
   exclude:
   - '*rc*'
   - '*beta*'
-  ref: v29.8.1-0-g4a63305d74332de5ceba7fcbccbc3cbb7412f5ba
+  ref: v29.8.2-0-g7fc2dff9bceb96b266a3b2c3117c0955a0d9e616
   directory: cli
 - kind: git_repo
   url: github:moby/moby.git
   track: 'docker-v*'
   exclude:
   - '*rc*'
-  ref: docker-v29.8.1-0-g464cd50c3d9e92877d56940ea160de6fca7bea23
+  ref: docker-v29.8.2-0-g8af9fe3a36bab3e039862a2ab1cef1880c9b4d03
   directory: moby
 - kind: git_repo
   url: github:krallin/tini.git

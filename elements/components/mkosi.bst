@@ -21,4 +21,4 @@ sources:
 - kind: git_repo
   url: github:systemd/mkosi.git
   track: v[0-9]*
-  ref: v27-0-g4736cd836108a97772142c461c49f1ddb4172348
+  ref: v27.1-0-gecf7f5702bb2052b7a69cab3fe7d37bc3b9ad77b

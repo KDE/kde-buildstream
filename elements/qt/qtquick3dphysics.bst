@@ -26,5 +26,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtquick3dphysics-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 1c5a24cf4285fc48481d7c7ae65bd6e80ed98b10964ea6e8530c608c4cdeb86e
+    version: 6.12.0
+    sha256sum: 8ddb23147e4677c759d36a65ae50f6b0d0d79fa8590ac89576b91f572918b481

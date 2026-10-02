@@ -29,5 +29,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qt3d-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 411185a4795a711472c8f72ff7d6b13a0a9082a5f2c3c3d1ca9556727efbac29
+    version: 6.12.0
+    sha256sum: d16f7489945c6c9e971cedd4362202a2681f3c10393461e1f5e74425f7fef59a

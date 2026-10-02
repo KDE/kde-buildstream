@@ -23,5 +23,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtlanguageserver-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 38bc4272ecf4ca0eb1927227053e52be6b2e05733f46d03422306aace511fc5e
+    version: 6.12.0
+    sha256sum: 552119e37360c06c5fb0b54e91bbfdf8da5a80d2cb1441ef93e966eb3b7a426d

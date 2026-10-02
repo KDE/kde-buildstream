@@ -24,5 +24,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtnetworkauth-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 0c83c23077ab7824393fa15bb0015c3c5acaf5678544aa789e3fcbb4d41fa05b
+    version: 6.12.0
+    sha256sum: 17d47be1a724d21775daa873ac7a52c30fd5c4935ba377af48d9b37b39765ed8

@@ -36,5 +36,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtmultimedia-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 967b5e02ec6b793cdb360622cd6e703132836af983208d678dae4b50f109cd9f
+    version: 6.12.0
+    sha256sum: 3143f53b64257ba2a0685c940f5dce476c75871ff86b516de45cfd54ea93a62d

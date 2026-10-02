@@ -27,5 +27,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtconnectivity-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 85b01a57bd059583ab520a857990dfdf4021447507ff5b9498f036b7295e6037
+    version: 6.12.0
+    sha256sum: ed51f7f02c1f437fcf8a42940c7a84f6c0908c0ec7a4f5a5304fe68f47521954

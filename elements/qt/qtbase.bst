@@ -49,9 +49,7 @@ depends:
 - freedesktop-sdk.bst:components/zlib.bst
 variables:
   arch-cmake-local: ''
-  cmake-local: -DINSTALL_ARCHDATADIR=lib -DQT_CREATE_VERSIONED_HARD_LINK=OFF -DQT_DISABLE_RPATH=ON
-    -DBUILD_WITH_PCH=FALSE -DQT_FEATURE_openssl_linked=ON -DQT_FEATURE_system_sqlite=ON
-    %{arch-cmake-local}
+  cmake-local: -DINSTALL_ARCHDATADIR=lib -DQT_CREATE_VERSIONED_HARD_LINK=OFF -DQT_DISABLE_RPATH=ON -DBUILD_WITH_PCH=FALSE -DQT_FEATURE_openssl_linked=ON -DQT_FEATURE_system_sqlite=ON %{arch-cmake-local}
 (?):
 - arch == 'x86_64':
     variables:
@@ -74,8 +72,8 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtbase-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 5b2e00eccaf5a4d8c14134ffa0ea8dfd0a35ae1ffc7f8d87fa4305a1ed23cf22
+    version: 6.12.0
+    sha256sum: a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307
 - kind: patch
   path: elements/qt/patch/qtbase-find_package-paths.patch
 - kind: patch

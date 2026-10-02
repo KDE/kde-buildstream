@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtscxml-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: f594c4bba7f8bffb20857973c72895669d6e54df08c8d897f50d15251cec35ff
+    version: 6.12.0
+    sha256sum: adc04875b383256bcd5a412f6f249d363495ea037913ca8c96d723442be38383

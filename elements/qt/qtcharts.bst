@@ -26,5 +26,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtcharts-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 5069e53b81d125509e937c6379cba6d664c562d5a1e5ed28dd383690d4b6fb29
+    version: 6.12.0
+    sha256sum: dc5e0599455c78729248a1bb95824fe6a3420e860b8cabc5ac0c7a93c2062bfb

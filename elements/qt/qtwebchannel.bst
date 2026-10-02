@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtwebchannel-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: feb3149758bda887f0c292656194812dd2c227595badc8fbdeb2fb2311c5575f
+    version: 6.12.0
+    sha256sum: 9afdfb64855b33c1cc16a4fdce69a556876f0d5b9df79d88de7306ffa2dca327

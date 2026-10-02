@@ -28,5 +28,5 @@ sources:
   project-id: 7927
   url: qt:{major}.{minor}/{version}/submodules/qtwayland-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 8eb7615e39332a10f506e8dd70f02d5954bb5949ff54f6dcbf8bd6168222f9df
+    version: 6.12.0
+    sha256sum: ae14d9bcf1bb3c300a3ab2e6a53f50284e5c6c966a4ac4cc5aedcb1bc74e4d02
