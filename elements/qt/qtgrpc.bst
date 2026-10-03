@@ -27,5 +27,3 @@ sources:
   ref:
     version: 6.12.0
     sha256sum: 771852c4e5fbeb3d7c3b2a9aacc13db9efe942a46e7d1454ec1f16092ec3ef9c
-- kind: patch
-  path: elements/qt/patch/qtgrpc-find_program-paths.patch
