@@ -1,9 +1,6 @@
 # SPDX-FileCopyrightText: 2026 Harald Sitter <sitter@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-kind: junction_override
-element-path: elements/components/linux.bst
-
 environment:
   ZSTD_CLEVEL: '19'
   INSTALL_MOD_STRIP: '1'

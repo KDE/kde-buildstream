@@ -1,12 +1,9 @@
 # SPDX-FileCopyrightText: 2026 Harald Sitter <sitter@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-kind: junction_override
-element-path: elements/components/_private/systemd-base.bst
-
 variables:
-  meson-local: >-
-    %{original}
+  meson: >-
+    meson setup %{conf-root} %{build-dir} %{meson-args}
     -Dfallback-hostname='kde-linux'
     -Dsbat-distro=kde-linux
     -Dsbat-distro-summary="KDE Linux"
