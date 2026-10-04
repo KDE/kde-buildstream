@@ -25,7 +25,7 @@ sources:
   track: 'v*'
   exclude:
   - "*rc*"
-  ref: v0.36.1-0-g1d8dde89b8aba914e05e45366770736fea1fd690
+  ref: v0.37.2-0-g2d379c0c3f22da0d2759d132a0ec81ca949098f0
 - kind: go_module
   url: github:Masterminds/semver.git
   module: github.com/Masterminds/semver/v3
@@ -51,16 +51,16 @@ sources:
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/config
   ref:
-    go-version: v1.32.31
-    git-ref: config/v1.32.31-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.32.39
+    git-ref: config/v1.32.39-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: config
 - kind: go_module
   url: github:compose-spec/compose-go.git
   module: github.com/compose-spec/compose-go/v2
   ref:
-    go-version: v2.13.0
-    git-ref: v2.13.0-0-g0670a1c375c19defea19147bd82eb126a7c33b29
+    go-version: v2.14.0
+    git-ref: v2.14.0-0-gd70c053ec9cbd7180c7881ba769d277f5cfc6fb5
     explicit: True
 - kind: go_module
   url: github:containerd/console.git
@@ -73,8 +73,8 @@ sources:
   url: github:containerd/containerd.git
   module: github.com/containerd/containerd/v2
   ref:
-    go-version: v2.3.3
-    git-ref: v2.3.3-0-gaad11006b869517fcd3009450b6f82da282e1a9b
+    go-version: v2.3.6
+    git-ref: v2.3.6-0-gee2735368117d2eb259779949d5e75cdafec9761
     explicit: True
 - kind: go_module
   url: github:containerd/continuity.git
@@ -122,8 +122,8 @@ sources:
   url: github:docker/cli.git
   module: github.com/docker/cli
   ref:
-    go-version: v29.6.2+incompatible
-    git-ref: v29.6.2-0-gdfc4efb1e2ab8c06d70d2a1366ad448d2f917e90
+    go-version: v29.7.2+incompatible
+    git-ref: v29.7.2-0-ga7dcaa6fdb6ed04aacbfdc76357fdae01605609e
     explicit: True
 - kind: go_module
   url: github:docker/cli-docs-tool.git
@@ -213,15 +213,15 @@ sources:
   url: github:moby/buildkit.git
   module: github.com/moby/buildkit
   ref:
-    go-version: v0.32.2
-    git-ref: v0.32.2-0-g991535e0973488b6a429096d21fa13f81f2d89d8
+    go-version: v0.33.1
+    git-ref: v0.33.1-0-g8c91502cf280bd70a0c50912ce251c46a8881d9f
     explicit: True
 - kind: go_module
   url: github:moby/go-archive.git
   module: github.com/moby/go-archive
   ref:
-    go-version: v0.2.1
-    git-ref: v0.2.1-0-g0bfb09625293006825b7a57ffca9b9552eb9d872
+    go-version: v0.2.0
+    git-ref: v0.2.0-0-g263611f5f0914b2a153d86dae2042d13be6a88c4
     explicit: True
 - kind: go_module
   url: github:moby/moby.git
@@ -243,8 +243,8 @@ sources:
   url: github:moby/policy-helpers.git
   module: github.com/moby/policy-helpers
   ref:
-    go-version: v0.0.0-20260722051018-856be88baec4
-    git-ref: 856be88baec46ecaa01f4d30676e48d14ccffa0b
+    go-version: v0.0.0-20260901104222-dd6c5499c491
+    git-ref: dd6c5499c491cfc998171f368028505e588de1e5
     explicit: True
 - kind: go_module
   url: github:moby/sys.git
@@ -294,8 +294,8 @@ sources:
   url: github:pelletier/go-toml.git
   module: github.com/pelletier/go-toml/v2
   ref:
-    go-version: v2.3.1
-    git-ref: v2.3.1-0-gf85c4e8142d63f3c193f84ecfbf4b99104a1c95f
+    go-version: v2.4.3
+    git-ref: v2.4.3-0-g071a36c2a57244f2e70369bfc69889fda2a1f60f
     explicit: True
 - kind: go_module
   url: github:pkg/browser.git
@@ -336,8 +336,8 @@ sources:
   url: github:sirupsen/logrus.git
   module: github.com/sirupsen/logrus
   ref:
-    go-version: v1.9.4
-    git-ref: v1.9.4-0-gb61f268f75b6ff134a62cd62aee1095fa12e8d2e
+    go-version: v1.10.2
+    git-ref: v1.10.2-0-g6d6a132bc03324d4ceb78e1b927f995d014cda20
     explicit: True
 - kind: go_module
   url: github:spf13/cobra.git
@@ -357,15 +357,15 @@ sources:
   url: github:stretchr/testify.git
   module: github.com/stretchr/testify
   ref:
-    go-version: v1.11.1
-    git-ref: v1.11.1-0-g2a57335dc9cd6833daa820bc94d9b40c26a7917d
+    go-version: v1.12.1
+    git-ref: v1.12.1-0-g959dbdacf1533e155162811ea90c90117a420463
     explicit: True
 - kind: go_module
   url: github:tonistiigi/fsutil.git
   module: github.com/tonistiigi/fsutil
   ref:
-    go-version: v0.0.0-20260717003753-6d9dc2ebad62
-    git-ref: 6d9dc2ebad626eb645fb587f14225b3aa96ec010
+    go-version: v0.0.0-20260819142231-83cac42c1c52
+    git-ref: 83cac42c1c5296d6bbc4017ec1ee3c6701f49938
     explicit: True
 - kind: go_module
   url: github:tonistiigi/go-csvvalue.git
@@ -392,16 +392,16 @@ sources:
   url: github:open-telemetry/opentelemetry-go-contrib.git
   module: go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp
   ref:
-    go-version: v0.69.0
-    git-ref: instrumentation/net/http/otelhttp/v0.69.0-0-g03b2bcdb54b3dde73c9ff91ae216aec262f6c8f5
+    go-version: v0.70.0
+    git-ref: instrumentation/net/http/otelhttp/v0.70.0-0-gc8a87a60ba1b3374fd16df11fc3eeae6c41abbc9
     explicit: True
     subdirectory: instrumentation/net/http/otelhttp
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel
   ref:
-    go-version: v1.44.0
-    git-ref: v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
@@ -415,46 +415,46 @@ sources:
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/metric
   ref:
-    go-version: v1.44.0
-    git-ref: metric/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: metric/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: metric
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/sdk
   ref:
-    go-version: v1.44.0
-    git-ref: sdk/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: sdk/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: sdk
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/trace
   ref:
-    go-version: v1.44.0
-    git-ref: trace/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: trace/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: trace
 - kind: go_module
   url: github:yaml/go-yaml.git
   module: go.yaml.in/yaml/v3
   ref:
-    go-version: v3.0.4
-    git-ref: v3.0.4-0-gc3552c15f996075a7634df5159d9161c67bf3d76
+    go-version: v3.0.5
+    git-ref: v3.0.5-0-ge16c7af9361b241fa02d91582fb59ce4954d8afc
     explicit: True
 - kind: go_module
   url: github:golang/crypto.git
   module: golang.org/x/crypto
   ref:
-    go-version: v0.54.0
-    git-ref: v0.54.0-0-gcdce021fa6c7d9c7eb2743bfbe551f0a98fd5d62
+    go-version: v0.56.0
+    git-ref: v0.56.0-0-g86efde54dc7069251a8b007026c500d28e4239ce
     explicit: True
 - kind: go_module
   url: github:golang/mod.git
   module: golang.org/x/mod
   ref:
-    go-version: v0.38.0
-    git-ref: v0.38.0-0-g792ac169a90372d88fb14e712cb793061ba0c104
+    go-version: v0.40.0
+    git-ref: v0.40.0-0-gd3398d06de5fa5c71083d3d1c26f2cda73508e0f
     explicit: True
 - kind: go_module
   url: github:golang/sync.git
@@ -481,59 +481,59 @@ sources:
   url: github:golang/text.git
   module: golang.org/x/text
   ref:
-    go-version: v0.40.0
-    git-ref: v0.40.0-0-g724af9c35838492dcaacc1ac51a8a0187c994c54
+    go-version: v0.41.0
+    git-ref: v0.41.0-0-gacdba6655fd45cdb5ab73c9d6a8981333bd65a39
     explicit: True
 - kind: go_module
   url: github:googleapis/go-genproto.git
   module: google.golang.org/genproto/googleapis/rpc
   ref:
-    go-version: v0.0.0-20260526163538-3dc84a4a5aaa
-    git-ref: 3dc84a4a5aaa87331e10f51e22e90d961f986894
+    go-version: v0.0.0-20260803160001-6ac0973c030d
+    git-ref: 6ac0973c030de548f6a485902facf1e906a58fbf
     explicit: True
     subdirectory: googleapis/rpc
 - kind: go_module
   url: github:grpc/grpc-go.git
   module: google.golang.org/grpc
   ref:
-    go-version: v1.82.1
-    git-ref: v1.82.1-0-gebd8f06a09426fbece97157c95c3917abff28f4e
+    go-version: v1.83.2
+    git-ref: v1.83.2-0-g030ee8becb20ce4315d6bf2dfa26bdd876169dc4
     explicit: True
 - kind: go_module
   url: github:grpc/grpc-go.git
   module: google.golang.org/grpc/cmd/protoc-gen-go-grpc
   ref:
-    go-version: v1.6.1
-    git-ref: cmd/protoc-gen-go-grpc/v1.6.1-0-g830c9098e4d034e0c7641e1fbc6001c2570bbc0f
+    go-version: v1.6.2
+    git-ref: cmd/protoc-gen-go-grpc/v1.6.2-0-g1c63fa5f5492fb6cb4cabf9847999ce469505f49
     explicit: True
     subdirectory: cmd/protoc-gen-go-grpc
 - kind: go_module
   url: https://go.googlesource.com/protobuf
   module: google.golang.org/protobuf
   ref:
-    go-version: v1.36.12-0.20260120151049-f2248ac996af
-    git-ref: f2248ac996afc39b3df0777cdcc269f6ade50b07
+    go-version: v1.36.12
+    git-ref: v1.36.12-0-gcdd4c5f7406e82462949c7a65defa9f3029c162d
     explicit: True
 - kind: go_module
   url: github:kubernetes/api.git
   module: k8s.io/api
   ref:
-    go-version: v0.36.0
-    git-ref: v0.36.0-0-g545bb975fe6653239af42324065cf72272186404
+    go-version: v0.36.3
+    git-ref: v0.36.3-0-g3fde3c43c3cf3447606b9c2ac2c6257095444387
     explicit: True
 - kind: go_module
   url: github:kubernetes/apimachinery.git
   module: k8s.io/apimachinery
   ref:
-    go-version: v0.36.0
-    git-ref: v0.36.0-0-gdebe1eba03a0c4134fd07a8f7586c44bb94ec7b0
+    go-version: v0.36.3
+    git-ref: v0.36.3-0-g40bf4b2b62f8838b9b37de7b407793f1f17ee225
     explicit: True
 - kind: go_module
   url: github:kubernetes/client-go.git
   module: k8s.io/client-go
   ref:
-    go-version: v0.36.0
-    git-ref: v0.36.0-0-g1d95f02c1723330f751c9eb255aefb0dcd7ca3d6
+    go-version: v0.36.3
+    git-ref: v0.36.3-0-g44a8af2fee834a8fc3523360e029cf7ea7104622
     explicit: True
 - kind: go_module
   url: github:Azure/go-ansiterm.git
@@ -581,103 +581,103 @@ sources:
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2
   ref:
-    go-version: v1.43.0
-    git-ref: v1.43.0-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.43.8
+    git-ref: v1.43.8-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/credentials
   ref:
-    go-version: v1.19.30
-    git-ref: credentials/v1.19.30-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.19.38
+    git-ref: credentials/v1.19.38-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: credentials
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/feature/ec2/imds
   ref:
-    go-version: v1.18.31
-    git-ref: feature/ec2/imds/v1.18.31-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.18.39
+    git-ref: feature/ec2/imds/v1.18.39-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: feature/ec2/imds
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/internal/configsources
   ref:
-    go-version: v1.4.31
-    git-ref: internal/configsources/v1.4.31-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.4.39
+    git-ref: internal/configsources/v1.4.39-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: internal/configsources
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/internal/endpoints/v2
   ref:
-    go-version: v2.7.31
-    git-ref: internal/endpoints/v2.7.31-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v2.7.39
+    git-ref: internal/endpoints/v2.7.39-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: internal/endpoints
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/internal/v4a
   ref:
-    go-version: v1.4.32
-    git-ref: internal/v4a/v1.4.32-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.4.40
+    git-ref: internal/v4a/v1.4.40-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: internal/v4a
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding
   ref:
-    go-version: v1.13.13
-    git-ref: service/internal/accept-encoding/v1.13.13-0-gb4784c17b51e7f4dff48ac6016a09e21eeb683a8
+    go-version: v1.13.18
+    git-ref: service/internal/accept-encoding/v1.13.18-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/internal/accept-encoding
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/internal/presigned-url
   ref:
-    go-version: v1.13.31
-    git-ref: service/internal/presigned-url/v1.13.31-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.13.39
+    git-ref: service/internal/presigned-url/v1.13.39-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/internal/presigned-url
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/signin
   ref:
-    go-version: v1.5.0
-    git-ref: service/signin/v1.5.0-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.5.8
+    git-ref: service/signin/v1.5.8-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/signin
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/sso
   ref:
-    go-version: v1.33.0
-    git-ref: service/sso/v1.33.0-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.33.8
+    git-ref: service/sso/v1.33.8-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/sso
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/ssooidc
   ref:
-    go-version: v1.38.0
-    git-ref: service/ssooidc/v1.38.0-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.38.8
+    git-ref: service/ssooidc/v1.38.8-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/ssooidc
 - kind: go_module
   url: github:aws/aws-sdk-go-v2.git
   module: github.com/aws/aws-sdk-go-v2/service/sts
   ref:
-    go-version: v1.45.0
-    git-ref: service/sts/v1.45.0-0-g4fef3455fe2dcb5ea3de4e9fbacf889b84c8a255
+    go-version: v1.45.8
+    git-ref: service/sts/v1.45.8-0-g655fababd6e36b08b8dfaccda2e3901ffa2f1657
     explicit: True
     subdirectory: service/sts
 - kind: go_module
   url: github:aws/smithy-go.git
   module: github.com/aws/smithy-go
   ref:
-    go-version: v1.27.4
-    git-ref: v1.27.4-0-g870555a648218564f98a855d655e6cc12031c4e3
+    go-version: v1.27.10
+    git-ref: v1.27.10-0-g3c4a597c707ec6af64c990a8d69a0d14d3f04e7b
     explicit: True
 - kind: go_module
   url: github:blang/semver.git
@@ -805,8 +805,8 @@ sources:
   url: github:felixge/httpsnoop.git
   module: github.com/felixge/httpsnoop
   ref:
-    go-version: v1.0.4
-    git-ref: v1.0.4-0-gc5817c27ec125409c069052fdd171023c353501c
+    go-version: v1.1.0
+    git-ref: v1.1.0-0-g0fc9006be0bfd68ee14bc3db0d58f7c7241892e0
     explicit: True
 - kind: go_module
   url: github:fvbommel/sortorder.git
@@ -826,8 +826,8 @@ sources:
   url: github:go-logr/logr.git
   module: github.com/go-logr/logr
   ref:
-    go-version: v1.4.3
-    git-ref: v1.4.3-0-g38a1c47ef633fa6b2eee6b8f2e1371ba8626e557
+    go-version: v1.4.4
+    git-ref: v1.4.4-0-g96a9abaa56526dd5d51745e817732a2d61505fb7
     explicit: True
 - kind: go_module
   url: github:go-logr/stdr.git
@@ -1104,8 +1104,8 @@ sources:
   url: github:klauspost/compress.git
   module: github.com/klauspost/compress
   ref:
-    go-version: v1.19.1
-    git-ref: v1.19.1-0-g2602f4afea09fe72f2b58d4ed04d43a6047a0131
+    go-version: v1.19.2
+    git-ref: v1.19.2-0-gc3b3439a48196b5082c63252bfb8633d0a2faad4
     explicit: True
 - kind: go_module
   url: github:lestrrat-go/blackmagic.git
@@ -1227,15 +1227,15 @@ sources:
   ref:
     go-version: v0.4.1
     git-ref: user/v0.4.1-0-g85a71bbe1faa36c552a960e6a5f3d0cfb632fbbe
-    explicit: True
+    explicit: False
     subdirectory: user
 - kind: go_module
   url: github:moby/sys.git
   module: github.com/moby/sys/userns
   ref:
-    go-version: v0.1.0
-    git-ref: userns/v0.1.0-0-g54475191138bd297c627eb1a59e1e54b953957f1
-    explicit: True
+    go-version: v0.2.0
+    git-ref: userns/v0.2.0-0-gfaeea0e5261cc2933681657f0e2df0717038a65b
+    explicit: False
     subdirectory: userns
 - kind: go_module
   url: github:moby/term.git
@@ -1285,7 +1285,7 @@ sources:
   ref:
     go-version: v1.0.1-0.20181226105442-5d4384ee4fb2
     git-ref: 5d4384ee4fb2527b0a1256a821ebfc92f91efefc
-    explicit: True
+    explicit: False
 - kind: go_module
   url: github:rcrowley/go-metrics.git
   module: github.com/rcrowley/go-metrics
@@ -1480,72 +1480,72 @@ sources:
   url: github:open-telemetry/opentelemetry-go-contrib.git
   module: go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc
   ref:
-    go-version: v0.69.0
-    git-ref: instrumentation/google.golang.org/grpc/otelgrpc/v0.69.0-0-g03b2bcdb54b3dde73c9ff91ae216aec262f6c8f5
+    go-version: v0.70.0
+    git-ref: instrumentation/google.golang.org/grpc/otelgrpc/v0.70.0-0-gc8a87a60ba1b3374fd16df11fc3eeae6c41abbc9
     explicit: True
     subdirectory: instrumentation/google.golang.org/grpc/otelgrpc
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go-contrib.git
   module: go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace
   ref:
-    go-version: v0.69.0
-    git-ref: instrumentation/net/http/httptrace/otelhttptrace/v0.69.0-0-g03b2bcdb54b3dde73c9ff91ae216aec262f6c8f5
+    go-version: v0.70.0
+    git-ref: instrumentation/net/http/httptrace/otelhttptrace/v0.70.0-0-gc8a87a60ba1b3374fd16df11fc3eeae6c41abbc9
     explicit: True
     subdirectory: instrumentation/net/http/httptrace/otelhttptrace
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc
   ref:
-    go-version: v1.44.0
-    git-ref: exporters/otlp/otlpmetric/otlpmetricgrpc/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: exporters/otlp/otlpmetric/otlpmetricgrpc/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: exporters/otlp/otlpmetric/otlpmetricgrpc
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp
   ref:
-    go-version: v1.44.0
-    git-ref: exporters/otlp/otlpmetric/otlpmetrichttp/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: exporters/otlp/otlpmetric/otlpmetrichttp/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: exporters/otlp/otlpmetric/otlpmetrichttp
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/exporters/otlp/otlptrace
   ref:
-    go-version: v1.44.0
-    git-ref: exporters/otlp/otlptrace/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: exporters/otlp/otlptrace/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: exporters/otlp/otlptrace
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
   ref:
-    go-version: v1.44.0
-    git-ref: exporters/otlp/otlptrace/otlptracegrpc/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: exporters/otlp/otlptrace/otlptracegrpc/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: exporters/otlp/otlptrace/otlptracegrpc
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp
   ref:
-    go-version: v1.44.0
-    git-ref: exporters/otlp/otlptrace/otlptracehttp/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: exporters/otlp/otlptrace/otlptracehttp/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: exporters/otlp/otlptrace/otlptracehttp
 - kind: go_module
   url: github:open-telemetry/opentelemetry-go.git
   module: go.opentelemetry.io/otel/sdk/metric
   ref:
-    go-version: v1.44.0
-    git-ref: sdk/metric/v1.44.0-0-gb62d92831b2dd142f5a0cc89c828270274196877
+    go-version: v1.45.0
+    git-ref: sdk/metric/v1.45.0-0-g93a693edeed0e07ce5ebd1dfe67af42d1e2055d8
     explicit: True
     subdirectory: sdk/metric
 - kind: go_module
   url: github:open-telemetry/opentelemetry-proto-go.git
   module: go.opentelemetry.io/proto/otlp
   ref:
-    go-version: v1.10.0
-    git-ref: otlp/v1.10.0-0-g5abb227a3efbfea092a8db5b89a8a9e59117cee1
+    go-version: v1.11.0
+    git-ref: otlp/v1.11.0-0-gbc625d6e040020737ab65c675c87e03bc841fd60
     explicit: True
     subdirectory: otlp
 - kind: go_module
@@ -1566,8 +1566,8 @@ sources:
   url: github:golang/net.git
   module: golang.org/x/net
   ref:
-    go-version: v0.57.0
-    git-ref: v0.57.0-0-gb8f09f6f062ceb4531b7af4bd17a5c8fe9c4b2b5
+    go-version: v0.58.0
+    git-ref: v0.58.0-0-gacc78e0d2b2c855c0c4fbdcfe5f42a9e3d0f9778
     explicit: True
 - kind: go_module
   url: github:golang/oauth2.git
@@ -1587,15 +1587,15 @@ sources:
   url: github:golang/tools.git
   module: golang.org/x/tools
   ref:
-    go-version: v0.47.0
-    git-ref: v0.47.0-0-gfbf9f2e2c8124fbe1877f5ed2857111038d9fe12
+    go-version: v0.49.0
+    git-ref: v0.49.0-0-g18332fec72972efbb8ab9881984fec2d8cfc2b58
     explicit: True
 - kind: go_module
   url: github:googleapis/go-genproto.git
   module: google.golang.org/genproto/googleapis/api
   ref:
-    go-version: v0.0.0-20260526163538-3dc84a4a5aaa
-    git-ref: 3dc84a4a5aaa87331e10f51e22e90d961f986894
+    go-version: v0.0.0-20260803160001-6ac0973c030d
+    git-ref: 6ac0973c030de548f6a485902facf1e906a58fbf
     explicit: True
     subdirectory: googleapis/api
 - kind: go_module
@@ -1611,7 +1611,7 @@ sources:
   ref:
     go-version: v3.0.1
     git-ref: v3.0.1-0-gf6f7691b1fdeb513f56608cd2c32c51f8194bf51
-    explicit: True
+    explicit: False
 - kind: go_module
   url: github:kubernetes/klog.git
   module: k8s.io/klog/v2
@@ -1630,8 +1630,8 @@ sources:
   url: github:kubernetes/streaming.git
   module: k8s.io/streaming
   ref:
-    go-version: v0.36.0
-    git-ref: v0.36.0-0-gfbcf184e52bfd8a40d46311b494493c287fd6d05
+    go-version: v0.36.3
+    git-ref: v0.36.3-0-gfbcf184e52bfd8a40d46311b494493c287fd6d05
     explicit: True
 - kind: go_module
   url: github:kubernetes/utils.git
@@ -1658,8 +1658,8 @@ sources:
   url: github:kubernetes-sigs/structured-merge-diff.git
   module: sigs.k8s.io/structured-merge-diff/v6
   ref:
-    go-version: v6.3.2
-    git-ref: v6.3.2-0-gd9cc6641c48292946e838bfc3b9bf7c297526757
+    go-version: v6.3.3
+    git-ref: v6.3.3-0-g3083adaae18bccebcdd781ef0e34cd5af7ab6b70
     explicit: True
 - kind: go_module
   url: github:kubernetes-sigs/yaml.git
