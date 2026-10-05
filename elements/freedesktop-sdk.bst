@@ -12,6 +12,9 @@ sources:
   path: patches/freedesktop-sdk
 
 config:
+  overrides:
+    components/extra-cmake-modules.bst: kde/extra-cmake-modules.bst
+    components/appstream.bst: components/appstreamqt.bst
   options:
     target_arch: '%{arch}'
     (?):
