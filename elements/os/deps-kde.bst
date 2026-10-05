@@ -62,6 +62,8 @@ depends:
 - components/py-setproctitle.bst
 - components/qcoro.bst # konsole
 - components/libqalculate.bst # krunner
+- components/qtkeychain.bst 
+- components/appstreamqt.bst 
 - qt.bst
 - components/xsettingsd.bst # needed by kwin for X11 apps to get the right theme, font, scale etc.
 - components/ddcutil.bst # requested by powerdevil

@@ -1,0 +1,14 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 99ff755..7257c31 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -52,6 +52,9 @@ dependencies = [
+ ]
+ dynamic = ['version', 'readme']
+ 
++[tool.hatch.build.targets.wheel]
++require-runtime-dependencies = true
++
+ [project.optional-dependencies]
+ email = ['email-validator>=2.0.0']
+ timezone = [
