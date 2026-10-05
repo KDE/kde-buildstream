@@ -1,0 +1,212 @@
+# This file controls options to apply when configuring/building projects, and controls which projects are built in the first place.
+# List of all options: https://kde-builder.kde.org/en/configuration/conf-options-table.html
+
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
+
+# WARNING: do not name this file .yaml it would get used as-is by kde-builder in PWD.
+# We want to change some values programatically though!
+
+config-version: 2
+global:
+  branch-group: latest-kf6
+
+  # Build dependencies. We usually want to install them from fedora but in this case the should compile all the KDE Stack because of mismatches.
+  include-dependencies: true
+
+  source-dir: /builder/src  # Directory for downloaded source code
+  build-dir: /builder/build  # Directory to build KDE into before installing
+  # qt-install-dir: ~/kde/qt  # Directory to install Qt if kde-builder supplies it
+  log-dir: /run/host/kde-builder-logs  # Directory to write logs into
+
+  # Tell kde-builder to use /usr/ as the configure location, but later
+  # we'll actually install everything into ~/kde/ which is the source
+  # for our system extension, so all the files end up at /usr/ anyway.
+  # This somewhat roundabout process is done because we want the
+  # configure paths to be /usr/ to prevent issues from paths differing
+  # between system and source-built stuff.
+  install-dir: /usr/
+
+  # BuildStream installs this element into /buildstream-install while
+  # kde-builder configures projects with /usr as their install prefix. Make
+  # dependencies built earlier in this same kde-builder run visible to later
+  # projects, while keeping staged system dependencies visible under /usr.
+  set-env:
+    PKG_CONFIG_PATH: /buildstream-install/usr/lib/pkgconfig:/buildstream-install/usr/lib/x86_64-linux-gnu/pkgconfig:/buildstream-install/usr/share/pkgconfig:/usr/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig
+    PATH: /buildstream-install/usr/bin:/usr/bin:/bin
+    LD_LIBRARY_PATH: /buildstream-install/usr/lib:/buildstream-install/usr/lib/x86_64-linux-gnu
+    XDG_DATA_DIRS: /buildstream-install/usr/share:/usr/share
+    QML_IMPORT_PATH: /buildstream-install/usr/lib/qml:/usr/lib/qml
+    QML2_IMPORT_PATH: /buildstream-install/usr/lib/qml:/usr/lib/qml
+
+  # Build RelWithDebInfo because that's our standard thing
+  # Use system Qt paths to prevent issues
+  # Don't build docs because we don't ship them in KDE Linux
+  # Don't build Python bindings because we don't yet include their
+  #   dependencies out of the box
+  # Merge libexec and lib, like the base OS does
+  # Use ccache for compilation to further avoid unnecessary work
+  cmake-options: >
+    -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+    -DBUILD_HTML_DOCS=OFF
+    -DBUILD_MAN_DOCS=OFF
+    -DBUILD_TESTING=OFF
+    -DBUILD_PYTHON_BINDINGS=OFF
+    -DWITH_PYTHON_VENDORING=ON
+    -DBUILD_QCH=OFF
+    -DCMAKE_INSTALL_LIBEXECDIR=lib
+    -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
+    -DCMAKE_PREFIX_PATH=/buildstream-install/usr
+    -DCMAKE_FIND_ROOT_PATH=/buildstream-install
+
+  # kde-builder sets 2 options which is used in options like make-options or set-env
+  # to help manage the number of compile jobs that happen during a build:
+  #
+  # 1. num-cores, which is just the number of detected CPU cores, and can be passed
+  #    to tools like make (needed for parallel build) or ninja (completely optional).
+  #
+  # 2. num-cores-low-mem, which is set to the largest value that appears safe for
+  #    particularly heavyweight projects based on total memory, intended for
+  #    projects like qtwebengine.
+  num-cores: "auto"
+  num-cores-low-mem: "auto"
+
+  # Don't install login session files since we're already building
+  # everything to the final location
+  install-login-session: false
+
+  # Stop the build process on the first failure. If set to false, when kde-builder
+  # encounters a build failure, it will attempt to continue building other projects,
+  # using libraries from the system in cases where they would otherwise be provided
+  # by a project that has failed to build.
+  # Unless your system has very up-to-date packages, this is probably not what you want.
+  stop-on-failure: true
+
+  # Use a flat folder layout under ~/kde/src and ~/kde/build
+  # rather than nested directories
+  directory-layout: flat
+
+  # Use Ninja as cmake generator
+  cmake-generator: Ninja
+
+  # Build with LSP support for everything that supports it
+  compile-commands-linking: false
+  compile-commands-export: false
+
+  # Generate .idea config files in project directories
+  # Enable this if you want to use CLion for development
+  generate-clion-project-config: false
+
+  # Generate .vscode config files in project directories
+  # Enable this if you want to use Visual Studio Code for development
+  generate-vscode-project-config: false
+
+  # Generate copy-pastable files for manual qtcreator config creation
+  # Enable this if you want to use Qt Creator for development
+  generate-qtcreator-project-config: false
+
+  # Show a message when kde-builder detects it is outdated.
+  check-self-updates: false
+
+  # Projects that are not supported or needed on KDE Linux
+  ignore-projects:
+
+  # gpgmepp master depends on an unreleased gpgme (2.1.3). Use freedesktop-sdk's
+  - gpgmepp
+
+  # PackageKit integration not needed (avoid showing pacman packages)
+  - packagekit-qt
+
+  # Not supported on immutable distros like KDE Linux
+  - plymouth-kcm
+
+  # We use KOnlineAccounts instead of kaccounts-integration
+  - kaccounts-integration
+
+  # Google killed it
+  - kio-gdrive
+
+  # Work around https://invent.kde.org/sdk/kde-builder/-/issues/197
+  - kde-vdg-extras
+
+  # Old themes/sounds – KDE Linux focuses on modern appearance
+  - oxygen
+  - oxygen-icons
+  - oxygen-sounds
+
+  # Not relevant for a full desktop environment
+  - plasma-nano
+
+  # We use plasma-login-manager (includes its own KCM)
+  - sddm-kcm
+
+  # Only CLI support for Snap, no KCM needed
+  - snap-kcm
+
+# With base options set, the remainder of the file is used to define projects to build, in the
+# desired order, and set any project-specific options.
+
+# This line includes build configs that are provided in build-configs dir in repo-metadata.
+# https://invent.kde.org/sysadmin/repo-metadata/-/tree/master/build-configs
+# KDE Builder automatically updates repo-metadata, so you are always using an up-to-date configs.
+include ${build-configs-dir}/kde6.yaml: ""
+
+# ===============================================================================================
+# Starting from here, you can add your custom projects and override options for defined projects.
+# ===============================================================================================
+
+#  To change options for projects that have already been defined, use an "override" node.
+#  Example:
+#
+#    override qt6-set:
+#      branch: dev
+#
+#  To define a project with some options, use "project" node.
+#  Example:
+#
+#    project some-app:
+#      repository: https://github.com/YourUser/YourProject.git
+
+override discover:
+    cmake-options: -DBUILD_SystemdSysupdateBackend=ON
+
+override kdoctools:
+    cmake-options: -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/ -DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/
+
+# qca: have to specify all of these directories because USE_RELATIVE_PATHS doesn't affect includes
+override qca:
+    cmake-options: >
+      -DUSE_RELATIVE_PATHS=ON
+      -DBUILD_WITH_QT6=ON
+
+override plasma-login-manager:
+    cmake-options: -DPAM_OS_CONFIGURATION=kde-linux
+
+override kwallet-pam:
+    cmake-options: -DKWALLETD_BIN_PATH=/usr/bin/ksecretd
+
+# Kapsule is only enabled for KDE Linux because it's still experimental
+override konsole:
+    cmake-options: -DWITH_KAPSULE=ON
+
+override kdeconnect-kde:
+    cmake-options: -DWITH_X11=OFF
+
+override appstream:
+    # Something is causing wonky rpath resolution which then leads the qt tests to find the library from LD_LIBRARY_PATH
+    # and fail to link if they expect a symbol that isn't yet available in the build that is installed in the PATH.
+    # Force disable the variable; appstream builds fine without it anyway
+    set-env:
+        LD_LIBRARY_PATH: ""
+    meson-options: --libdir=lib/@GNU_TRIPLET@ -Dqt=true -Ddocs=false -Dapidocs=false -Dman=false
+
+override drkonqi:
+    cmake-options: -DWITH_PYTHON_VENDORING=OFF
+
+override kapsule:
+    cmake-options: -DVENDOR_PYTHON_DEPS=OFF
+
+override plasma-wayland-protocols:
+    # temporary for https://invent.kde.org/libraries/plasma-wayland-protocols/-/merge_requests/139
+    cmake-options: -DQT_MAJOR_VERSION=6 -DBUILD_WITH_QT6=ON
