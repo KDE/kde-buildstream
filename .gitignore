@@ -3,3 +3,5 @@
 
 /.bst/
 __pycache__/
+.cmake-traces/
+.pytest_cache/
