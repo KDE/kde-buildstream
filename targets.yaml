@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
+
+targets:
+  - ark
+  - appstream
+  - auto-chmod
+  - clazy
+  - dolphin
+  - dolphin-plugins
+  - ffmpegthumbs
+  - heaptrack
+  - kapsule
+  - kdeconnect-kde
+  - kdegraphics-thumbnailers
+  - kde-inotify-survey
+  - kdenetwork-filesharing
+  - kdsoap
+  - kdialog
+  - kimageformats
+  - kio-admin
+  - kio-fuse
+  - kio-gdrive
+  - plasma-setup
+  - plasma-wayland-protocols
+  - konlineaccounts
+  - konsole
+  - kpmcore
+  - kup
+  - package-compatibility-helper
+  - partitionmanager
+  - pulseaudio-qt
+  - qtkeychain
+  - selenium-webdriver-at-spi
+  - spectacle
+  - workspace
