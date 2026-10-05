@@ -13,7 +13,9 @@ sources:
 
 config:
   overrides:
+    components/appstream.bst: components/appstreamqt.bst
     components/at-spi2-core.bst: components/at-spi2-core.bst
+    components/extra-cmake-modules.bst: kde/extra-cmake-modules.bst
   options:
     target_arch: '%{arch}'
     (?):
