@@ -20,5 +20,5 @@ sources:
   - '*rc*'
   - '*beta*'
   - '*alpha*'
-  ref: 490f4cb496ac1db9f675dae7bad689f676a8256f
+  ref: 69b2604fc76e370615438bdc8d2cd95b9349c12e
   ref-format: sha1
