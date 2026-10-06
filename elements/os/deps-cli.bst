@@ -97,3 +97,5 @@ depends:
 - components/yubikey-manager.bst # CLI tools for managing Yubikey hardware authenticators
 - components/xerces-c.bst # xerces-c: optional make dependency for syntax-highlighting
 - components/mkosi.bst
+- components/inxi.bst
+
