@@ -22,4 +22,5 @@ fi
 bst build \
     components/**.bst \
     os/**.bst \
-    qt/**.bst
+    qt/**.bst \
+    tests/**.bst
