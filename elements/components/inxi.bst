@@ -13,7 +13,7 @@ depends:
 
 config:
   install-commands:
-  - install -Dm 00755 inxi "%{install-root}/bin/inxi"
+  - install -Dm 00755 inxi "%{install-root}%{bindir}/inxi"
 
 sources:
 - kind: tar
