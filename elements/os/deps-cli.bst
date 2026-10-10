@@ -99,4 +99,5 @@ depends:
 - components/mkosi.bst
 - components/inxi.bst
 - components/psmisc.bst # openqa needs fuser
+- freedesktop-sdk-extra.bst:components/uv.bst # For kde-builder and pre-commit
 
