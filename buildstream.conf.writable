@@ -24,6 +24,23 @@ projects:
           auth:
             access-token: /tmp/bst-cache-token
         - url: https://freedesktop.buildstream.cache.kde-linux.haraldsitter.eu
+  freedesktop-sdk-extra:
+    artifacts:
+      override-project-caches: true
+      servers:
+        - url: https://buildstream.cache.kde-linux.haraldsitter.eu:11002
+          push: true
+          auth:
+            access-token: /tmp/bst-cache-token
+        - url: https://freedesktop.buildstream.cache.kde-linux.haraldsitter.eu
+    source-caches:
+      override-project-caches: true
+      servers:
+        - url: https://buildstream.cache.kde-linux.haraldsitter.eu:11002
+          push: true
+          auth:
+            access-token: /tmp/bst-cache-token
+        - url: https://freedesktop.buildstream.cache.kde-linux.haraldsitter.eu
   gnome:
     # - Augment gnome with our own caches as well so that we can catch objects that have fallen out of the remote cache or aren't there yet.
     # - As a fallback try to use our proxy cache for gnome
