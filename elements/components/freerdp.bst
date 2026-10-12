@@ -11,7 +11,7 @@ sources:
   exclude:
   - '*rc*'
   - '*beta*'
-  ref: 3.32.1-0-gbf217a504e54cc719880c228e82353382cd7d4fa
+  ref: 3.32.2-0-g97eff6ddfbbfaa8e42a126d362686bd001ff8bdc
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst

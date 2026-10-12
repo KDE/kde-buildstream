@@ -35,7 +35,7 @@ sources:
   exclude:
   - vendor/adb/rustfmt.toml
   ref:
-    version: 37.0.0
-    sha256sum: 2725d09f892a3a38e534429f47a321f58ecf6a3169caa42c915fb2cb7d46be0e
+    version: 37.0.0p1
+    sha256sum: 2c6de1abe16b211c7d9f59276217e14fd9e0e18b20e331d3c84358f5dffd576e
 - kind: patch
   path: elements/components/patch/android-tools-37.0.0-protobuf-36.patch

@@ -23,4 +23,4 @@ sources:
   exclude:
   - '*rc*'
   - '*beta*'
-  ref: 1.4.3-RC1-0-g16db741dff5986a8f66ce6c9409937b70feb0730
+  ref: 1.4.4-0-gddda911f389362fc33ba3babf223ce912f3cc909
