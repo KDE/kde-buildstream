@@ -16,14 +16,15 @@ depends:
 - freedesktop-sdk.bst:components/pygobject.bst
 - freedesktop-sdk.bst:components/itstool.bst
 - freedesktop-sdk-extra.bst:components/speech-dispatcher.bst
+- components/python-dasbus.bst
 - components/sonic.bst
 
 sources:
 - kind: git_repo
   url: https://gitlab.gnome.org/GNOME/orca.git
-  track: '48.*'
+  track: '*[02468].*'
   exclude:
   - '*rc*'
   - '*beta*'
   - '*alpha*'
-  ref: 48.9-0-g4b964097f586446b3c74a98d0d309fb4b87ceb70
+  ref: 50.3-0-g911b5c87b643bdc575776dd5f33c4d2e1dab7734

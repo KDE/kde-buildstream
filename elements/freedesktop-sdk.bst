@@ -12,6 +12,8 @@ sources:
   path: patches/freedesktop-sdk
 
 config:
+  overrides:
+    components/at-spi2-core.bst: components/at-spi2-core.bst
   options:
     target_arch: '%{arch}'
     (?):
