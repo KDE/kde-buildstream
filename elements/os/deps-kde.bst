@@ -68,3 +68,4 @@ depends:
 
 # KDE Linux needs GCC and such installed so that it can build calamares
 - components/yamlcpp.bst
+- freedesktop-sdk-extra.bst:components/opensc.bst # smartcard support
