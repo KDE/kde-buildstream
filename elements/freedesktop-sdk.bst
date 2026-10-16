@@ -30,9 +30,17 @@ sources:
   element: elements/components/_private/shim.bst
   extra-config: files/junction-overrides/shim.yml
 
+- kind: element_overlay
+  element: elements/components/appstream.bst
+  extra-config: files/junction-overrides/appstream.yml
+  dependency-slots:
+  - elements/downstream/qtbase.bst
+
 config:
   overrides:
     components/at-spi2-core.bst: components/at-spi2-core.bst
+    downstream/qtbase.bst: qt/qtbase.bst
+
   options:
     target_arch: '%{arch}'
     (?):

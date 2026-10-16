@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleix.pol@codethink.co.uk>
+# SPDX-License-Identifier: BSD-2-Clause
+
+depends:
+  (>):
+  - downstream/qtbase.bst
+
+config:
+  configure-commands:
+    (=):
+    - '%{meson} -Dqt=true'
