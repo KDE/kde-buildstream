@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2026 Harald Sitter <sitter@kde.org>
+# SPDX-License-Identifier: BSD-2-Clause
+
+variables:
+  meson-local: >-
+    -Dmode=release
+    -Dauto_features=disabled
+    -Daudit=disabled
+    -Dseccomp=disabled
+    -Dsystem-uid-max=999
+    -Dsystem-gid-max=999
+    -Dusers-gid=100
+    -Dopenssl=enabled
+    -Dpam=enabled
+    -Dbootloader=disabled
+    -Defi=false
+    -Dfirstboot=true
+    -Dzlib=enabled
+    -Dbzip2=enabled
+    -Dxz=enabled
+    -Dlz4=enabled
+    -Ddefault-dnssec=no
+    -Drepart=disabled
+    -Dman=disabled
+    -Dhtml=disabled
+    -Dlibcryptsetup=disabled
+    -Dlibcryptsetup-plugins=disabled
+    -Dp11kit=disabled
+    -Dlibfido2=disabled
+    -Dbpf-framework=disabled
+    -Dapparmor=disabled
+    -Dxenctrl=disabled
+    -Dmicrohttpd=disabled
+    -Dlibmount=enabled

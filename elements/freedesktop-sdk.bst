@@ -17,9 +17,15 @@ sources:
 - kind: local
   path: files/freedesktop-sdk/files/shim/sbat.kde-linux.csv
   directory: files/shim
+- kind: local
+  path: include/sources/systemd.yml
+  directory: elements/include
 - kind: element_overlay
   element: elements/components/_private/systemd-base.bst
   extra-config: files/junction-overrides/systemd.yml
+- kind: element_overlay
+  element: elements/components/_private/systemd-stage1.bst
+  extra-config: files/junction-overrides/systemd-stage1.yml
 - kind: element_overlay
   element: elements/components/linux.bst
   extra-config: files/junction-overrides/linux.yml

@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleixpol@kde.org>
+# SPDX-License-Identifier: BSD-2-Clause
+
+sources:
+- kind: git_repo
+  url: github:systemd/systemd.git
+  track: v*
+  exclude:
+  - '*rc*'
+  ref: v262.1-0-g73612ea502d53baf9b0df4336cfc296a7ee0d524
+  version-guess-pattern: '(\d+)(?:\.(\d+))?'
