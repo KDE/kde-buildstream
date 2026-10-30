@@ -15,9 +15,12 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 sources:
-- kind: anitya
-  project-id: 67946
-  url: 'github:Yubico/yubikey-manager/releases/download/{version}/yubikey_manager-{version}.tar.gz'
-  ref:
-    version: 5.9.2
-    sha256sum: 9584c7377449e6487140da6c3f13a289e618b0023c8414be91c1c212fce3c473
+- kind: git_repo
+  url: github:Yubico/yubikey-manager.git
+  track: '[0-9]*'
+  exclude:
+  - '*a*'
+  - '*b*'
+  - '*rc*'
+  - '*dev*'
+  ref: 5.9.2-0-g60ab055dd34b6384bdd4ceb85a38d36bc15ce58a
