@@ -23,4 +23,4 @@ sources:
   exclude:
   - '*rc*'
   - '*pre*'
-  ref: v2.15.10-0-g88369b42ec523787081b9bf8811b364e2a3d5f2d
+  ref: v2.5.13-0-g5fdc5bbca7f8c3f5bb2ad6540e8211a159a88a3a

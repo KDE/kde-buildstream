@@ -6,8 +6,8 @@ Subject: [PATCH 1/4] modify kernel for kde linux
 ---
  elements/components/linux.bst |   19 +
  files/linux/config-utils.sh   |    7 +-
- files/linux/fdsdk-config.sh   | 3077 ++++++++++++++++++++++++++++++++-
- 3 files changed, 3099 insertions(+), 4 deletions(-)
+ files/linux/fdsdk-config.sh   | 3074 ++++++++++++++++++++++++++++++++-
+ 3 files changed, 3096 insertions(+), 4 deletions(-)
 
 diff --git a/elements/components/linux.bst b/elements/components/linux.bst
 index 447565c62..8312011a5 100644
@@ -102,10 +102,10 @@ index 90d6d0a91..01db9cce6 100644
  module CNIC
 -module NET_VENDOR_BROADCOM
 +enable NET_VENDOR_BROADCOM
- if has PCMCIA; then
-     module PCMCIA_XIRCOM
- fi
-@@ -2814,2 +2818,3069 @@
+ module FEALNX
+ module I40E
+ module I40EVF
+@@ -2814,2 +2818,3066 @@
  # Needed and/or helpful for graphics and multimedia (e.g. libcamera and mesa).
  enable UDMABUF
 +
@@ -952,7 +952,6 @@ index 90d6d0a91..01db9cce6 100644
 +module IAQCORE
 +module IB700_WDT
 +module IBMASR
-+module IBM_ASM
 +module IBM_RTL
 +module ICS932S401
 +module IDPF
@@ -1115,7 +1114,6 @@ index 90d6d0a91..01db9cce6 100644
 +module IPVTAP
 +module IPW2100
 +module IPW2200
-+module IPWIRELESS
 +enable IP_FIB_TRIE_STATS
 +enable IP_MROUTE_MULTIPLE_TABLES
 +module IP_NF_IPTABLES
@@ -2216,7 +2214,6 @@ index 90d6d0a91..01db9cce6 100644
 +module SENSORS_POWR1220
 +module SENSORS_PT5161L
 +module SENSORS_PWM_FAN
-+module SENSORS_SBTSI
 +module SENSORS_SHT15
 +module SENSORS_SHT4x
 +module SENSORS_SHTC1

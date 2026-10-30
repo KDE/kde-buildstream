@@ -24,4 +24,4 @@ sources:
 - kind: git_repo
   url: github:fsfe/reuse-tool
   track: 'v*'
-  ref: v6.2.0-0-ga1bb792acda6fd0724936b4ebbdbc8eceb9c0459
+  ref: v6.3.0-0-gea739bff9c6daa1c4c8a5c5dfd069f3fb0374728

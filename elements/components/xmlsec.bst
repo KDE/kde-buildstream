@@ -6,6 +6,9 @@ kind: autotools
 
 description: XML Security Library is a C library based on LibXML2
 
+environment:
+  enable_hardening: 'no'
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 
@@ -19,5 +22,5 @@ sources:
   project-id: 5200
   url: 'github:lsh123/xmlsec/releases/download/{version}/xmlsec1-{version}.tar.gz'
   ref:
-    version: 1.3.12
-    sha256sum: 24045199af12d93fe5fdbbbf7e386e823e4842071e9432e2b90ac108b889a923
+    version: 1.3.13
+    sha256sum: 7e500061eed734c55d74c786998e7562e55b1aaa72a2dff8ce3130b4c5b832d5

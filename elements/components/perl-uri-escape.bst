@@ -7,8 +7,8 @@ sources:
 - kind: cpan
   index: 'cpan:'
   name: 'URI::Escape'
-  suffix: authors/id/O/OA/OALDERS/URI-5.38.tar.gz
-  sha256sum: 6cd49ac0bba005842458ea17a2f5b58c146f3884b846c91aecf2cec4320dc6bf
+  suffix: authors/id/O/OA/OALDERS/URI-5.40.tar.gz
+  sha256sum: ef5d2ef099a1a24a6e83ffe543de73337805d3d39c00b84fa205d725ad1a1b63
 
 depends:
 - freedesktop-sdk.bst:sdk.bst

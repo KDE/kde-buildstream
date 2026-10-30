@@ -27,7 +27,7 @@ sources:
   - '*beta*'
   - '*alpha*'
   - '*dev*'
-  ref: 5.5.3-0-gdb0ec62f81b0737fbbe184d8fea40af5738f8eef
+  ref: 5.5.4-0-g7e548e6eff172f38f97664afe7f7ce40db36c8d6
 config:
   build-commands:
     (>):

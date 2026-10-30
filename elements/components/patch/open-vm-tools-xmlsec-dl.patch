@@ -1,0 +1,13 @@
+Include the header declaring xmlSecCryptoDLLoadLibrary explicitly.
+
+diff --git a/open-vm-tools/vgauth/serviceImpl/saml-xmlsec1.c b/open-vm-tools/vgauth/serviceImpl/saml-xmlsec1.c
+--- a/open-vm-tools/vgauth/serviceImpl/saml-xmlsec1.c
++++ b/open-vm-tools/vgauth/serviceImpl/saml-xmlsec1.c
+@@ -37,6 +37,7 @@
+ #include <xmlsec/xmltree.h>
+ #include <xmlsec/xmldsig.h>
+ #include <xmlsec/templates.h>
++#include <xmlsec/dl.h>
+ #include <xmlsec/crypto.h>
+ #include <xmlsec/errors.h>
+ 

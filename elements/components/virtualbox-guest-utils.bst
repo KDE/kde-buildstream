@@ -15,8 +15,8 @@ sources:
   project-id: 14449
   url: 'https://download.virtualbox.org/virtualbox/{version}/VirtualBox-{version}.tar.bz2'
   ref:
-    version: 7.2.20
-    sha256sum: 5c2138213b72f36c129b92c2c267f2a40e9c98513f4c86a584327f09f9be706d
+    version: 7.2.22
+    sha256sum: 440a2b3eeb46e7e992961b70ef24f43e95b3c99fa2ab30aac20b963ef9e91ad7
 - kind: remote
   url: https://gitlab.archlinux.org/archlinux/packaging/packages/virtualbox/-/raw/main/virtualbox-host-dkms.conf?ref_type=heads
   ref: f753501352054576c510aa81e83f4935079ea620e601057784b02b4d4d1eeb04

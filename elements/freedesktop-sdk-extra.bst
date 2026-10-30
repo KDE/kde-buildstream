@@ -7,7 +7,7 @@ sources:
 - kind: git_repo
   url: gitlab:freedesktop-sdk/freedesktop-sdk-extra.git
   track: main
-  ref: freedesktop-sdk-extra-26.08.2-79-gc3f90c650ce8bd16a6de8fa3504a7f17cee88c1b
+  ref: freedesktop-sdk-extra-26.08.4-21-g02bf8e6ac70456f972f07439e59c7eb2261b333b
 
 config:
   options:

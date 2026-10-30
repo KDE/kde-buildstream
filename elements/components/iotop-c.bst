@@ -26,4 +26,4 @@ sources:
 - kind: git_repo
   url: github:Tomas-M/iotop.git
   track: 'v*'
-  ref: v1.31-0-g57890d671ba69ebc4a619a1cfe7d76cdd3d836a8
+  ref: v1.33-0-gef5088a660f0b112369fff7643b844fb1e98c2ea

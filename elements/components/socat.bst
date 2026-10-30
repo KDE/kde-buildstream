@@ -23,4 +23,4 @@ sources:
   track: tag-*
   exclude:
   - "*-b[0-9]*"
-  ref: tag-1.8.1.3-0-g12c08bf66d709fba17035ce95d85bd218428d9ba
+  ref: tag-1.8.1.2-0-gd44cd1cc4fbb70a9ae9e71890024ae8367fcb912

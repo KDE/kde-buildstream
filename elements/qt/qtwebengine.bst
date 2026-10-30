@@ -67,15 +67,13 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 variables:
-  cmake-local: '-DQT_FEATURE_webengine_system_icu=ON -DQT_FEATURE_webengine_proprietary_codecs=ON
-    -DQT_FEATURE_webengine_kerberos=ON -DQT_FEATURE_webengine_webrtc_pipewire=ON
+  cmake-local: '-DQT_FEATURE_webengine_system_icu=ON -DQT_FEATURE_webengine_proprietary_codecs=ON -DQT_FEATURE_webengine_kerberos=ON -DQT_FEATURE_webengine_webrtc_pipewire=ON
 
-    # -DQT_FEATURE_webengine_system_re2=ON # -DQT_FEATURE_webengine_system_ffmpeg=ON
-    # -DQT_FEATURE_webengine_system_openh264=ON'
+    # -DQT_FEATURE_webengine_system_re2=ON # -DQT_FEATURE_webengine_system_ffmpeg=ON # -DQT_FEATURE_webengine_system_openh264=ON'
 sources:
 - kind: anitya
   project-id: 239861
   url: qt:{major}.{minor}/{version}/submodules/qtwebengine-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.2
-    sha256sum: 6101c1aa00ff933d1b65ee5d167f76e8d71b9ac5b378b0111277723ebda7c163
+    version: 6.11.3
+    sha256sum: 4f4701b4976d90571e67557f2c12cbfee8c64ecc8295430236921cae2f9f43ca

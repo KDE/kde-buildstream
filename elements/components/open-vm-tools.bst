@@ -43,3 +43,5 @@ sources:
   ref: stable-13.1.0-0-g50cede15e10a21ab919f5ad2961ae0a1840a1911
 - kind: patch
   path: elements/components/patch/open-vm-tools-glibc-2.43.patch
+- kind: patch
+  path: elements/components/patch/open-vm-tools-xmlsec-dl.patch
