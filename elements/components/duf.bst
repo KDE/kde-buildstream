@@ -24,81 +24,56 @@ sources:
   url: github:muesli/duf.git
   track: v*
   ref: v0.9.1-0-gb2f01a1ecbfd1af63015b83296c50a95260f97b1
-- kind: go_module
-  url: github:IGLOU-EU/go-wildcard.git
-  module: github.com/IGLOU-EU/go-wildcard
+- kind: go_mod_vendor
   ref:
-    go-version: v1.0.3
-    git-ref: v1.0.3-0-g5269b048c3023f5e5e10500274aebaa20b3c312b
-- kind: go_module
-  url: github:aymanbagabas/go-osc52.git
-  module: github.com/aymanbagabas/go-osc52/v2
-  ref:
-    go-version: v2.0.1
-    git-ref: v2.0.1-0-gce73587a0f72cf077e55f163e71ea1b5496a133c
-- kind: go_module
-  url: github:jedib0t/go-pretty.git
-  module: github.com/jedib0t/go-pretty/v6
-  ref:
-    go-version: v6.6.8
-    git-ref: v6.6.8-0-g3c86af826bbe2883c693e0ff28b0fdd4fc3a9846
-- kind: go_module
-  url: github:lucasb-eyer/go-colorful.git
-  module: github.com/lucasb-eyer/go-colorful
-  ref:
-    go-version: v1.2.0
-    git-ref: v1.2.0-0-gd2b05a0d83cca9d610425691c3253d5f36d0ad06
-- kind: go_module
-  url: github:mattn/go-isatty.git
-  module: github.com/mattn/go-isatty
-  ref:
-    go-version: v0.0.20
-    git-ref: v0.0.20-0-ga7c02353c47bc4ec6b30dc9628154ae4fe760c11
-- kind: go_module
-  url: github:mattn/go-runewidth.git
-  module: github.com/mattn/go-runewidth
-  ref:
-    go-version: v0.0.16
-    git-ref: v0.0.16-0-g6ceadc68530e7bfea8cba17d6523bed32912d4fa
-- kind: go_module
-  url: github:muesli/mango.git
-  module: github.com/muesli/mango
-  ref:
-    go-version: v0.2.0
-    git-ref: v0.2.0-0-g50407234dce52e233c96b748504890cf11d2706d
-- kind: go_module
-  url: github:muesli/roff.git
-  module: github.com/muesli/roff
-  ref:
-    go-version: v0.1.0
-    git-ref: v0.1.0-0-g273d76dfb27f763ed9a86826be7c55520d46672b
-- kind: go_module
-  url: github:muesli/termenv.git
-  module: github.com/muesli/termenv
-  ref:
-    go-version: v0.16.0
-    git-ref: v0.16.0-0-g2e6fa35162bb1c735367736319813b2dc01a77a4
-- kind: go_module
-  url: github:rivo/uniseg.git
-  module: github.com/rivo/uniseg
-  ref:
-    go-version: v0.4.7
-    git-ref: v0.4.7-0-g03509a98a092b522b2ff0de13e53513d18b3b837
-- kind: go_module
-  url: github:golang/sys.git
-  module: golang.org/x/sys
-  ref:
-    go-version: v0.35.0
-    git-ref: v0.35.0-0-g5b936e1f126baa13682eff91c2e4d5d9e3a0b71d
-- kind: go_module
-  url: github:golang/term.git
-  module: golang.org/x/term
-  ref:
-    go-version: v0.34.0
-    git-ref: v0.34.0-0-ga35244d18d7756b12deca31a518c0fa1327d050a
-- kind: go_module
-  url: github:golang/text.git
-  module: golang.org/x/text
-  ref:
-    go-version: v0.22.0
-    git-ref: v0.22.0-0-g3b64043c9e8fa8cd61a019df17dc729630915fa9
+  - module: github.com/IGLOU-EU/go-wildcard
+    version: v1.0.3
+    sha256sum: fabf7a28a76606b3aa9c9ef54a0f59cb9b5fdbd9e3dcb40fa55786beebd39416
+  - module: github.com/aymanbagabas/go-osc52/v2
+    version: v2.0.1
+    sha256sum: 939ebf2a5481f2172e1a5e0c318d05aef5b6d950a960556216c3da7879a927f8
+  - module: github.com/davecgh/go-spew
+    version: v1.1.1
+    sha256sum: 6b44a843951f371b7010c754ecc3cabefe815d5ced1c5b9409fb2d697e8a890d
+  - module: github.com/jedib0t/go-pretty/v6
+    version: v6.6.8
+    sha256sum: cb4a3eec0a13d23f986d76e479f9400789fb40844ef0ecd1f2174212dc7aa0e9
+  - module: github.com/lucasb-eyer/go-colorful
+    version: v1.2.0
+    sha256sum: 78d5d0e0737f0f54bbed77b6dfa847d8c871bed2668a9dc44328c7c3411ada10
+  - module: github.com/mattn/go-isatty
+    version: v0.0.20
+    sha256sum: f2d5f89ca451577e17464b9bb596dc0d0ecececb5eaa63622c41b57cd0b7b8cc
+  - module: github.com/mattn/go-runewidth
+    version: v0.0.16
+    sha256sum: 179d2d900c76ee3560fbeda60d0237a3be6acb734d0cb7423b55e5ccb0cedbca
+  - module: github.com/muesli/mango
+    version: v0.2.0
+    sha256sum: a95275afdeaf6ac18526e5574d0814a3425a468849fdbfbfca5893fc775da32d
+  - module: github.com/muesli/roff
+    version: v0.1.0
+    sha256sum: 9fd6265f0207b4af5786049c728c0ed9844b83cab8c0bfe419c49378dc08a173
+  - module: github.com/muesli/termenv
+    version: v0.16.0
+    sha256sum: ba02d3ebd9c1d87e2c2133b1f2bb61a7001b3765196e8016029ce9fe54c5c0fc
+  - module: github.com/pmezard/go-difflib
+    version: v1.0.0
+    sha256sum: de04cecc1a4b8d53e4357051026794bcbc54f2e6a260cfac508ce69d5d6457a0
+  - module: github.com/rivo/uniseg
+    version: v0.4.7
+    sha256sum: b995e4aa0cc1e5779cc61138ac925cb8c1e963e40c80e4b93ee8553812ebb792
+  - module: github.com/stretchr/testify
+    version: v1.10.0
+    sha256sum: 36c87573527a97ce97fc15ce2a101e65e5ebb350db142d09f633580cb8d5c839
+  - module: golang.org/x/sys
+    version: v0.35.0
+    sha256sum: dc3c20611168aaa8fda0d71999be1a5222a0ba57bc767c978a590e41ff2ede35
+  - module: golang.org/x/term
+    version: v0.34.0
+    sha256sum: 22281cbf30560433d57de8d72c1151f9cac2917795dc6e9f694f7a525bb5309c
+  - module: golang.org/x/text
+    version: v0.22.0
+    sha256sum: 939cb4c202aa8fa302f2ba6f9d29165ce82fce9c665d9a1a0bb0d9e51b79e6f5
+  - module: gopkg.in/yaml.v3
+    version: v3.0.1
+    sha256sum: aab8fbc4e6300ea08e6afe1caea18a21c90c79f489f52c53e2f20431f1a9a015
