@@ -31,4 +31,4 @@ sources:
   exclude:
   - '*rc*'
   - '*beta*'
-  ref: 3.0.0b2-0-gefbd1427c883a32f43cad4b81af60c80bbf4cce6
+  ref: 3.0.0b3-0-gde3377ddd331bbc372d9a0229a87dabbb4715dab

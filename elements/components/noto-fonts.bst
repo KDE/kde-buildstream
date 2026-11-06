@@ -28,4 +28,4 @@ sources:
 - kind: git_repo
   url: github:notofonts/notofonts.github.io.git
   track: 'noto-monthly-release-*'
-  ref: noto-monthly-release-2026.10.01-0-g025970232f4f8ff349310d9785431e87d20ed27c
+  ref: noto-monthly-release-2026.11.01-0-g412a7edb2c8c535d1066157e5b17e661fd5591fe

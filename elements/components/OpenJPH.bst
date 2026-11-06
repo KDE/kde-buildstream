@@ -14,5 +14,5 @@ sources:
 - url: https://github.com/aous72/OpenJPH.git
   kind: git_repo
   track: '*.*.*'
-  ref: 23c422895ce6c3a156935222e4715ee0b7be952c
+  ref: 345a8bcd1c7a3908e3870797057277660a412073
   ref-format: sha1

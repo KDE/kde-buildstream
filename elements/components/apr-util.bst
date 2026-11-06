@@ -27,5 +27,5 @@ sources:
   project-id: 96
   url: 'https://downloads.apache.org/apr/apr-util-{version}.tar.bz2'
   ref:
-    version: 1.6.5
-    sha256sum: 96de1dd6f6a0476d2d2e7964926d8c1ddc3bb0e210e1b1812d3ba5a454a392e2
+    version: 1.6.6
+    sha256sum: aa77dd25f036731b7246abbfbebe6cc813b42799b62c874bc82bd4e1f90f2918
