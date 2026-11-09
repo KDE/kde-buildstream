@@ -89,6 +89,7 @@ depends:
 - components/lsof.bst
 - components/mcfly.bst # mcfly: Fancy shell history searching
 - components/nvtop.bst # nvtop: Fancy GPU monitoring
+- components/nvidia-container-toolkit.bst # NVIDIA GPU support for OCI containers
 - components/procs.bst # procs: Opinionated fancy ps
 - components/tldr.bst # tldr: mini-manpages
 - components/trash-cli.bst # trash-cli: safer way to remove files from the CLI
