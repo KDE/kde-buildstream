@@ -16,7 +16,7 @@ sources:
   url: github:snowballstem/snowball.git
   track: v*
 
-  ref: v3.1.1-0-gcd195b51e948a902a4312f023f4a14392516a543
+  ref: v3.2.0-0-g6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11
 config:
   build-commands:
   - make

@@ -17,7 +17,7 @@ sources:
 - kind: git_repo
   url: github:inotify-tools/inotify-tools.git
   track: '*'
-  ref: 4.26.270-0-ge763f493f0746bf548ef0374fce76a3fd226025a
+  ref: 4.26.275-0-gfada1e98322cf1e088e5cd31bfd33a21693cd84c
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

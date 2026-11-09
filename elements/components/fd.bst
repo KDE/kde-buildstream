@@ -23,7 +23,7 @@ sources:
 - kind: git_repo
   url: github:sharkdp/fd.git
   track: 'v*'
-  ref: v10.5.1-0-g193d0df1d0ad455e44506953a2cd80428203ff35
+  ref: v10.5.2-0-gb2a287b3993768e0ec52f0852916917f23fb2a38
 - kind: cargo2
   cargo-lock: Cargo.lock
   ref:

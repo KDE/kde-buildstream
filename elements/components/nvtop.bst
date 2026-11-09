@@ -30,4 +30,4 @@ sources:
 - kind: git_repo
   url: github:Syllo/nvtop.git
   track: '*'
-  ref: 3.3.2-0-g76890233d759199f50ad3bdb57a0c0988e96fc44
+  ref: 3.4.0-0-gfbe10276768919657ea608e48b92569727d67c99
