@@ -10,7 +10,9 @@ depends:
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/zstd.bst
+- freedesktop-sdk.bst:components/llvm.bst
 - qt/qtbase.bst
+- qt/qtdeclarative.bst
 environment:
   INSTALL_ROOT: '%{install-root}'
   FLATPAK_DEST: '%{prefix}'
