@@ -15,8 +15,11 @@ environment:
   SKIP_CYTHON: '1'
 
 sources:
-- kind: tar
-  url: https://files.pythonhosted.org/packages/aa/db/b621610e50b1bc46ff63534d75239553c1bf33256de6096b58214fd9808a/dbus_fast-5.0.22.tar.gz
-  ref: 34dc67d7d21a12399828dd13e63b352750580beea54ea7c729e708f2d2905fef
+- kind: pypi
+  name: dbus-fast
+  url: 'pypi:'
+  ref:
+    sha256sum: 34dc67d7d21a12399828dd13e63b352750580beea54ea7c729e708f2d2905fef
+    suffix: aa/db/b621610e50b1bc46ff63534d75239553c1bf33256de6096b58214fd9808a/dbus_fast-5.0.22.tar.gz
 - kind: patch # remove once dbus-fast accepts Cython 3.4.0
   path: patches/python3-dbus-fast/remove-cython-build-requirement.patch
