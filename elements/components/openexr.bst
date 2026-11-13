@@ -6,6 +6,8 @@ kind: cmake
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+
+depends:
 - components/openexr-imath.bst
 - components/OpenJPH.bst
 

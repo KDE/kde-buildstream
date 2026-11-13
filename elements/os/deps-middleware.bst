@@ -41,3 +41,7 @@ depends:
 - components/unrar.bst # unrar: ark, for RAR decompression support
 - components/xdg-desktop-portal-gtk.bst # xdg-desktop-portal-gtk: GTK/Flatpak icon settings syncing
 - components/dmidecode.bst # inxi uses it to inspect the hardware configuration
+- components/libmtp.bst # MTP device access for kio-extras
+- components/editorconfig-core-c.bst # EditorConfig support for KTextEditor
+- components/libutempter.bst # Terminal session accounting for Konsole
+- components/libzip.bst # ZIP archive support
