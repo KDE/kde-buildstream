@@ -10,8 +10,10 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-python-setuptools.bst
 
 depends:
+- components/python3-dotenv.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/python3.bst
+- freedesktop-sdk.bst:components/python3-pyyaml.bst
 
 sources:
 - kind: git_repo
