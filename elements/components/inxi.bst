@@ -16,7 +16,10 @@ config:
   - install -Dm 00755 inxi "%{install-root}%{bindir}/inxi"
 
 sources:
-- kind: tar
-  url: https://codeberg.org/smxi/inxi/archive/3.3.41-1.tar.gz
-  ref: e08d92550a0f10890e722cc7db1e6d6cbde7e9fb47e61a8c6cec51f54a0b63d8
+- kind: anitya
+  project-id: 10526
+  url: 'codeberg:smxi/inxi/archive/{version}.tar.gz'
+  ref:
+    version: 3.3.41-1
+    sha256sum: e08d92550a0f10890e722cc7db1e6d6cbde7e9fb47e61a8c6cec51f54a0b63d8
 
