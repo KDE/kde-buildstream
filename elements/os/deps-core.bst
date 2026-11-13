@@ -18,7 +18,6 @@ depends:
 - freedesktop-sdk.bst:components/udisks.bst
 - freedesktop-sdk.bst:vm/mesa-default.bst # mesa: HW enablement for graphics
 - freedesktop-sdk.bst:vm/base-filesystem.bst
-- freedesktop-sdk.bst:vm/config/journald.bst
 - freedesktop-sdk.bst:vm/config/useradd-default.bst
 - freedesktop-sdk.bst:vm/config/systemd-homed-firstboot.bst
 - freedesktop-sdk.bst:components/hosts.bst
