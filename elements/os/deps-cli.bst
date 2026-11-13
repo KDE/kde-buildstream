@@ -4,6 +4,7 @@
 kind: stack
 
 depends:
+- components/7zip.bst # Ark's ZIP and 7z backend
 - freedesktop-sdk.bst:components/iproute2.bst # iproute2: Basic networking tools
 - freedesktop-sdk.bst:components/usbutils.bst # usbutils: `lsusb` and other useful troubleshooting tools
 - freedesktop-sdk.bst:components/bash-completion.bst # bash-completion: Completions for Bash
@@ -101,4 +102,3 @@ depends:
 - components/inxi.bst
 - components/psmisc.bst # openqa needs fuser
 - freedesktop-sdk-extra.bst:components/uv.bst # For kde-builder and pre-commit
-
