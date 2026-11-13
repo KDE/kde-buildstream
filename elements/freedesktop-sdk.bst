@@ -13,6 +13,7 @@ sources:
 
 config:
   overrides:
+    components/_private/systemd-base.bst: components/systemd-base.bst
     components/at-spi2-core.bst: components/at-spi2-core.bst
   options:
     target_arch: '%{arch}'
