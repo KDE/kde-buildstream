@@ -45,3 +45,4 @@ depends:
 - components/editorconfig-core-c.bst # EditorConfig support for KTextEditor
 - components/libutempter.bst # Terminal session accounting for Konsole
 - components/libzip.bst # ZIP archive support
+- components/libvips.bst # appstream composer depends on it
