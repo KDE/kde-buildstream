@@ -62,6 +62,10 @@ depends:
 - components/py-setproctitle.bst
 - components/qcoro.bst # konsole
 - components/libqalculate.bst # krunner
+- components/anthy.bst # plasma-keyboard
+- components/libchewing.bst # plasma-keyboard
+- components/libhangul.bst # plasma-keyboard
+- components/libpinyin.bst # plasma-keyboard
 - qt.bst
 - components/xsettingsd.bst # needed by kwin for X11 apps to get the right theme, font, scale etc.
 - components/ddcutil.bst # requested by powerdevil
