@@ -43,6 +43,7 @@ depends:
 - components/tesseract.bst # Spectacle OCR
 - freedesktop-sdk-extra.bst:components/libgit2.bst # kup
 - components/libssh.bst # konsole
+- components/sshfs.bst # kdeconnect: browse phone storage
 - components/freerdp.bst # krdp
 - components/boost.bst
 - components/exiv2.bst
