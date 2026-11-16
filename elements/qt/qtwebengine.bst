@@ -36,8 +36,6 @@ depends:
 - freedesktop-sdk.bst:components/openjpeg.bst
 - freedesktop-sdk.bst:components/opus.bst
 - freedesktop-sdk.bst:components/pciutils.bst
-- freedesktop-sdk.bst:components/rust-bindgen.bst
-- freedesktop-sdk.bst:components/rust.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
@@ -67,7 +65,7 @@ public:
         - '%{prefix}/bin'
         - '%{prefix}/bin/**'
 variables:
-  cmake-local: '-DQT_FEATURE_webengine_system_icu=ON -DQT_FEATURE_webengine_proprietary_codecs=ON -DQT_FEATURE_webengine_kerberos=ON -DQT_FEATURE_webengine_webrtc_pipewire=ON
+  cmake-local: '-DQT_FEATURE_webengine_rust_build=OFF -DQT_FEATURE_webengine_system_icu=ON -DQT_FEATURE_webengine_proprietary_codecs=ON -DQT_FEATURE_webengine_kerberos=ON -DQT_FEATURE_webengine_webrtc_pipewire=ON
 
     # -DQT_FEATURE_webengine_system_re2=ON # -DQT_FEATURE_webengine_system_ffmpeg=ON # -DQT_FEATURE_webengine_system_openh264=ON'
 sources:
