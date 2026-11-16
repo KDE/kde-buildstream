@@ -1,23 +1,21 @@
 # SPDX-FileCopyrightText: 2026 Aleix Pol Gonzalez <aleixpol@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-kind: manual
+kind: make
 
 description: Fish shell-like syntax highlighting for zsh
 
+build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
+
 depends:
-- freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
 - components/zsh.bst
 
 variables:
   strip-binaries: ''
-
-config:
-  install-commands:
-  - install -Dm644 zsh-syntax-highlighting.zsh
-    "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-  - cp -a highlighters
-    "%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting/"
+  make-args: >-
+    PREFIX="%{prefix}"
+    SHARE_DIR="%{install-root}%{datadir}/zsh/plugins/zsh-syntax-highlighting"
 
 sources:
 - kind: git_repo
