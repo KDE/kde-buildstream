@@ -24,7 +24,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtimageformats-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtimageformats-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 0943132b5db8de6b6a7f1d162682173e8763c7ed94e80fd39113292845f67762

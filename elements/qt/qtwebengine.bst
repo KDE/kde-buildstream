@@ -73,7 +73,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 239861
-  url: qt:{major}.{minor}/{version}/submodules/qtwebengine-everywhere-src-{version}.tar.xz
+  url: qt:qtwebengine/{major}.{minor}/{version}/src/qtwebengine-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.11.3
-    sha256sum: 4f4701b4976d90571e67557f2c12cbfee8c64ecc8295430236921cae2f9f43ca
+    version: 6.140.0
+    sha256sum: 82352854a1d01dfe6abeefaf023554e4722c1d7df48ba3ce0078f6c0a9c7e1a3

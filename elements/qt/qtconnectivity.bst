@@ -25,7 +25,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtconnectivity-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtconnectivity-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: ed51f7f02c1f437fcf8a42940c7a84f6c0908c0ec7a4f5a5304fe68f47521954

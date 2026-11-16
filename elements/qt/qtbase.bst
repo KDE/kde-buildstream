@@ -70,7 +70,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtbase-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtbase-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307

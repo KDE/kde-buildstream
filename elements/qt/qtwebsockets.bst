@@ -23,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtwebsockets-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtwebsockets-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 21690a365cd5fbfa8dea051473e98968df9f4eca0121fed7481d1215b7455a31

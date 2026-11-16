@@ -24,7 +24,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtquick3dphysics-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtquick3dphysics-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 8ddb23147e4677c759d36a65ae50f6b0d0d79fa8590ac89576b91f572918b481

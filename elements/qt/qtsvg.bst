@@ -22,7 +22,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtsvg-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtsvg-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: e4ab39534ec97987b1b9b60ef7f4d3253d5912a69f8c713a01753174a4029331

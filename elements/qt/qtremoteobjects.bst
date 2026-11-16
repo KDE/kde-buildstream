@@ -25,7 +25,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtremoteobjects-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtremoteobjects-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 54faf680f7cc84d7f54ae9bd5f98255e5d2d7ab2d6f4d0464a3fbe50f8a55509

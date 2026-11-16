@@ -23,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtquicktimeline-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtquicktimeline-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 6919153c841478c113f0ad20526f40e606590968334762ec6ccbc96002f8da19

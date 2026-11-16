@@ -24,7 +24,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtgraphs-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtgraphs-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 18c4e968785447051d94b01f8e3c975e31ddc46065c0777443cecc50753a4d8c

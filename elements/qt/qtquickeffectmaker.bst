@@ -25,7 +25,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtquickeffectmaker-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtquickeffectmaker-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 290c8c3c9835e9d3991cbf7e8fe965992c8f7c8730e694f7cf90fb719c2c63ac

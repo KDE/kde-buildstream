@@ -23,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtpositioning-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtpositioning-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: b060d410fac7413b05a0e7938bbf3325f7ad08d7df14af3956270f0696e76763

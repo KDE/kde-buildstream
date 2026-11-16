@@ -28,7 +28,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtdeclarative-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtdeclarative-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 311f3a2603e1973bb59baef9dfa740a376de713157d4782ee043681e889c9260

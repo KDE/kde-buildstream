@@ -25,7 +25,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtspeech-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtspeech-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 9a60ce5bee54a9343740feab2582bffb996812f43d6c5585aade26dbd04933db

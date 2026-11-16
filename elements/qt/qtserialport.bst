@@ -23,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtserialport-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtserialport-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: ba8886a54eee466e57c9fa1341255cc09c462c84baab3ee7b19d67cdbcbd71c3

@@ -23,7 +23,7 @@ public:
 sources:
 - kind: anitya
   project-id: 7927
-  url: qt:{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz
+  url: qt:qt/{major}.{minor}/{version}/submodules/qtvirtualkeyboard-everywhere-src-{version}.tar.xz
   ref:
     version: 6.12.0
     sha256sum: 2aae3628f4648f86959d7853e7e1f50ee96a7f1bb5497afb62b7deff6c350170
