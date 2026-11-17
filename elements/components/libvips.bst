@@ -12,6 +12,19 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/expat.bst
 - freedesktop-sdk.bst:components/glib.bst
+# image formats, appstream compose needs at least png
+- freedesktop-sdk.bst:components/cairo.bst
+- freedesktop-sdk.bst:components/fontconfig.bst
+- freedesktop-sdk.bst:components/jpeg.bst
+- freedesktop-sdk.bst:components/lcms.bst
+- freedesktop-sdk.bst:components/libarchive.bst
+- freedesktop-sdk.bst:components/libpng.bst
+- freedesktop-sdk.bst:components/libtiff.bst
+- freedesktop-sdk.bst:components/libwebp.bst
+- freedesktop-sdk.bst:components/openjpeg.bst
+- freedesktop-sdk.bst:components/pango.bst
+- components/libRaw.bst
+- components/openexr.bst
 
 sources:
 - kind: git_repo
