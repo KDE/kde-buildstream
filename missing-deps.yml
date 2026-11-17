@@ -1,0 +1,88 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
+
+# Things cmake/meson don't find that we're fine without, checked by tools/check-missing-deps.py.
+# components/foo.bst:
+# - Bar  # why
+components/appmenu-gtk-module.bst:
+- gtk+-2.0
+- systemd
+components/at-spi2-core.bst:
+- dbus-broker-launch
+components/dbus-broker.bst:
+- libdbus-typenum
+components/fastfetch.bst:
+- Python
+components/fprintd.bst:
+- dbus-1
+components/freerdp.bst:
+- PCSC
+- SNDIO
+- uriparser
+components/gammaray.bst:
+- KF6CoreAddons
+- KF6SyntaxHighlighting
+- Qt6QmlCompilerPlusPrivateTools
+- libdwarf
+components/kmscon.bst:
+- dbus-1
+- glesv2
+- systemd
+components/libfprint.bst:
+- appstreamcli
+components/libnma.bst:
+- gck-1
+- gcr-base-3
+components/libssh.bst:
+- GSSAPI
+- NaCl
+- Python
+components/libvips.bst:
+- cfitsio
+- fftw3
+- g-ir-scanner
+- imagemagick
+- imagequant
+- libexif
+- libheif
+- libhwy
+- libjxl
+- libjxl_threads
+- librsvg-2.0
+- libuhdr
+- magickcore
+- matio
+- nifti
+- niftiio
+- openslide
+- orc-0.4
+- pdfium
+- poppler-glib
+- quantizr
+components/libzip.bst:
+- MbedTLS
+components/lldb.bst:
+- LibEdit
+- LibXml2
+- LuaAndSwig
+- PythonAndSwig
+- SWIG
+components/orca.bst:
+- gtk4-update-icon-cache
+- python3 (brlapi)
+- python3 (gi.repository.Wnck)
+- python3 (louis)
+- python3 (psutil)
+- systemd
+components/powertop.bst:
+- bash-completion
+components/switcheroo-control.bst:
+- libdrm_amdgpu
+- libdrm_nouveau
+qt/qtgraphs.bst:
+- Qt6CanvasPainter
+- Qt6CanvasPainterPrivate
+qt/qtgrpc.bst:
+- protobuf
+qt/qtwebchannel.bst:
+- Qt6WebSockets

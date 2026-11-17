@@ -24,3 +24,5 @@ bst build \
     os/**.bst \
     qt/**.bst \
     tests/**.bst
+
+python3 tools/check-missing-deps.py
