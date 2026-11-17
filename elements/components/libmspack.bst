@@ -21,4 +21,4 @@ sources:
   track: 'v*'
   exclude:
   - '*alpha*'
-  ref: v1.11-0-g305907723a4e7ab2018e58040059ffb5e77db837
+  ref: v1.12-0-g3434c093c6d5b4ab0c95ad1247e7449271bd03d3

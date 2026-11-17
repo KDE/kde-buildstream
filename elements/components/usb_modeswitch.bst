@@ -27,5 +27,5 @@ sources:
   project-id: 5059
   url: 'http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-{version}.tar.bz2'
   ref:
-    version: 2.6.2
-    sha256sum: f7abd337784a9d1bd39cb8a587518aff6f2a43d916145eafd80b1b8b7146db66
+    version: 2.6.3
+    sha256sum: cddb987af80eca5bc9c364dc0ccd0e2b788de4d28626d017277a48c06b0453b6

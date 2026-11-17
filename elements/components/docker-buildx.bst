@@ -25,7 +25,7 @@ sources:
   track: 'v*'
   exclude:
   - "*rc*"
-  ref: v0.38.2-0-g3c4cbd35852fc1a476923627a780a7836c28b654
+  ref: v0.39.0-0-g360040a78d6113dc84e5d4dcdf0f438e1be7a41f
 - kind: go_mod_vendor
   ref:
   - module: cloud.google.com/go
@@ -77,8 +77,8 @@ sources:
     version: v1.2.0
     sha256sum: fea8b9a6517633da1b023698f9be20868fa21ef5886847bc9a939fbac89c7dee
   - module: github.com/Azure/go-ansiterm
-    version: v0.0.0-20250102033503-faa5f7b0171c
-    sha256sum: 53babc36db77d2d8af41cf86bddcf6203747335054c26b44165a6725c5455c34
+    version: v0.0.0-20261006220739-8c912ac31dd4
+    sha256sum: 45663c6a24203cf66741357e00445071a705f700c01ff1e70f947114070ae28c
   - module: github.com/AzureAD/microsoft-authentication-library-for-go
     version: v1.7.0
     sha256sum: bb6dabca00ee01efafe642c55110d35bd28e9619cebeef604e4d6e6237ea73ca
@@ -86,11 +86,11 @@ sources:
     version: v3.4.0
     sha256sum: 20cf1a0cf1820860c47cb87a0daa1422824e39ca15f47bb59a52b33bce31a239
   - module: github.com/Microsoft/go-winio
-    version: v0.6.3-0.20251027160822-ad3df93bed29
-    sha256sum: 6507326885292057ef1bf96a9d6a9300b1695f88a49b34f77fcfdf2a219c276c
+    version: v0.6.4
+    sha256sum: 0bb0285b68150970584752c9792137af693579c51ae5ff9c082d031f5b9cfdf1
   - module: github.com/Microsoft/hcsshim
-    version: v0.15.0-rc.4
-    sha256sum: 1a6d05fdeefddeb80e3e1823236bdd6b407ac5486532a1367d170c51973c355a
+    version: v0.15.0
+    sha256sum: 4528b0c6c830d94c1ffecb149f2714e72af1f497b843e5b590006939b38028bd
   - module: github.com/ProtonMail/go-crypto
     version: v1.4.1
     sha256sum: 70bbdc0f9e926738193aed968f7901efab41493752277c4c94c9b751aa55c42a
@@ -122,38 +122,38 @@ sources:
     version: v0.0.0-20230301143203-a9d515a09cc2
     sha256sum: 0f8ec67bbc585d29ec115c0885cef6f2431a422cc1cc10008e466ebe8be5dc37
   - module: github.com/aws/aws-sdk-go-v2
-    version: v1.47.0
-    sha256sum: 86316f5160d058070acc82beb4225ee9c3bd0244826cd650506eeb805be8864c
+    version: v1.47.5
+    sha256sum: 586beecd9a9546e74afae343991ceec70be412bf8333bd20d265a95d0a65bc3b
   - module: github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream
-    version: v1.7.20
-    sha256sum: bd715c4dd8a605f44bdde484e0b59eb43815040d948527d61da01792977ff9ec
+    version: v1.7.25
+    sha256sum: 498a22fd97e2a07bd3f5446a0e494acc72f1702124560ad2864d661fcc44c3f2
   - module: github.com/aws/aws-sdk-go-v2/config
-    version: v1.33.4
-    sha256sum: 41306bc516b134dcac08e28e6624922af733907ce83cd0250e6260576ea167de
+    version: v1.33.13
+    sha256sum: bbf27a294c780f2dcf222526319b3d1dbd024d0690d33507c48473725640a441
   - module: github.com/aws/aws-sdk-go-v2/credentials
-    version: v1.20.4
-    sha256sum: 57e4b1f6efe01f818e665d35800328e2d98b8cc5c2efebaa69c10984c9cf2d31
+    version: v1.20.13
+    sha256sum: 0d4b068d3c9c578df5c95ded2294051787e169c304888099379e36b66c8589a6
   - module: github.com/aws/aws-sdk-go-v2/feature/ec2/imds
-    version: v1.20.0
-    sha256sum: a7e436ec8ab20d8debc95681b7c7915c39c098c3b7e38a84a32a10a903859584
+    version: v1.20.5
+    sha256sum: c3c0d2e16219530b33d1d507d8f73d83a843d351c61607f0a988c1c1f56c5407
   - module: github.com/aws/aws-sdk-go-v2/internal/configsources
-    version: v1.5.3
-    sha256sum: 03061e5b669d0809ef0b96bf9bc14a8ed822a648932f9634783d3b93e1c709a1
+    version: v1.5.8
+    sha256sum: 545852f29780df3bc0bb366adb6303921c6801cd5348c847e196ef71460644bb
   - module: github.com/aws/aws-sdk-go-v2/internal/endpoints/v2
-    version: v2.8.3
-    sha256sum: 34cdeb5d32175e9e7d3c9d9bfb4f0aaf1e7fc112efb1e40dd52cc74d0e71abb2
+    version: v2.8.8
+    sha256sum: a95d0b86a52687b0db638e7595ed6b399f06664f16cbef78956dce5be3210b7f
   - module: github.com/aws/aws-sdk-go-v2/internal/v4a
-    version: v1.5.3
-    sha256sum: ae2c3903b5ce6d2363da1743cc4e3fe4364cdcdd7358cbc6b29e7075404f2e43
+    version: v1.5.8
+    sha256sum: e2a5c526808b8afa7e0973cfb0dbe0716726fdd1d337bca49f1839aea0947c20
   - module: github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding
-    version: v1.13.19
-    sha256sum: cd55f71c785b8d9b08ae8eeb8d9803e38a4c6f4905c1cf9ff54a30f1cd5c858d
+    version: v1.13.23
+    sha256sum: 40bc2073cff29fda941d9b9f5dfb0179987ff1aaef33351258bff85eb38fb665
   - module: github.com/aws/aws-sdk-go-v2/service/internal/checksum
     version: v1.9.28
     sha256sum: aac3a9736ca1de77a4d533f755dc33b9969ca3bba56705a55f4081eaa808fdb8
   - module: github.com/aws/aws-sdk-go-v2/service/internal/presigned-url
-    version: v1.14.3
-    sha256sum: 80eb7bb3b353f93ba38c961750ec5e350bd07d68907dc76c8ea24705c75fa4a8
+    version: v1.14.8
+    sha256sum: 7c8fd7fa87c8d2c7e5b837f079a4e80f8ca4746d7625e49d0a4ce85e2efa842f
   - module: github.com/aws/aws-sdk-go-v2/service/internal/s3shared
     version: v1.19.36
     sha256sum: 0135568c0f618af560e4d7382537e030f65ec668a367d7ffec4d2f7f9c21cfb8
@@ -164,20 +164,20 @@ sources:
     version: v1.106.5
     sha256sum: 8356be140dca513460d336d2846ec9866c1512a78d8634e55d22ec30fa7efc84
   - module: github.com/aws/aws-sdk-go-v2/service/signin
-    version: v1.10.0
-    sha256sum: ae52f22eb436d1790b68553ea46067ab481d894bfc3b2349cd7561305dec8b4c
+    version: v1.12.1
+    sha256sum: f42b65a6c9edfa122325463bccef6477e8c64f161526d903ce3e4995bf31bb64
   - module: github.com/aws/aws-sdk-go-v2/service/sso
-    version: v1.38.0
-    sha256sum: c479a781b8f851a9e86c272c7fb96a83e17229f07cae05addfd8574ae373f414
+    version: v1.39.1
+    sha256sum: c3ff8f6688ac975dd4279830a89003e2731540b368f16e6563312220358e9bfb
   - module: github.com/aws/aws-sdk-go-v2/service/ssooidc
-    version: v1.43.0
-    sha256sum: 5b04bfe49ef9d167539bcbb4b4a9d768ea7baf6237e79bd6d8b005a3a336db7e
+    version: v1.44.1
+    sha256sum: fd8291dcb325c6bacd945a4728ceaeb5de011848d5afba19c4441503631f104f
   - module: github.com/aws/aws-sdk-go-v2/service/sts
-    version: v1.50.0
-    sha256sum: 2a6519448722ff283eb3324dd3873aa71f955900edc5f5b0b27d577afb588d9c
+    version: v1.51.6
+    sha256sum: 66cfdb68e115c695a130a8c13cdc07a98eb5783188394dabb7e038d029c99b59
   - module: github.com/aws/smithy-go
-    version: v1.28.2
-    sha256sum: 53b42a5130c244491eb4e48f098948b1148a3862ba6ba16761d67f001b55a9b9
+    version: v1.28.8
+    sha256sum: e49de683d654b4fe326200b2ce475f2575c6f91b449d040c3aa9dd76e099f1fb
   - module: github.com/beorn7/perks
     version: v1.0.1
     sha256sum: 25bd9e2d94aca770e6dbc1f53725f84f6af4432f631d35dd2c46f96ef0512f1a
@@ -245,11 +245,11 @@ sources:
     version: v1.1.0
     sha256sum: e1f803ef59e9194c5a092c37dd8d34a2e0c7a5c6c7afb6b04c4344b452b73c84
   - module: github.com/containerd/stargz-snapshotter
-    version: v0.18.2
-    sha256sum: 5d71cd438767e0de7d8540e18db1827c574cc86beb6b89591a9a850dfa0b640f
+    version: v0.19.1
+    sha256sum: 792f8cd939dfd063ab99244bb0290db7a3529dea3da6d696e04f6ae3e93060e5
   - module: github.com/containerd/stargz-snapshotter/estargz
-    version: v0.18.2
-    sha256sum: 3ba05758c81ad89701d66bb34a9025e688d3e6b58784c2cbb4c6adfbae574435
+    version: v0.19.1
+    sha256sum: 1354b7104fa510c2dbedca3d09855d919ca98077207679f8140f865a69b69cd9
   - module: github.com/containerd/ttrpc
     version: v1.2.10
     sha256sum: fb8d872f79e4d79bee2bcd88031db0a7cdb512fb59f390a4a0bb97275e82acbb
@@ -299,8 +299,8 @@ sources:
     version: v1.11.0
     sha256sum: 2a93432600feacb866669789bb7910ff283e1af764fcd03d70c6592f9619aeb4
   - module: github.com/docker/cli
-    version: v29.8.2+incompatible
-    sha256sum: 1c30bdd4f2ff12806ad00a5f47e8a0e7f70fec1e3381e2974f4457223fcf92f2
+    version: v29.9.3+incompatible
+    sha256sum: ecdee197c312b3dfb29d6de9c9c3a27d39bfd2dc2063b8d23dadecce76e92d79
   - module: github.com/docker/cli-docs-tool
     version: v0.11.0
     sha256sum: b4802747380da9db5270f53b4e403f04570a37c3d24323cfa1ae52e911b40d4c
@@ -356,80 +356,80 @@ sources:
     version: v1.2.2
     sha256sum: 9dd6893bf700198485ae699640b49bc1efbc6c73b37cb5792a0476e1fd8f7fef
   - module: github.com/go-openapi/analysis
-    version: v0.25.5
-    sha256sum: 78ed5b158531cce2705f3759e3d2551278324962c266b1781ad787ec590124be
+    version: v1.0.0
+    sha256sum: 806361b020a8dbfb202bc5d104f1008dff307c6dcf4edc757d372fa10914560b
   - module: github.com/go-openapi/errors
-    version: v0.22.8
-    sha256sum: 29105371e583abec5440063d20b77c67f67bf6b017c959c88934a5da6e65ae92
-  - module: github.com/go-openapi/jsonpointer
-    version: v1.0.0
-    sha256sum: 403cc887595921a24880a173862ea95b7c46f0747725d7b75c31165e0647e157
-  - module: github.com/go-openapi/jsonreference
-    version: v1.0.0
-    sha256sum: 381714f9c672c76e573155e6e6fb38ab1ccceafba6163d672a52d4460a999f5b
-  - module: github.com/go-openapi/loads
-    version: v0.25.0
-    sha256sum: 309d12a74ca10eacfe6d73a3b1f91a7fd4c5d30609bddb48afb05e101c3ac361
-  - module: github.com/go-openapi/runtime
-    version: v0.33.0
-    sha256sum: 2dd8da0f7ef92b99af6d02a682214373252b862120dbbb5692699a2f29e44bcf
-  - module: github.com/go-openapi/runtime/server-middleware
-    version: v0.30.0
-    sha256sum: afc8dcdb7add7673b1a89215cd419d15d84bfeb1f62da9162c55b5a3fe736e58
-  - module: github.com/go-openapi/spec
     version: v0.22.9
-    sha256sum: e99c84955b8268d1552d5a77ccaec6a9c92c5c397aeaa52ee693636b6be5cafd
+    sha256sum: 051d8685c61791cb57083da18eff3639f0a00dc4357c28b1598b675cf29bcc59
+  - module: github.com/go-openapi/jsonpointer
+    version: v1.0.1
+    sha256sum: 2a65a7a48df16e1b477b11050552d6a32c2bedf8d10e2819be4a42b3fa3a77e9
+  - module: github.com/go-openapi/jsonreference
+    version: v1.0.1
+    sha256sum: dc2be0608d3cf77b585d4f531279a3c9bb63b1a28c8fcf61b9eb6706ab1e93e1
+  - module: github.com/go-openapi/loads
+    version: v0.25.2
+    sha256sum: 8efa2be3c1070b3a3c66b03eeb2d31a62b544265a3590731ca7953bd2c9be2b0
+  - module: github.com/go-openapi/runtime
+    version: v0.33.2
+    sha256sum: b311910b83746fd99f6d7d96488dca1f50b029f80e62e2c87848ae85d409121a
+  - module: github.com/go-openapi/runtime/server-middleware
+    version: v0.33.2
+    sha256sum: 4b979778ffe7bb804c89df0c06f79d7b9cd5935d875674de2a1d89dfbb3ca608
+  - module: github.com/go-openapi/spec
+    version: v1.0.0
+    sha256sum: ae99668764b3eb2c8c403989890032e5789d57b1a992d80e80c57c2876f1f61f
   - module: github.com/go-openapi/strfmt
-    version: v0.27.0
-    sha256sum: 6e830c668d22047156cd9d1e991e9e2603a55fd2fbd7331ee2e4691e9646797e
+    version: v0.27.2
+    sha256sum: 5b84d226d9c9945448ab0dccf8201f9ba108478472fd446b1392c43dd8a4943d
   - module: github.com/go-openapi/swag
-    version: v0.28.0
-    sha256sum: 3d8ca6e12ec2e0ca5e14be6f2688cfb3005878b799d42fbe3828e293d375dd5b
+    version: v0.29.2
+    sha256sum: 7eb932c6e8d2c65399cb0ce05ac07ed6890e8be8f89f0e14c3633c13b9e6b5c1
   - module: github.com/go-openapi/swag/cmdutils
-    version: v0.28.0
-    sha256sum: ec8d7c8093e697ab5aa09eb1c7644bc02f9bb48d2cd00278a1c851001c6f82c4
+    version: v0.29.2
+    sha256sum: 9d3718108fe466f6939a02798e77610850bd3972b26bb4be767277b80a74491a
   - module: github.com/go-openapi/swag/conv
-    version: v0.28.0
-    sha256sum: 0869a899afe4cdc64843f06a45cc9fe4feddb47be187e223730ffe4b57de854b
+    version: v0.29.2
+    sha256sum: 40f074336f5332566d1e591fef0213e1f5b66a056c529f23a742f00c48e9a98b
   - module: github.com/go-openapi/swag/fileutils
-    version: v0.28.0
-    sha256sum: 282c501d0d2f2539c5ea0ae18fcd0b3b544d958b91b483404426717610ffcacb
+    version: v0.29.2
+    sha256sum: 0df6e2bf0df5203870aefb951288b75edae2982c5ce7c74847e3f4ecfbe288b2
   - module: github.com/go-openapi/swag/jsonutils
-    version: v0.28.0
-    sha256sum: 9ec1021cfa869bcf862ec8a36b166c46ebbb47f736e2bb8fa2a6685b83170e34
+    version: v0.29.2
+    sha256sum: 9501519560dd16e45329d8347494818cfaabae577a12a465a15a97690b870429
   - module: github.com/go-openapi/swag/jsonutils/fixtures_test
-    version: v0.28.0
-    sha256sum: 0b82d33f96dcb4c5c1c159d2c2dce2028588852c2b63a136499b7b4344ecbf9a
+    version: v0.29.2
+    sha256sum: 7fc9d8bd9e8945a401cd2ba9f7a59560a77db2ba2ca08faf735265089cd08161
   - module: github.com/go-openapi/swag/loading
-    version: v0.28.0
-    sha256sum: 63c459ca5289190b2a231c05aff1d22710bab0f50c33a49fe5f0c6cb218612a0
+    version: v0.29.2
+    sha256sum: cda07b9e0b9a53015118fac77ca11c733bac26e7bbb3b89089cef24f1e3c5271
   - module: github.com/go-openapi/swag/mangling
-    version: v0.28.0
-    sha256sum: 2d16f070918e2fd8714aaf356dfb9984e84daf7643689a8e25cc58d5ded54b70
+    version: v0.29.2
+    sha256sum: ac4e040b22930aec1a70d099192a6fbbf68c9c7b624d50ab8f6faf08fb8859b8
   - module: github.com/go-openapi/swag/netutils
-    version: v0.28.0
-    sha256sum: d7363cce443a04264c352c76d34d89d0993e7e299319b25c00854d7ab865672a
+    version: v0.29.2
+    sha256sum: e5cfc45406c88b20b54481afd011685bb2419a74ed7032348f9fea15d034e3bd
   - module: github.com/go-openapi/swag/pools
-    version: v0.28.0
-    sha256sum: 623705ee11fe884b4a998ca0e8305c4da03ada2f43c3b4c41e1f84486e627049
+    version: v0.29.2
+    sha256sum: 896d9fd8b6d08753fcadd1f6f3e064068c8a5c0d7a9af58d4ecdbdfbf07afa0c
   - module: github.com/go-openapi/swag/stringutils
-    version: v0.28.0
-    sha256sum: e15348c48de427f551dc69583eb088a72510c257cf976f6ab382601ec602ab6c
+    version: v0.29.2
+    sha256sum: f48ab90eedafb4059e96fcb9bb63c9bf47b6a7a03f2c191dcf9d5698e2c9700e
   - module: github.com/go-openapi/swag/typeutils
-    version: v0.28.0
-    sha256sum: 9256dec49a60a1efca39e0486107c7d86d15f7c52c962cfb9a04a720023e3e0d
+    version: v0.29.2
+    sha256sum: 3029ba8a7894271a67db1bb24ebfb8e4945b960234167f0fa9c2fcd3fb13ac8d
   - module: github.com/go-openapi/swag/yamlutils
-    version: v0.28.0
-    sha256sum: 66bffa6d57cfc00135695b8d873f08d11c6017f472aa00b777dd168b3ecec2c3
+    version: v0.29.2
+    sha256sum: d2dd896648b99f6bd5c09e95c15002da7cedc36339cd53875e8ff1f70429109c
   - module: github.com/go-openapi/testify/enable/yaml/v2
-    version: v2.6.0
-    sha256sum: 985eeb1d1df3582dded573d476253753e81de708a3d47b36721acd3114b3439f
+    version: v2.7.0
+    sha256sum: 87d50fbe23720e391330a636f8a88d4f1c9731517c8e663e47b284460ab4a3fb
   - module: github.com/go-openapi/testify/v2
-    version: v2.6.0
-    sha256sum: bcee6bf36660ceb6cc307e5302e4ff7087f26df7f7ee7c591a7b0c5d19024f72
+    version: v2.8.0
+    sha256sum: 5e0a75713f4998ca45ba997bfeefe3ca2f27e2ca9e754aca33e16beabf131c4f
   - module: github.com/go-openapi/validate
-    version: v0.26.1
-    sha256sum: c9a7e3f8cd420729d9d89d4785dcadbb46a3a1918815119bfbf3d07208983d38
+    version: v1.0.0
+    sha256sum: 1aae41b4fe221a74b4d081421a003ef344fa21d21a8dfd2adb5c7ee17a8deb5e
   - module: github.com/go-test/deep
     version: v1.1.1
     sha256sum: 52844b1cc8b3e4e5613bef80f0f88b02d73edb3c6b24d58f14a20c76d86cb2dc
@@ -470,8 +470,8 @@ sources:
     version: v0.7.0
     sha256sum: 64a9ce046f2c320e3783fba0d1f4a15f8a18f0b009b67bf27f7630919db3f539
   - module: github.com/google/go-containerregistry
-    version: v0.21.7
-    sha256sum: 70c92eaefc68579adcd49cd95cdfab663b6fd82bf83ea40eb0e2c8ce09c0b8e6
+    version: v0.22.0
+    sha256sum: 883aedc6b0284486c407a35706b7cf7afd9977b13a647000604515ef72cfc38d
   - module: github.com/google/go-dap
     version: v0.12.1-0.20250904181021-d7a2259b058b
     sha256sum: b9eda3537b717229926ae927f841678cb6612c90a2f963f3943a019629235081
@@ -503,8 +503,8 @@ sources:
     version: v1.4.0
     sha256sum: e4e1845280f93ea81648d0e48d3c17e6610c7916a49171f73c150fbde8fa9bc0
   - module: github.com/grpc-ecosystem/grpc-gateway/v2
-    version: v2.30.0
-    sha256sum: e76534d0b9df3124c4d3c20378789db52bf700a5d8c4d8db7beeef49bf372980
+    version: v2.31.0
+    sha256sum: 34488f78fe9ad92484898964e914bbd8394a08d949a105c00a7f987aabeea088
   - module: github.com/hashicorp/errwrap
     version: v1.1.0
     sha256sum: 209ae99bc039443e28e4d6bb66517d1756d9468b7578d31f1b63a28103d8e18c
@@ -620,8 +620,8 @@ sources:
     version: v1.5.0
     sha256sum: 118d5b2cb65c50dba967fb6d708f450a9caf93f321f8fc99080675b2ee374199
   - module: github.com/moby/buildkit
-    version: v0.34.2
-    sha256sum: d491e17052d6e45779fda89eeab5d41f157da373e963931f010dac650c7ebdfc
+    version: v0.35.0
+    sha256sum: 3ec4346c960aeaa25eab4b204a93757707d94f6a92a66ea29047d55d3a19e733
   - module: github.com/moby/docker-image-spec
     version: v1.3.1
     sha256sum: e3fe212be410465c0cae032baa7e2c7282b9bb878f081f00549333edc260c306
@@ -641,8 +641,8 @@ sources:
     version: v0.6.1
     sha256sum: 63143eefbfab2697750be63bc4be899b2607538b3b1fb8e862ced521f7f9545f
   - module: github.com/moby/policy-helpers
-    version: v0.0.0-20261006174519-bd98f4747414
-    sha256sum: bdbb68a29fc232c8d348ec462210aac3022091d830a862a3284a43815ba2f04a
+    version: v0.0.0-20261111163703-6acab594b423
+    sha256sum: c0ce3b741c869aa7abf1a3b2514c20d45bb21340ba6c1ec6909422313a58628e
   - module: github.com/moby/spdystream
     version: v0.5.1
     sha256sum: f4cdb9929a3327708b04dbbb4b6f15e1a21b7919e5c59e5b18bc049bb033d688
@@ -650,8 +650,8 @@ sources:
     version: v0.1.0
     sha256sum: a43a7148f3866be0752c515f32bd9ca1c96a4cc336b7e61af31932ee434da873
   - module: github.com/moby/sys/mountinfo
-    version: v0.7.2
-    sha256sum: 94f79687bc3b72ca4cc60fafda851454fefc0ef04bdb4499e8c7c2b2e231b5d3
+    version: v0.7.3
+    sha256sum: 866764d99fc6fba1bb81e72db7884d1b996b406cea9a5aec052a47e48b7c3691
   - module: github.com/moby/sys/sequential
     version: v0.7.0
     sha256sum: 7079b80c6b1ce943a924f1b6daa9fc05ba8ce1c6e37da354dca5aada6510291b
@@ -659,8 +659,8 @@ sources:
     version: v0.7.1
     sha256sum: 8c3853bc4ba4f283f7fccde5c548e93c3613db46f5209394a60cdbbc3eaf4f42
   - module: github.com/moby/sys/user
-    version: v0.4.1
-    sha256sum: acfdb68bda18ee112adacf55e0b20752a1f5633c55fb020f2a10a9b2eeaec46a
+    version: v0.5.0
+    sha256sum: fd3926735e585b2f22f0598641bf9a352bf87249ceaada560b587013b92ab62d
   - module: github.com/moby/sys/userns
     version: v0.2.1
     sha256sum: fd69e7793f9753dc0e5b6c6f600ebbbf3b613d5356fe862110fe811e6544f746
@@ -683,8 +683,8 @@ sources:
     version: v1.0.1
     sha256sum: 25df4a9727bd8750557a848d9066503c2e0b1788821be4db87377fd202254ed4
   - module: github.com/oklog/ulid/v2
-    version: v2.1.1
-    sha256sum: 312b5fea3f68df920adaffc327440efbaba43ad6a8df2f7e0c9e365743f6ff89
+    version: v2.1.2
+    sha256sum: 0af1a4847c9dcf0084230afbe6d9265f433d9f45e2507ce155e3dbbd312aa7c3
   - module: github.com/open-policy-agent/opa
     version: v1.19.0
     sha256sum: 70d07bec2c2da760f389d0daa930c19319d873513387861db77d1aef766182dd
@@ -716,20 +716,20 @@ sources:
     version: v1.0.1-0.20181226105442-5d4384ee4fb2
     sha256sum: 24ff45e356f638a53bd0c89fff961fbeaecfdb0dc5e482ceed0a2230e0e5f3b7
   - module: github.com/prometheus/client_golang
-    version: v1.24.1
-    sha256sum: 90b627e392d9936cf410ed23066d6198fecc11130bbab2e17dda627da3a86fc3
+    version: v1.25.0
+    sha256sum: 677986b15218e6e5f740fd0801a6024726e71bf909ca1a504417eae281df4519
   - module: github.com/prometheus/client_model
     version: v0.6.3
     sha256sum: 92f5d9a39b75bdc3f6733563934438148a3c3661420a8f742fea8cbf40d39abe
   - module: github.com/prometheus/common
-    version: v0.71.0
-    sha256sum: d78a22ba3919910cb3bc8a1953b1e0b930f16363c6ca6d13d613e4845f921716
+    version: v0.72.0
+    sha256sum: 7ba7a7e373c9c87626224e24526d664972848b24a00f36923b94e2e93a6fe182
   - module: github.com/prometheus/otlptranslator
     version: v1.0.0
     sha256sum: b4a3a9d8b0dfd8d7a54937d6916beb08108e57afdd8f0e21544a0d163181ffb4
   - module: github.com/prometheus/procfs
-    version: v0.21.1
-    sha256sum: b417ab3081ad334ce4c6b367b2d5e74dea49e2eb3b5431c1dd5a65e1256736f9
+    version: v0.22.0
+    sha256sum: e13d43da4a9773cecdfa8b86e745bbd8efda07b005402c673a1e882b6dbb6804
   - module: github.com/rcrowley/go-metrics
     version: v0.0.0-20250401214520-65e299d6c5c9
     sha256sum: a8c9e9792ad16f31ef8c32232de6243cc02147175661c9f64bc7b292f1c4d0cc
@@ -760,9 +760,6 @@ sources:
   - module: github.com/sergi/go-diff
     version: v1.4.0
     sha256sum: 63aef1860b251af1421ba0a014a6bb08a60833f13f948f3d88d66754bb484f53
-  - module: github.com/serialx/hashring
-    version: v0.0.0-20200727003509-22c0c7ab6b1b
-    sha256sum: 23dc67499d52b7b55a5a8f9d35e976052166da0cd0d499c1cc8be041e56789a4
   - module: github.com/shibumi/go-pathspec
     version: v1.3.0
     sha256sum: 1ac9091ebe9ff4154ddc39b2b3436c5b6b268d5cdc1e8462c9790485cd76a58f
@@ -845,8 +842,8 @@ sources:
     version: v0.0.0-20250318174251-73d941a28323
     sha256sum: 251cf604bd1301b75e8dc6d3f6061fccd250f4b3648813ba57793cac799c91ed
   - module: github.com/tonistiigi/fsutil
-    version: v0.0.0-20261103091533-a72de9dcf763
-    sha256sum: ebc1c287e90f3f33706b5d54fcdbae2615b0e271210813f76d44bfa2c3c1d421
+    version: v0.0.0-20261103125000-e075fd9305eb
+    sha256sum: 7fed96bfc79fb7165194ca70bafe8e3e55966438041d6b8544f9ef022608c6c0
   - module: github.com/tonistiigi/go-csvvalue
     version: v0.0.0-20240814133006-030d3b2625d0
     sha256sum: 51bce4d81fe31cb3edfcfaa124a74e2cff5ef08ed8d6f54afb054b39dc0ed89a
@@ -908,56 +905,59 @@ sources:
     version: v1.2.1
     sha256sum: a08a16fc0a7041cdb875f47a260a56000632212c85f65a302a043c76380c8335
   - module: go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc
-    version: v0.71.0
-    sha256sum: 837540ee3def8b884606cdd9bf616fb9ff7ebb8bb76c0d6423d856ea4ad2c157
+    version: v0.72.0
+    sha256sum: 4a714fcf1be92ca6233ec6a719e2565f43ec6960fedbdb1195cb7cd112f1ca28
   - module: go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace
-    version: v0.71.0
-    sha256sum: 6b5f277c8d507c35aca712423bf739ee5c6eb624e905ee9ad99d42232113b6c6
+    version: v0.72.0
+    sha256sum: 6c9f95a3d1176103470881c64d7dba7d7b65c362cfd3b2b10953adcf808442f0
   - module: go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp
-    version: v0.71.0
-    sha256sum: f518d56b4e820f12904a4501b6c80c79a4d3955f39886b7ef43295f2361dc8e9
+    version: v0.72.0
+    sha256sum: e9e9f34bc563d5114bc6c2760cf2b3d15ae82b0bbd635cd534ae3ccce2ac3300
   - module: go.opentelemetry.io/otel
-    version: v1.46.0
-    sha256sum: 5f1b7d702ee2e6e41880ef279a6c7ecae78f7867f5b3e92a3a87828d472501a9
+    version: v1.47.0
+    sha256sum: 275ce19c11b3f26830a4b3d884e6a59f3e4ef51e519ef3fc3bcbcc5e71f9b37d
   - module: go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc
-    version: v1.46.0
-    sha256sum: 8be944d1ff7467e6f3d1f68ed2ff54afabd487a68bc51b9462172981fc1e5c5a
+    version: v1.47.0
+    sha256sum: da21a18529d26722d626d047763e7a3f753ae52bd3a8b658f44dc628d15e7af7
   - module: go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp
-    version: v1.46.0
-    sha256sum: dbfd8f9064f5e7dbd19093ecc3cdf0da4c398bc1ac765594a66c3690ad54ecb1
+    version: v1.47.0
+    sha256sum: dc9a0d068506d2d39912b837730b6456a5dc0e3c86c5b1c2757267dcaa7e119b
   - module: go.opentelemetry.io/otel/exporters/otlp/otlptrace
-    version: v1.46.0
-    sha256sum: 9525fcb8bf01543e78e716ae10ff39c2a7181f73924de921402a04e4ba0be7b8
+    version: v1.47.0
+    sha256sum: a6a41ac372755156c3ba546b861f887052b9ea781d9fc6233e4db5d52a47d1bd
   - module: go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
-    version: v1.46.0
-    sha256sum: dc5ff4f8efd9bb09577b3a9fbf1d13a50d72692618a4b6202d0274f568f0e441
+    version: v1.47.0
+    sha256sum: 0407ee999c6c4c1af03a6806d781f4eb85d893ceb2633f7f0da1f318605c2002
   - module: go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp
-    version: v1.46.0
-    sha256sum: f87ca4401bb735a8f70c279e9fa07977d795f49c95d2d7518488614732d5ef55
+    version: v1.47.0
+    sha256sum: d60b7685919afb99a609954b98334203369eb6a9d2d5495262518401dd0fa665
   - module: go.opentelemetry.io/otel/exporters/prometheus
-    version: v0.68.0
-    sha256sum: b823df4cd5ad9329d98f2d97823e257aad9e34b3158010f2cc2c56729a9e6ed2
+    version: v0.69.0
+    sha256sum: 5040eee833edfeebe7c94bd721d6ffdeb7ed05bb6ab5aadbfd25071eabda0c66
   - module: go.opentelemetry.io/otel/exporters/stdout/stdouttrace
-    version: v1.46.0
-    sha256sum: 5cda581e8fabf599c029f5813d8a2e934ac2bedc461f4645939b5c25c83c0d45
+    version: v1.47.0
+    sha256sum: 0e8bf8b320296667b2997a42b1e0725d8f169b7f5f97ef4ac71fc759eee72024
+  - module: go.opentelemetry.io/otel/log
+    version: v1.47.0
+    sha256sum: 6f99ff1e779241c778d62872f651ea7bafce80246b5cfac321aa133f196ad811
   - module: go.opentelemetry.io/otel/metric
-    version: v1.46.0
-    sha256sum: 9dfefa696b083e8d923b4bb531e8c6d38328a1a859c69236434c0b2d36cfc4c4
+    version: v1.47.0
+    sha256sum: cfa35ad1f540114d39a381cf8773ba7d2aab47f0fa42040d409e86dee9ab27f6
   - module: go.opentelemetry.io/otel/metric/x
-    version: v0.68.0
-    sha256sum: ca2dce76fa28fa98bc04a573149526c7f3cda203707cb927b010ff77e231ebdd
+    version: v0.69.0
+    sha256sum: d2dc7a7fad22048cf68da510296251841e5f4e34dc97ffa5c502cd270fde541a
   - module: go.opentelemetry.io/otel/sdk
-    version: v1.46.0
-    sha256sum: 3b190b8bd3e596b4f8496a1842898207f21416345c3228ca133231199bbb3e05
+    version: v1.47.0
+    sha256sum: c01b323e4173c1700ee0352533bdc26816d1e4fa33fb15a0c24b35f9978c4918
   - module: go.opentelemetry.io/otel/sdk/metric
-    version: v1.46.0
-    sha256sum: df55dfb670650dc4e6ff2ac1e5e116e461bae85b4f11e3aff32c421fe492357c
+    version: v1.47.0
+    sha256sum: 0d63b5fa4f373296a54137ed76e74dfc0b267bb5e579f313d1e76eb1bd919c37
   - module: go.opentelemetry.io/otel/trace
-    version: v1.46.0
-    sha256sum: 00c882750676e787b00f1c0328d99ed7ad0546e19af86c7af546c1343481c25a
+    version: v1.47.0
+    sha256sum: dfffa6cb848954b5d3413007b6553ad3e508a9fc992a81ab4bd9026c236229be
   - module: go.opentelemetry.io/proto/otlp
-    version: v1.11.0
-    sha256sum: 790b98d472e7095511fa7feddd04e1d85bd844226e03ba482bd4105ef2217e09
+    version: v1.11.1
+    sha256sum: f2b50e90c541d3cdf4714b359989c3618038c999e35301dd0fad8a6153f1a30d
   - module: go.step.sm/crypto
     version: v0.77.7
     sha256sum: 7d1fcac1035c84827bfd73f9b06f685bf26b665aa8b6e8ee9ca3c96f231b3651
@@ -971,44 +971,44 @@ sources:
     version: v1.28.0
     sha256sum: 49d6287497537480c2e9330e3dee9c38ac793fbf9fd2257dbc4fa5697818919c
   - module: go.yaml.in/yaml/v2
-    version: v2.4.4
-    sha256sum: 1b98a6a498cf255c5f2982d32c74633bc7969770957e98103ac1e14345aa4576
+    version: v2.4.5
+    sha256sum: 8256b49ab7288808bffa9da47ca7508ec4b0fa63b349433d6bcb471e7193e660
   - module: go.yaml.in/yaml/v3
     version: v3.0.6
     sha256sum: 5ec6b154ced05b5fe8b15aef1287d647a70c9a53f43aa14e42d2bb5aee6cffac
   - module: go.yaml.in/yaml/v4
-    version: v4.0.0-rc.4
-    sha256sum: 9398112d7e82e7d19d01f0d5907ed232d8b1f44b0d487c9d5d0905a4d732996b
+    version: v4.0.0
+    sha256sum: 06fd129dc0c517aacd9d50d1dfafa2b9aea04017959786aa77edf3a21d00cb00
   - module: golang.org/x/crypto
-    version: v0.57.0
-    sha256sum: 856c916b92f1fc5b53983c04f6249f632f56c47ebc003bbcdfc503500dfb58b8
+    version: v0.58.0
+    sha256sum: b0a45594cda20ddb4264d84aeff9b588b8570bf6a2833c51a0b821734a298d95
   - module: golang.org/x/mod
-    version: v0.41.0
-    sha256sum: 201e678d0a35b18b246abe58d80017b75d60be21cbaf4cbb9e963b48872565a9
+    version: v0.42.0
+    sha256sum: 2770e372e42c30dd498d63bb094fe257edfad6882c611f8e0d82925feac159f3
   - module: golang.org/x/net
-    version: v0.59.0
-    sha256sum: 1dc3bf31fcebe80d393288ac8fe5cac7f0e82e9b3a2630021dcdf5ffbfa3f601
+    version: v0.62.0
+    sha256sum: 50e869800f4921e910eb6550369f937c7187d130a7f7f78a26ef9b589a7071a6
   - module: golang.org/x/oauth2
     version: v0.36.0
     sha256sum: 15bf65ff103e5dafc809d78cd037a1d1e88ccb8451824e851156002a13304504
   - module: golang.org/x/sync
-    version: v0.23.0
-    sha256sum: c19a11baba5c1a093cb4fd2f6d0d8d79673c97a82cb0fe2d693c9b6ad84f0f82
+    version: v0.24.0
+    sha256sum: ca3fcf3ea8259e75891f7947e1a816a5b89402c542d45d8bbbd9e061b0c58019
   - module: golang.org/x/sys
-    version: v0.48.0
-    sha256sum: 3a47e06431ba1e24d5b2aca3a7ce31fd13faff34df3e5d8e63f105ff9d0c1786
+    version: v0.50.0
+    sha256sum: b115e8a144a7c9d1df3ffb8af20b283e162844b5b624a97ee342955cca69b9e6
   - module: golang.org/x/term
-    version: v0.46.0
-    sha256sum: 9147fdd982f1aed1392183d5b48055f4f74c85d496604766c7f0b1d3bbd61c7c
+    version: v0.47.0
+    sha256sum: d990d5ab94dfa41ba980645b721bba7490064337a01bb03e6cacace70e8df0bf
   - module: golang.org/x/text
-    version: v0.42.0
-    sha256sum: a7b64e003056b6470303f408202098d8f3714a115f23091b8cac85edeb265476
+    version: v0.43.0
+    sha256sum: b75131f628f6e2e4892fd638d33127e952a5027775e0162b94ba069cb4e13863
   - module: golang.org/x/time
     version: v0.16.0
     sha256sum: ac27777be8088859ba3b1bea3648064dc95ff8bac3023b1b059d1ab126dc729e
   - module: golang.org/x/tools
-    version: v0.49.0
-    sha256sum: babd2d5a0ccf4eac49b6c9785be2b9e39b261097ad8b8a6b92578b9f248703d5
+    version: v0.51.0
+    sha256sum: 176a49a54ed781feb196235cc640f0454884f4e59d0b859ab4ecc9169cde513c
   - module: gonum.org/v1/gonum
     version: v0.17.0
     sha256sum: dadeb3d260548de27375f7188bdfd5a175110120fd8ee8085a63b0dff2cae501
@@ -1019,14 +1019,14 @@ sources:
     version: v0.0.0-20260319201613-d00831a3d3e7
     sha256sum: a75d9f7ea0d1bba57acec769c848764c866c88f22fe8c0e9b295134d20e5400f
   - module: google.golang.org/genproto/googleapis/api
-    version: v0.0.0-20260825221802-da73d73af1c5
-    sha256sum: 3fd3154433fa2854341abb63f1bc4d834767e59e280dfa7a26fe2c951ea4a830
+    version: v0.0.0-20261012220534-4341edf3f941
+    sha256sum: 0167b14fa3bb74f04f9e477569082e3879c11dc193e3e9a62042d59ac996c3bc
   - module: google.golang.org/genproto/googleapis/rpc
-    version: v0.0.0-20260825221802-da73d73af1c5
-    sha256sum: fa524d4bd3d27a627e34b376c4f163b3d050142c85f92b4e42bdee988d8275a5
+    version: v0.0.0-20261012220534-4341edf3f941
+    sha256sum: 4728954680ee41fdb6d90adddcb175edb179afd93d1a7237e60b1e969626162c
   - module: google.golang.org/grpc
-    version: v1.84.0
-    sha256sum: a14bebefbac1ec115d9e1f8042006c185d65adf43a91644f3e58df0688831b95
+    version: v1.85.0
+    sha256sum: bd1ce651075f55e5bad492f9e1ee7cc013f1b96770981556d2a9cb5ee2c31e1e
   - module: google.golang.org/grpc/cmd/protoc-gen-go-grpc
     version: v1.6.2
     sha256sum: 6c79e1f21272c7b841b9640164482fd741cf4e5a4636039a4f0594d9743222c6

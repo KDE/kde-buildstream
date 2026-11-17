@@ -24,5 +24,5 @@ sources:
   project-id: 10649
   url: https://libzip.org/download/libzip-{version}.tar.xz
   ref:
-    version: 1.11.4
-    sha256sum: 8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b
+    version: 1.12.1
+    sha256sum: c40062022a1963c80573d48f6070792297cecd7c6bffe3aefcac0d8b9bee8913

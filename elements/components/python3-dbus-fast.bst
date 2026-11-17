@@ -19,7 +19,7 @@ sources:
   name: dbus-fast
   url: 'pypi:'
   ref:
-    sha256sum: 34dc67d7d21a12399828dd13e63b352750580beea54ea7c729e708f2d2905fef
-    suffix: aa/db/b621610e50b1bc46ff63534d75239553c1bf33256de6096b58214fd9808a/dbus_fast-5.0.22.tar.gz
+    sha256sum: a4a5dddc04b1ade5eb7650d791e2f6fb7c1334595593473914e78a2526ecddda
+    suffix: 4c/5b/ce64b8788c10a8bd313c8638b28be5dccdd5c2daf14839f23aff37e0b39d/dbus_fast-5.2.0.tar.gz
 - kind: patch # remove once dbus-fast accepts Cython 3.4.0
   path: patches/python3-dbus-fast/remove-cython-build-requirement.patch

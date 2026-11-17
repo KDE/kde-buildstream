@@ -29,7 +29,7 @@ sources:
 - kind: git_repo
   url: github:rfjakob/gocryptfs.git
   track: 'v*.*.*'
-  ref: v2.6.1-0-g25e85a4454e93643ad92397d01ed532a360d7ee2
+  ref: v2.7.0-0-g756cd453d7afe69fd2a00a7592fd2d9869a6f756
 - kind: go_mod_vendor
   ref:
   - module: github.com/aperturerobotics/jacobsa-crypto
@@ -39,8 +39,14 @@ sources:
     version: v1.1.0
     sha256sum: 0b5a691aeb8b6af31bd2bb640973ea7e8bf1ed9bc5889da220bf44dc06d9692c
   - module: github.com/hanwen/go-fuse/v2
-    version: v2.8.0
-    sha256sum: ac0a357028e533e764cb25fd359e18e867a0bca09adaef79245658399797d56c
+    version: v2.9.0
+    sha256sum: 8eb070703aa9448e0f9d5ae80410a0c15f6930c94e7f264a9c6310bf5575becb
+  - module: github.com/hanwen/go-fuse/v2
+    version: v2.12.1-0.20261018182834-2d50fff207d7
+    sha256sum: 36c636fdcff1b570b10cfd68cdd02e32be67614688e0a9560508fc582c55c049
+  - module: github.com/hanwen/go-fuse/v2
+    version: v2.12.1
+    sha256sum: a8cf72307d90d28fc3835738d75d90a3850d166d0cebd92f302d17e1cb622359
   - module: github.com/jacobsa/oglematchers
     version: v0.0.0-20150720000706-141901ea67cd
     sha256sum: bcd70357107c45c3177c913b718624376b692d39672c157708fe2cd9aa78fcb5
@@ -66,29 +72,50 @@ sources:
     version: v1.0.0
     sha256sum: de04cecc1a4b8d53e4357051026794bcbc54f2e6a260cfac508ce69d5d6457a0
   - module: github.com/rfjakob/eme
-    version: v1.1.2
-    sha256sum: 6187089d5d40720c5cfeb4814d735d4b23a038f7da6406f088b83907781f4b57
+    version: v1.2.0
+    sha256sum: e233157a745ba698a268b6b6630e923286b550a0caaeb8849b03f30841ed4dd0
   - module: github.com/sabhiram/go-gitignore
     version: v0.0.0-20210923224102-525f6e181f06
     sha256sum: 18379d4fa60ed3050b651e51ecb48a21aba3bf951c81d359aadbc1d7601ffef5
   - module: github.com/spf13/pflag
     version: v1.0.5
     sha256sum: fc6e704f2f6a84ddcdce6de0404e5340fa20c8676181bf5d381b17888107ba84
+  - module: github.com/spf13/pflag
+    version: v1.0.10
+    sha256sum: a246b8c9d3daa87d6c634cdfee1bdf7fa53d5817eeef4fa0c6da43edd12de4ca
   - module: github.com/stretchr/testify
     version: v1.6.1
     sha256sum: e3c77324195658ead0289c507966fec55c69a7b1b8e3aac13c587dc50932fbc3
   - module: golang.org/x/crypto
-    version: v0.33.0
-    sha256sum: 3b0c19c1d259e93464f540165470de872721e5fc66ce3f0d36ffd27d307ec5bb
+    version: v0.52.0
+    sha256sum: a4dca44f467a3d8745aef41147c7bc6a90cdcfda9c42ae0585888bf046c7941e
+  - module: golang.org/x/crypto
+    version: v0.58.0
+    sha256sum: b0a45594cda20ddb4264d84aeff9b588b8570bf6a2833c51a0b821734a298d95
   - module: golang.org/x/net
-    version: v0.21.0
-    sha256sum: 4e9cb4bded1957e73fe709741c29879eab05047617c9b14b7237314ff9024913
+    version: v0.54.0
+    sha256sum: 1fef7f3ac7fc69f85b7fa47df036c75ad2136f719072a2bb4b93fc79f90bc7c7
+  - module: golang.org/x/net
+    version: v0.60.0
+    sha256sum: 052e0453db47a96ae9567503e7c95ea925ab52682cb1cec31250541f7160107e
   - module: golang.org/x/sys
-    version: v0.30.0
-    sha256sum: f5214bfec98f00e5432da68bbece03e98600fa41594ed026556cbde8fcb6f7c9
+    version: v0.45.0
+    sha256sum: e51c1c88045b4edbe48ad810122131381ff541c89edbd97ef833ed6653b59e6a
+  - module: golang.org/x/sys
+    version: v0.49.0
+    sha256sum: e73a06591ca0d7016ce3ccb45c36a8ed7128468aecc1a357f94d815c760c6b31
   - module: golang.org/x/term
-    version: v0.29.0
-    sha256sum: 9d92c583d222113ac653848b3319ff559d2dba92f8232baff03d08fc9c0b8619
+    version: v0.43.0
+    sha256sum: 0d12dd77f2c620f236e59421d604f6bcd1f9212a4083a1c0ec13425c67bc6e81
+  - module: golang.org/x/term
+    version: v0.47.0
+    sha256sum: d990d5ab94dfa41ba980645b721bba7490064337a01bb03e6cacace70e8df0bf
+  - module: golang.org/x/text
+    version: v0.37.0
+    sha256sum: b8d475c17835ab602b91f1147684ceb5dbf4060e72e5dfb2e0e33efc9312a982
+  - module: golang.org/x/text
+    version: v0.43.0
+    sha256sum: b75131f628f6e2e4892fd638d33127e952a5027775e0162b94ba069cb4e13863
   - module: gopkg.in/yaml.v3
     version: v3.0.0-20200313102051-9f266ea9e77c
     sha256sum: acf19ccb4fca983b234a39ef032faf9ab70e759680673bb3dff077e77fee20fe
