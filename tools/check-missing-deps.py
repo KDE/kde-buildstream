@@ -4,6 +4,10 @@
 
 """Fail if cmake or meson couldn't find something that isn't in missing-deps.yml.
 
+Run it from the project directory right after `bst build TARGETS`, with the same
+TARGETS. It reads the build logs bst just wrote locally. Elements pulled from the
+cache have none, they got checked by the pipeline that built them.
+
 missing-deps.yml maps element names to the dependencies they are allowed to
 miss. Use '*' (quoted, a bare * is a YAML alias) to skip an element entirely:
 
@@ -17,9 +21,9 @@ Names are compared case-insensitively.
 """
 
 import argparse
+import fnmatch
 import os
 import re
-import subprocess
 import sys
 from pathlib import Path
 
@@ -52,9 +56,7 @@ IGNORE = {"valgrind", "gtest", "gmock", "pytest", "pytest-3 pytest", "python3 (p
 # Elements without a build log.
 NO_LOG_KINDS = {"junction", "link"}
 
-# `bst artifact log` prints the logs back to back, each starting with this header.
-LOG_HEADER = re.compile(r"^(?=BuildStream \S+ - )", re.M)
-LOG_START = re.compile(r"^\S+ START\s+\[\w+\] (\S+\.bst): Build", re.M)
+LOG_ROOT = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache")) / "buildstream/logs"
 
 yaml = YAML(typ="safe")
 
@@ -81,22 +83,24 @@ def missing(log):
     return {d for d in deps if d.lower() not in found}
 
 
-def local_elements():
-    element_path = Path(load("project.conf").get("element-path", "."))
-    return {str(p.relative_to(element_path)) for p in element_path.rglob("*.bst")
+def local_elements(element_path):
+    return {p.relative_to(element_path).as_posix() for p in element_path.rglob("*.bst")
             if load(p).get("kind") not in NO_LOG_KINDS}
 
 
-def build_logs(elements):
-    # Read the logs from the artifacts so pulled elements get checked too. --out can't
-    # handle elements in subdirectories, so split stdout at each log's header instead.
-    output = subprocess.run(["bst", "artifact", "log", *sorted(elements)], check=True,
-                            stdout=subprocess.PIPE, text=True, errors="replace").stdout
+def select(elements, targets):
+    """Elements matching bst style globs, e.g. components/**.bst."""
+    return {e for e in elements if any(fnmatch.fnmatch(e, t) for t in targets)}
+
+
+def build_logs(log_dir, elements):
+    """Newest local build log of each element. bst names the log dir after the element, / -> -."""
     logs = {}
-    for log in LOG_HEADER.split(output):
-        m = LOG_START.search(log)
-        if m and m[1] in elements:
-            logs[m[1]] = logs.get(m[1], "") + log
+    for element in elements:
+        found = sorted((log_dir / element.removesuffix(".bst").replace("/", "-")).glob("*-build.*.log"),
+                       key=lambda p: p.stat().st_mtime)
+        if found:
+            logs[element] = found[-1].read_text(errors="replace")
     return logs
 
 
@@ -104,13 +108,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--print", action="store_true",
                         help="dump everything currently missing in allowlist format")
+    parser.add_argument("targets", nargs="+", help="the targets passed to bst build")
     args = parser.parse_args()
-    os.chdir(Path(__file__).resolve().parent.parent)
 
-    elements = local_elements()
-    logs = build_logs(elements)
-    if unlogged := len(elements - logs.keys()):
-        print(f"note: skipped {unlogged} elements without a cached build log", file=sys.stderr)
+    project = load("project.conf")
+    elements = local_elements(Path(project.get("element-path", ".")))
+    selected = select(elements, args.targets)
+    logs = build_logs(LOG_ROOT / project["name"], selected)
+    if unlogged := len(selected - logs.keys()):
+        print(f"note: skipped {unlogged} elements that weren't built here", file=sys.stderr)
 
     if args.print:
         dump = YAML(typ="safe")

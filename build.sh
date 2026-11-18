@@ -19,10 +19,10 @@ if [ "${KDECI_BUILD:-}" = "TRUE" ]; then
     set -x
 fi
 
-bst build \
-    components/**.bst \
-    os/**.bst \
-    qt/**.bst \
-    tests/**.bst
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover tools
 
-python3 tools/check-missing-deps.py
+# Globs are for bst, not the shell.
+set -f
+TARGETS="components/**.bst os/**.bst qt/**.bst tests/**.bst"
+bst build $TARGETS
+python3 tools/check-missing-deps.py $TARGETS
