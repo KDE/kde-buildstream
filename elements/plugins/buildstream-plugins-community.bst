@@ -4,6 +4,8 @@
 kind: junction
 
 sources:
+# Temporarily use aleixpol/fix-gomod-gosum until the fix is released.
+# https://gitlab.com/BuildStream/buildstream-plugins-community/-/merge_requests/521
 - kind: tar
-  url: pypi:e3/09/a56ca89a7b8126649e282432a2216e814af84d14ad7cd58dab585fb1d9fc/buildstream_plugins_community-2.5.0.tar.gz
-  ref: 0a08a520fb2b717877025f30d6088c3da2c204b813a5d2d786d09acf988ef29b
+  url: gitlab:apol/buildstream-plugins-community/-/archive/c0e59f5accc1c3f442e6601a6665374a3f7de623/buildstream-plugins-community-c0e59f5accc1c3f442e6601a6665374a3f7de623.tar.gz
+  ref: cffa06e16f4743245302e9f55a54f6cb18175236a5844afc4b6c9feb10811032
