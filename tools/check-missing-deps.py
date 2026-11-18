@@ -24,6 +24,7 @@ import argparse
 import fnmatch
 import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -93,11 +94,22 @@ def select(elements, targets):
     return {e for e in elements if any(fnmatch.fnmatch(e, t) for t in targets)}
 
 
-def build_logs(log_dir, elements):
-    """Newest local build log of each element. bst names the log dir after the element, / -> -."""
+def cache_keys(targets):
+    output = subprocess.run(["bst", "show", "--deps", "none", "--format", "%{name} %{full-key}", *targets],
+                            check=True, stdout=subprocess.PIPE, text=True).stdout
+    return dict(line.split() for line in output.splitlines() if line.count(" ") == 1)
+
+
+def build_logs(log_dir, keys):
+    """Newest local build log of each element for its current cache key.
+
+    bst names the log dir after the element (/ -> -) and the log after the key's first characters,
+    so logs of older builds of the element are left out.
+    """
     logs = {}
-    for element in elements:
-        found = sorted((log_dir / element.removesuffix(".bst").replace("/", "-")).glob("*-build.*.log"),
+    for element, key in keys.items():
+        found = sorted((log for log in (log_dir / element.removesuffix(".bst").replace("/", "-")).glob("*-build.*.log")
+                        if key.startswith(log.name.split("-")[0])),
                        key=lambda p: p.stat().st_mtime)
         if found:
             logs[element] = found[-1].read_text(errors="replace")
@@ -114,7 +126,7 @@ def main():
     project = load("project.conf")
     elements = local_elements(Path(project.get("element-path", ".")))
     selected = select(elements, args.targets)
-    logs = build_logs(LOG_ROOT / project["name"], selected)
+    logs = build_logs(LOG_ROOT / project["name"], {e: k for e, k in cache_keys(args.targets).items() if e in selected})
     if unlogged := len(selected - logs.keys()):
         print(f"note: skipped {unlogged} elements that weren't built here", file=sys.stderr)
 

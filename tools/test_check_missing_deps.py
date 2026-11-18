@@ -84,11 +84,15 @@ class Project(unittest.TestCase):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(f"kind: {kind}\n")
         self.logs = self.tmp / "logs"
-        self.log("components-foo", "a-build.1.log", "-- Could NOT find Old", mtime=0)
-        self.log("components-foo", "b-build.2.log", "-- Could NOT find Bar\n-- Could NOT find Baz")
-        self.log("components-foo", "c-pull.3.log", "-- Could NOT find FromPull")
-        self.log("components-sub-bar", "a-build.1.log", "Dependency systemd found: NO")
-        self.log("qt-baz", "a-build.1.log", "-- Could NOT find Anything")
+        # what `bst show` reports, the junction isn't there
+        self.keys = {"components/foo.bst": "f00f00f0" + "0" * 56, "components/sub/bar.bst": "ba5ba5ba" + "0" * 56,
+                     "qt/baz.bst": "ba2ba2ba" + "0" * 56}
+        self.log("components-foo", "f00f00f0-build.1.log", "-- Could NOT find Old", mtime=0)
+        self.log("components-foo", "f00f00f0-build.2.log", "-- Could NOT find Bar\n-- Could NOT find Baz")
+        self.log("components-foo", "0ldbuild-build.3.log", "-- Could NOT find FromOldKey")
+        self.log("components-foo", "f00f00f0-pull.4.log", "-- Could NOT find FromPull")
+        self.log("components-sub-bar", "ba5ba5ba-build.1.log", "Dependency systemd found: NO")
+        self.log("qt-baz", "ba2ba2ba-build.1.log", "-- Could NOT find Anything")
 
     def log(self, directory, name, text, mtime=None):
         path = self.logs / "proj" / directory / name
@@ -104,6 +108,7 @@ class Project(unittest.TestCase):
         os.chdir(self.tmp)
         try:
             with mock.patch.object(check, "LOG_ROOT", self.logs), mock.patch.object(sys, "argv", ["x", *args]), \
+                    mock.patch.object(check, "cache_keys", lambda targets: self.keys), \
                     contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
                 ret = check.main()
         finally:
@@ -123,11 +128,22 @@ class Project(unittest.TestCase):
         self.assertIn("components/foo.bst: Gone isn't missing anymore", err)
         self.assertIn("nope.bst doesn't exist", err)
 
-    def test_not_built_here(self):
-        self.log("components-foo", "a-build.1.log", "")
+    def test_only_targets(self):
         ret, out, err = self.run_main("", "qt/*.bst", "components/sub/*.bst")
         self.assertIn("components/sub/bar.bst: missing systemd", out)
         self.assertNotIn("foo", out)
+
+    def test_stale_logs_are_ignored(self):
+        self.keys["qt/baz.bst"] = "11111111" + "0" * 56  # pulled from the cache at a newer key
+        ret, out, err = self.run_main("", "qt/*.bst")
+        self.assertEqual((ret, out), (0, ""))
+        self.assertIn("skipped 1 elements", err)
+
+    def test_cache_keys(self):
+        show = "components/foo.bst f00\nqt/baz.bst ba2\n[--:--:--] some bst noise\n"
+        with mock.patch.object(check.subprocess, "run", return_value=mock.Mock(stdout=show)) as run:
+            self.assertEqual(check.cache_keys(["components/**.bst"]), {"components/foo.bst": "f00", "qt/baz.bst": "ba2"})
+        self.assertEqual(run.call_args.args[0][-1], "components/**.bst")
 
     def test_print(self):
         ret, out, err = self.run_main("", "--print", "components/**.bst")
