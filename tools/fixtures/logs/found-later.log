@@ -1,0 +1,5 @@
+CMake Warning at CMakeLists.txt:12 (find_package):
+  Could not find a package configuration file provided by "LibXml2" with any
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.13.0")
+Run-time dependency libjpeg found: NO (tried pkgconfig)
+Run-time dependency LIBJPEG found: YES 3.0.4 (cached)

@@ -1,0 +1,8 @@
+components/foo.bst:
+- bar
+- Baz
+- Gone
+components/sub/bar.bst:
+- '*'
+nope.bst:
+- X

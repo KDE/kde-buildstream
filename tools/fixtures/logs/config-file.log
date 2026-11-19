@@ -1,0 +1,6 @@
+CMake Warning at CMakeLists.txt:42 (find_package):
+  Could not find a package configuration file provided by "KF6Wallet" with
+  any of the following names:
+
+    KF6WalletConfig.cmake
+    kf6wallet-config.cmake

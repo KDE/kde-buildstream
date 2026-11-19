@@ -1,0 +1,14 @@
+-- The following packages have been found:
+
+ * Qt6Core (required version >= 6.8.0)
+ * Gettext
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6TextToSpeech, Qt text to speech, <https://qt.io>
+   Needed for speech
+ * PCSC
+
+-- Configuring done (1.2s)
+-- Generating done (0.3s)
+ * NotInASummary

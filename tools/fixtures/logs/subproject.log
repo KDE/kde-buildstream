@@ -1,0 +1,2 @@
+Run-time dependency libcdvar-1 found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency libcdvar-1

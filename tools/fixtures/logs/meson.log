@@ -1,0 +1,6 @@
+Run-time dependency libsystemd found: NO (tried pkgconfig and cmake)
+Dependency glib-2.0 found: NO found 2.78.0 but need: '>= 2.80'
+Library bsd found: NO
+Library m found: YES
+Program python3 (louis) found: NO
+Dependency gtk4 skipped: feature gtk disabled

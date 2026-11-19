@@ -1,0 +1,2 @@
+-- Could NOT find LibEdit (missing: LibEdit_INCLUDE_DIRS LibEdit_LIBRARIES)
+-- Could NOT find LibGit2: Found unsuitable version "1.1.0", but required is at least "1.5" (found /usr/lib/libgit2.so)

@@ -1,0 +1,6 @@
+-- Checking for module 'libcanberra'
+--   No package 'libcanberra' found
+-- Checking for module 'libfoo'
+--   No package 'libfoo' found
+-- Checking for module 'libfoo>=1.0'
+--   Found libfoo, version 1.0
