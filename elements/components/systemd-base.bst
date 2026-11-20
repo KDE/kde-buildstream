@@ -1,72 +1,68 @@
 # SPDX-FileCopyrightText: Freedesktop-SDK Developers
+# SPDX-FileCopyrightText: Aleix Pol i Gonzalez <aleixpol@kde.org>
 # SPDX-License-Identifier: MIT
 
 kind: meson
 
-# This element is not be used directly. Use either:
-#  - components/systemd.bst
-#  - components/systemd-libs.bst
-
-(@):
-- elements/include/systemd.yml
-
 build-depends:
-- public-stacks/runtime-minimal.bst
-- public-stacks/buildsystem-meson.bst
-- bootstrap/sed.bst
-- bootstrap/gawk.bst
-- bootstrap/grep.bst
-- bootstrap/diffutils.bst
-- components/audit.bst
-- components/gperf.bst
-- components/m4.bst
-- components/libapparmor.bst
-- components/libcap.bst
-- components/libgcrypt.bst
-- components/libgpg-error.bst
-- components/libseccomp.bst
-- components/lz4.bst
-- components/zstd.bst
-- components/util-linux-libfdisk.bst
-- components/util-linux-libs.bst
+- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+- freedesktop-sdk.bst:bootstrap/sed.bst
+- freedesktop-sdk.bst:bootstrap/gawk.bst
+- freedesktop-sdk.bst:bootstrap/grep.bst
+- freedesktop-sdk.bst:bootstrap/diffutils.bst
+- freedesktop-sdk.bst:components/audit.bst
+- freedesktop-sdk.bst:components/gperf.bst
+- freedesktop-sdk.bst:components/m4.bst
+- freedesktop-sdk.bst:components/libapparmor.bst
+- freedesktop-sdk.bst:components/libcap.bst
+- freedesktop-sdk.bst:components/libgcrypt.bst
+- freedesktop-sdk.bst:components/libgpg-error.bst
+- freedesktop-sdk.bst:components/libseccomp.bst
+- freedesktop-sdk.bst:components/lz4.bst
+- freedesktop-sdk.bst:components/zstd.bst
+- freedesktop-sdk.bst:components/util-linux-libfdisk.bst
+- freedesktop-sdk.bst:components/util-linux-libs.bst
 # systemd services exist that call `agetty`, `fsck`, `mkswap` from util-linux-full.
-- components/util-linux-full.bst
-- components/libarchive.bst
-- components/linux-pam.bst
-- components/kmod.bst
-- components/python3-pyelftools.bst
-- components/libxslt.bst
-- components/docbook-xsl.bst
-- components/_private/cryptsetup-lvm2-stage1.bst
-- components/p11-kit.bst
-- components/libfido2.bst
-- components/libidn2.bst
-- components/openssl.bst
-- components/python3-pefile.bst
-- components/python3-jinja2.bst
-- components/apparmor.bst
-- components/tpm2-tss.bst
-- components/curl.bst
-- components/libqrencode.bst
-- components/iptables.bst
-- components/libxkbcommon.bst
-- components/libmicrohttpd.bst
-- components/bpf-maybe.bst
-- components/libbpf.bst
-- components/llvm.bst
-- components/_private/git-minimal.bst
+- freedesktop-sdk.bst:components/util-linux-full.bst
+- freedesktop-sdk.bst:components/libarchive.bst
+- freedesktop-sdk.bst:components/linux-pam.bst
+- freedesktop-sdk.bst:components/kmod.bst
+- freedesktop-sdk.bst:components/python3-pyelftools.bst
+- freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst
+- freedesktop-sdk.bst:components/_private/cryptsetup-lvm2-stage1.bst
+- freedesktop-sdk.bst:components/p11-kit.bst
+- freedesktop-sdk.bst:components/libfido2.bst
+- freedesktop-sdk.bst:components/libidn2.bst
+- freedesktop-sdk.bst:components/openssl.bst
+- freedesktop-sdk.bst:components/python3-pefile.bst
+- freedesktop-sdk.bst:components/python3-jinja2.bst
+- freedesktop-sdk.bst:components/apparmor.bst
+- freedesktop-sdk.bst:components/tpm2-tss.bst
+- freedesktop-sdk.bst:components/curl.bst
+- freedesktop-sdk.bst:components/libqrencode.bst
+- freedesktop-sdk.bst:components/iptables.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/libmicrohttpd.bst
+- freedesktop-sdk.bst:components/bpf-maybe.bst
+- freedesktop-sdk.bst:components/libbpf.bst
+- freedesktop-sdk.bst:components/llvm.bst
 
 variables:
+  # The SDK filters share these licenses and whitelist this directory.
+  project_licensedir: '%{licensedir}/freedesktop-sdk'
   efi: 'false'
   bpf-framework: 'disabled'
   (?):
-  - target_arch in ["x86_64", "i686", "aarch64", "riscv64", "loongarch64"]:
+  - arch in ["x86_64", "i686", "aarch64", "riscv64", "loongarch64"]:
       efi: 'true'
-  - target_arch in ["x86_64", "aarch64"]:
+  - arch in ["x86_64", "aarch64"]:
       bpf-framework: 'enabled'
 
   meson-local: >-
     -Dmode=release
+    -Dfallback-hostname=kde-linux
     -Daudit=enabled
     -Dseccomp=enabled
     -Dsystem-uid-max=999
@@ -94,10 +90,10 @@ variables:
     -Dapparmor=enabled
     -Dtpm=true
     -Dtpm2=enabled
-    -Dsbat-distro=freedesktop-sdk
+    -Dsbat-distro=kde-linux
     -Dsbat-distro-generation=1
-    -Dsbat-distro-summary="Freedesktop SDK"
-    -Dsbat-distro-url=https://gitlab.com/freedesktop-sdk/freedesktop-sdk/
+    -Dsbat-distro-summary="KDE Linux"
+    -Dsbat-distro-url=https://linux.kde.org
     -Dversion-tag="$(git describe --abbrev=7 | sed "s/^v//")"
     -Dqrencode=enabled
     -Dxkbcommon=enabled
@@ -171,6 +167,12 @@ public:
       - "%{project_licensedir}/**"
 
 sources:
-  (>):
-  - kind: local
-    path: files/systemd/90-sysupdate.preset
+- kind: git_repo
+  url: github:systemd/systemd.git
+  track: v*
+  exclude:
+  - '*rc*'
+  ref: v262.2-0-g63511d7283d7d0e2a2fc28075481afaf1a7be8f5
+  version-guess-pattern: '(\d+)(?:\.(\d+))?'
+- kind: local
+  path: files/systemd/90-sysupdate.preset

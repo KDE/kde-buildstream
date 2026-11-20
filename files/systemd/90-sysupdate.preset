@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: Freedesktop-SDK Developers
+# SPDX-License-Identifier: MIT
+
+disable systemd-sysupdate-reboot.*
+disable systemd-sysupdate-update.*
