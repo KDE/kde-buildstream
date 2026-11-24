@@ -11,7 +11,7 @@ variables:
   cmake-local: -DOJPH_ENABLE_TIFF_SUPPORT=OFF -DOJPH_BUILD_EXECUTABLES=OFF
 
 sources:
-- url: https://github.com/aous72/OpenJPH.git
+- url: github:aous72/OpenJPH.git
   kind: git_repo
   track: '*.*.*'
   ref: 345a8bcd1c7a3908e3870797057277660a412073

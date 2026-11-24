@@ -18,6 +18,6 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.freedesktop.org/hadess/switcheroo-control
+  url: fdo:hadess/switcheroo-control
   track: '3.*'
   ref: 3.0-0-g2adfa2dff85b9886ce0fddca6863fe9f2eaf54a0

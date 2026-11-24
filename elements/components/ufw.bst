@@ -24,7 +24,7 @@ config:
 
 sources:
 - kind: git_repo
-  url: https://git.launchpad.net/ufw
+  url: launchpad_git:ufw
   track: '*'
   exclude:
   - '*rc*'

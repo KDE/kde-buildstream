@@ -15,7 +15,7 @@ variables:
   cmake-local: -DOPENEXR_BUILD_TOOLS=OFF -DOPENEXR_BUILD_EXAMPLES=OFF -DBUILD_TESTING=OFF
 
 sources:
-- url: https://github.com/AcademySoftwareFoundation/openexr.git
+- url: github:AcademySoftwareFoundation/openexr.git
   kind: git_repo
   track: v*
   exclude:

@@ -16,6 +16,6 @@ variables:
 
 sources:
 - kind: git_repo
-  url: https://github.com/qcoro/qcoro.git
+  url: github:qcoro/qcoro.git
   track: v*
   ref: v0.13.0-0-g98f23d8d8d67e9e24217d268927faec97c713fb0

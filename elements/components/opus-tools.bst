@@ -24,7 +24,7 @@ depends:
 sources:
 - kind: anitya
   project-id: 7905
-  url: 'https://downloads.xiph.org/releases/opus/opus-tools-{version}.tar.gz'
+  url: 'xiph_download:releases/opus/opus-tools-{version}.tar.gz'
   ref:
     version: '0.2'
     sha256sum: b4e56cb00d3e509acfba9a9b627ffd8273b876b4e2408642259f6da28fa0ff86

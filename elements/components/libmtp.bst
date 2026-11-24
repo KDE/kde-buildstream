@@ -18,7 +18,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 10017
-  url: https://downloads.sourceforge.net/libmtp/libmtp-{version}.tar.gz
+  url: sourceforge_download:libmtp/libmtp-{version}.tar.gz
   ref:
     version: "1.1.23"
     sha256sum: 74a2b6e8cb4a0304e95b995496ea3ac644c29371649b892b856e22f12a0bdeed

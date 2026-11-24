@@ -13,7 +13,7 @@ depends:
 sources:
 - kind: anitya
   project-id: 1729
-  url: 'https://www.libssh.org/files/{major}.{minor}/libssh-{version}.tar.xz'
+  url: 'libssh:files/{major}.{minor}/libssh-{version}.tar.xz'
   ref:
     version: 0.12.2
     sha256sum: 49560f677d96e3706a904ac2de1116e25f3680937d51e5c92198fcba4a1c1e9f

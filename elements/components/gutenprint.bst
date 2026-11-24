@@ -49,7 +49,7 @@ config:
 sources:
 - kind: anitya
   project-id: 1285
-  url: 'https://downloads.sourceforge.net/gimp-print/gutenprint-{version}.tar.xz'
+  url: 'sourceforge_download:gimp-print/gutenprint-{version}.tar.xz'
   ref:
     version: 5.3.5
     sha256sum: f5a9f47de28530b1ae2069cfbc647a9a641baeeabe809bb0ef2b3ec5b9668d70

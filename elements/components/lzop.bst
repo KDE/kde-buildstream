@@ -16,7 +16,7 @@ depends:
 sources:
 - kind: anitya
   project-id: 7486
-  url: 'https://www.lzop.org/download/lzop-{version}.tar.gz'
+  url: 'lzop:download/lzop-{version}.tar.gz'
   ref:
     version: '1.04'
     sha256sum: 7e72b62a8a60aff5200a047eea0773a8fb205caf7acbe1774d95147f305a2f41

@@ -112,6 +112,6 @@ sources:
   ref: v0.19.0-0-gde40ad007797e0dcd8b7126f27bb87401d224240
   directory: tini
 - kind: remote
-  url: https://gitlab.archlinux.org/archlinux/packaging/packages/docker/-/raw/main/docker.sysusers?ref_type=heads
+  url: archlinux:archlinux/packaging/packages/docker/-/raw/main/docker.sysusers?ref_type=heads
   ref: 541826011a9836d05a2f42293d5f1beadf2ca8d89fb604487d61a013505678eb
   filename: docker.sysusers

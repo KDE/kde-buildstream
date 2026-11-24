@@ -19,7 +19,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 13306
-  url: 'https://www.rarlab.com/rar/unrarsrc-{version}.tar.gz'
+  url: 'rarlab:rar/unrarsrc-{version}.tar.gz'
   ref:
     version: 7.3.2
     sha256sum: f61a1160d6e2ebbda2ad353c8e82f62ab4312f97fde23c6c2c982d25e0014f99

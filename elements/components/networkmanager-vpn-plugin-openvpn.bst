@@ -20,7 +20,7 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.gnome.org/GNOME/NetworkManager-openvpn.git
+  url: gnome:NetworkManager-openvpn.git
   track: '*.*'
   exclude:
   - '*rc*'

@@ -31,16 +31,16 @@ config:
 sources:
 - kind: anitya
   project-id: 358810
-  url: 'https://cdn.kernel.org/pub/linux/kernel/v{major}.x/linux-{version}.tar.xz'
+  url: 'kernel_cdn:pub/linux/kernel/v{major}.x/linux-{version}.tar.xz'
   ref:
     version: 7.3
     sha256sum: 87363c24f10e06321eb362765521094e94471f6bff8bce2d6b3e40f39f004953
 - kind: remote
-  url: https://gitlab.archlinux.org/archlinux/packaging/packages/linux-tools/-/raw/main/usbipd.service?ref_type=heads
+  url: archlinux:archlinux/packaging/packages/linux-tools/-/raw/main/usbipd.service?ref_type=heads
   ref: 2e187734d8aec58a3046d79883510d779aa93fb3ab20bd3132c1a607ebe5498f
 - kind: remote
-  url: https://gitlab.archlinux.org/archlinux/packaging/packages/linux-tools/-/raw/main/hv_kvp_daemon.service?ref_type=heads
+  url: archlinux:archlinux/packaging/packages/linux-tools/-/raw/main/hv_kvp_daemon.service?ref_type=heads
   ref: b1315cb77a35454e1af9172f821a52e2a0cb18561be05a340d21cf337b01ae61
 - kind: remote
-  url: https://gitlab.archlinux.org/archlinux/packaging/packages/linux-tools/-/raw/main/hv_vss_daemon.service?ref_type=heads
+  url: archlinux:archlinux/packaging/packages/linux-tools/-/raw/main/hv_vss_daemon.service?ref_type=heads
   ref: 2d5e2f8d40b6f19bf2e1dead57ca105d72098fb0b418c09ff2e0cb91089710af

@@ -23,3 +23,28 @@ aliases:
   sesse: https://git.sesse.net/
   kernel: https://git.kernel.org/
   go_proxy: https://proxy.golang.org/
+  crates: https://static.crates.io/
+  apache_archive: https://archive.apache.org/dist/
+  apache_dist: https://www.apache.org/dist/
+  apache_download: https://downloads.apache.org/
+  archlinux: https://gitlab.archlinux.org/
+  boost_archive: https://archives.boost.io/
+  debian: https://deb.debian.org/debian/
+  draisberghof: http://www.draisberghof.de/
+  ezix: https://ezix.org/
+  googlesource_mirror: https://third-party-mirror.googlesource.com/
+  kernel_cdn: https://cdn.kernel.org/
+  kernel_download: https://www.kernel.org/
+  kyotocabinet: https://dbmx.net/kyotocabinet/
+  launchpad_git: https://git.launchpad.net/
+  libssh: https://www.libssh.org/
+  libzip: https://libzip.org/
+  lzop: https://www.lzop.org/
+  rarlab: https://www.rarlab.com/
+  savannah_download: https://download.savannah.gnu.org/releases/
+  sourceforge_download: https://downloads.sourceforge.net/
+  strongswan: https://download.strongswan.org/
+  virtualbox: https://download.virtualbox.org/
+  wagner: http://ftp.wagner.pp.ru/
+  xiph_download: https://downloads.xiph.org/
+  zx2c4: https://git.zx2c4.com/

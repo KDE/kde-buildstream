@@ -33,7 +33,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 4905
-  url: 'https://downloads.apache.org/subversion/subversion-{version}.tar.bz2'
+  url: 'apache_download:subversion/subversion-{version}.tar.bz2'
   ref:
     version: 1.15.0
     sha256sum: dfb7b1e5270c7def971ccbd5938b0c03b1b5bd60b6674a2d8a74a9560839fb8c

@@ -25,7 +25,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 5059
-  url: 'http://www.draisberghof.de/usb_modeswitch/usb-modeswitch-{version}.tar.bz2'
+  url: 'draisberghof:usb_modeswitch/usb-modeswitch-{version}.tar.bz2'
   ref:
     version: 2.6.3
     sha256sum: cddb987af80eca5bc9c364dc0ccd0e2b788de4d28626d017277a48c06b0453b6

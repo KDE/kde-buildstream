@@ -16,7 +16,7 @@ depends:
 sources:
 - kind: anitya
   project-id: 4899
-  url: 'https://download.strongswan.org/strongswan-{version}.tar.bz2'
+  url: 'strongswan:strongswan-{version}.tar.bz2'
   ref:
     version: 6.1.0
     sha256sum: fe6c97481298767213cfc2e9a1da29fdd8018d481ff4cb9cf0283099654f20d4

@@ -21,7 +21,7 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.gnome.org/GNOME/orca.git
+  url: gnome:orca.git
   track: '*[02468].*'
   exclude:
   - '*rc*'

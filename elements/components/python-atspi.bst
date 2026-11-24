@@ -15,6 +15,6 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.gnome.org/GNOME/pyatspi2.git
+  url: gnome:pyatspi2.git
   track: '*'
   ref: 2.58.2-0-gf2fb289a9d2e4dac65fca8db0f4d3d65607a0cf2

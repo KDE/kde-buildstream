@@ -18,7 +18,7 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://gitlab.gnome.org/GNOME/NetworkManager-vpnc.git
+  url: gnome:NetworkManager-vpnc.git
   track: '*'
   exclude:
   - '*rc*'

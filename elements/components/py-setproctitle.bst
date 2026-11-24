@@ -10,6 +10,6 @@ depends:
 - freedesktop-sdk.bst:components/python3.bst
 sources:
 - kind: git_repo
-  url: https://github.com/dvarrazzo/py-setproctitle
+  url: github:dvarrazzo/py-setproctitle
   track: v*
   ref: version-1.3.8-0-g2e7124295edef1d84a1e1416290fdeaae9ba6eab

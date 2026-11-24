@@ -18,7 +18,7 @@ depends:
 sources:
 - kind: anitya
   project-id: 17877
-  url: 'https://downloads.xiph.org/releases/opus/libopusenc-{version}.tar.gz'
+  url: 'xiph_download:releases/opus/libopusenc-{version}.tar.gz'
   ref:
     version: '0.3'
     sha256sum: f616d3aff9b2034547894ccb8ab56c36cf1a4acb0d922c5d7119f97bbe58642c

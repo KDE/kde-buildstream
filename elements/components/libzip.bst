@@ -22,7 +22,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 10649
-  url: https://libzip.org/download/libzip-{version}.tar.xz
+  url: libzip:download/libzip-{version}.tar.xz
   ref:
     version: 1.12.1
     sha256sum: c40062022a1963c80573d48f6070792297cecd7c6bffe3aefcac0d8b9bee8913

@@ -22,6 +22,6 @@ variables:
 
 sources:
 - kind: git_repo
-  url: https://ezix.org/src/pkg/lshw.git
+  url: ezix:src/pkg/lshw.git
   track: 'B.*'
   ref: B.02.20-0-g4c6497c8b0a67cd9fa9693e9101a7cafd3297e81

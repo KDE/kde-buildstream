@@ -19,7 +19,7 @@ depends:
 sources:
 - kind: git_repo
   # url: https://repo.or.cz/socat.git
-  url: https://third-party-mirror.googlesource.com/socat
+  url: googlesource_mirror:socat
   track: tag-*
   exclude:
   - "*-b[0-9]*"

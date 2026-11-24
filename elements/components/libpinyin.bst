@@ -21,7 +21,7 @@ sources:
   track: '*.*.*'
   ref: 2.11.91-0-g0c5e80e1200f84fab185d1c5bde458b770a0636c
 - kind: tar
-  url: https://downloads.sourceforge.net/libpinyin/models/model20.text.tar.gz
+  url: sourceforge_download:libpinyin/models/model20.text.tar.gz
   ref: 59c68e89d43ff85f5a309489499cbcde282d2b04bd91888734884b7defcb1155
   base-dir: ''
   directory: data

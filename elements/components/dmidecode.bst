@@ -19,7 +19,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 443
-  url: https://download.savannah.gnu.org/releases/dmidecode/dmidecode-{version}.tar.xz
+  url: savannah_download:dmidecode/dmidecode-{version}.tar.xz
   ref:
     version: '3.7'
     sha256sum: 2c3aed12c85a1e6a9410d406d5e417c455466dc1bc7c89278bb32cf7cad91e8a

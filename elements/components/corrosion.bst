@@ -16,7 +16,7 @@ depends:
 
 sources:
 - kind: git_repo
-  url: https://github.com/corrosion-rs/corrosion.git
+  url: github:corrosion-rs/corrosion.git
   track: v*
   exclude:
   - '*beta*'

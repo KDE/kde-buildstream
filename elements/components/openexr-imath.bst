@@ -8,7 +8,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 sources:
-- url: https://github.com/AcademySoftwareFoundation/Imath.git
+- url: github:AcademySoftwareFoundation/Imath.git
   kind: git_repo
   track: v*
   exclude:

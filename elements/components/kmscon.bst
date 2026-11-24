@@ -33,7 +33,7 @@ variables:
 
 sources:
 - kind: git_repo
-  url: https://github.com/kmscon/kmscon.git
+  url: github:kmscon/kmscon.git
   track: v*
   ref: bd3efdf5c33e2a7049621fb4973e25f72f83cfe8
   ref-format: sha1

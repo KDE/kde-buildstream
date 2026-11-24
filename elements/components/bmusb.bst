@@ -26,5 +26,5 @@ sources:
 #   ref: 0.7.8-0-g3615574c0d8c8564e1e091c8270f19138357777e
 #   track: '*.*.*'
 - kind: tar
-  url: https://deb.debian.org/debian/pool/main/b/bmusb/bmusb_0.7.8.orig.tar.gz
+  url: debian:pool/main/b/bmusb/bmusb_0.7.8.orig.tar.gz
   ref: e0a565e3db5d07a28a9f1aa1e2e60e483b143f9c5a84f161f2e1fa3498ec637d

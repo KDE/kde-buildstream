@@ -39,7 +39,7 @@ variables:
 sources:
 - kind: anitya
   project-id: 2081
-  url: 'https://www.kernel.org/pub/linux/utils/nfs-utils/{version}/nfs-utils-{version}.tar.xz'
+  url: 'kernel_download:pub/linux/utils/nfs-utils/{version}/nfs-utils-{version}.tar.xz'
   ref:
     version: 3.1.1
     sha256sum: 7dbc05eb8b32828b322872b759a62cb3979cb4118f344dd8616813d1390e84e0

@@ -26,5 +26,5 @@ sources:
   ref: 1.2.3-alt1-0-g4caa8ab94ff8b207228fa723a89214bf5e929321
 - kind: remote
   filename: libutempter.tmpfiles
-  url: https://gitlab.archlinux.org/archlinux/packaging/packages/libutempter/-/raw/main/libutempter.tmpfiles?ref_type=heads
+  url: archlinux:archlinux/packaging/packages/libutempter/-/raw/main/libutempter.tmpfiles?ref_type=heads
   ref: 8fc708052bab79f707bacaa66fa1529808bc7e72316faf4038ad9c763ec7e80d
