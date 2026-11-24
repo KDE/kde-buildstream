@@ -11,6 +11,7 @@ build-depends:
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/libdrm.bst
 - freedesktop-sdk.bst:components/libva.bst
+- freedesktop-sdk.bst:components/python3.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - freedesktop-sdk.bst:components/vulkan-headers.bst
 - freedesktop-sdk.bst:components/vulkan-icd-loader.bst
