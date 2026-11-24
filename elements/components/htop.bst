@@ -21,10 +21,8 @@ variables:
     --enable-affinity
     --enable-capabilities
     --enable-delayacct
-    --enable-openvz
     --enable-sensors
     --enable-unicode
-    --enable-vserver
 
 sources:
 - kind: git_repo

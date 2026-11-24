@@ -39,7 +39,6 @@ variables:
     --enable-function-subdirs
     --enable-fndir="%{datadir}/zsh/functions"
     --enable-scriptdir="%{datadir}/zsh/scripts"
-    --with-tcsetpgrp
     --enable-pcre
     --enable-gdbm
     --enable-cap

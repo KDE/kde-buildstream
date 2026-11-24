@@ -22,7 +22,6 @@ variables:
   conf-local: >-
     --without-apxs
     --without-berkeley-db
-    --without-swig
     --without-gnome-keyring
     --without-kwallet
     --disable-mod-activation

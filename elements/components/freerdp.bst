@@ -32,7 +32,6 @@ depends:
 # CLIENT_SDL depends on webkit2gtk-4.0.
 variables:
   cmake-local: >-
-    -DRDTK_FORCE_STATIC_BUILD=ON
     -DUWAC_FORCE_STATIC_BUILD=ON
     -DWITH_ADD=ON
     -DWITH_BINARY_VERSIONING=ON
