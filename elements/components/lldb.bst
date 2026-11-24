@@ -6,6 +6,7 @@
 
 kind: cmake
 
+# NOTE: Remember to bring the patches from freedesktop-sdk when necessary
 (@):
 - freedesktop-sdk.bst:elements/include/llvm.yml
 

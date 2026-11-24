@@ -1,0 +1,21 @@
+diff --git a/llvm/lib/Target/BPF/BTFDebug.h b/llvm/lib/Target/BPF/BTFDebug.h
+index 75858fcc8..1388e15d2 100644
+--- a/llvm/lib/Target/BPF/BTFDebug.h
++++ b/llvm/lib/Target/BPF/BTFDebug.h
+@@ -14,6 +14,7 @@
+ #ifndef LLVM_LIB_TARGET_BPF_BTFDEBUG_H
+ #define LLVM_LIB_TARGET_BPF_BTFDEBUG_H
+ 
++#include "llvm/ADT/MapVector.h"
+ #include "llvm/ADT/StringMap.h"
+ #include "llvm/CodeGen/DebugHandlerBase.h"
+ #include "llvm/DebugInfo/BTF/BTF.h"
+@@ -304,7 +305,7 @@ class BTFDebug : public DebugHandlerBase {
+       DataSecEntries;
+   std::vector<BTFTypeStruct *> StructTypes;
+   std::map<const GlobalVariable *, std::pair<int64_t, uint32_t>> PatchImms;
+-  std::map<const DICompositeType *,
++  MapVector<const DICompositeType *,
+            std::vector<std::pair<const DIDerivedType *, BTFTypeDerived *>>>
+       FixupDerivedTypes;
+   std::set<const Function *>ProtoFunctions;
