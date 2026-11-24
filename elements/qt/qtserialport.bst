@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtserialport-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: ba8886a54eee466e57c9fa1341255cc09c462c84baab3ee7b19d67cdbcbd71c3
+    version: 6.12.1
+    sha256sum: ee05511d4993438b6b2babd8df8f8fae8c5e7aab563090dd81f1f0be9bbb3374

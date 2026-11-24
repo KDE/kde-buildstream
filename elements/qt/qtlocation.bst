@@ -27,5 +27,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtlocation-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: 218696d57c9eb95e8756e9fda62a8eabf94badc507db5f6e8ab9a640c4b0f50d
+    version: 6.12.1
+    sha256sum: 2bf9c9f48550412b2d4d18f3fa7bacd9af9a236a88a1376dc5741be2f6f9eb7b

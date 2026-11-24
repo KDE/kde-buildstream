@@ -25,7 +25,7 @@ sources:
   track: 'v*'
   exclude:
   - "*rc*"
-  ref: v0.39.0-0-g360040a78d6113dc84e5d4dcdf0f438e1be7a41f
+  ref: v0.39.1-0-g334b63fe2bb0f0e89a8fd067704a0d113f57ec25
 - kind: go_mod_vendor
   ref:
   - module: cloud.google.com/go
@@ -620,8 +620,8 @@ sources:
     version: v1.5.0
     sha256sum: 118d5b2cb65c50dba967fb6d708f450a9caf93f321f8fc99080675b2ee374199
   - module: github.com/moby/buildkit
-    version: v0.35.0
-    sha256sum: 3ec4346c960aeaa25eab4b204a93757707d94f6a92a66ea29047d55d3a19e733
+    version: v0.35.1
+    sha256sum: c7ef98c6f5851840ad9dbccf3a0573e775ad0c6624d25293318f9aefbf1be35d
   - module: github.com/moby/docker-image-spec
     version: v1.3.1
     sha256sum: e3fe212be410465c0cae032baa7e2c7282b9bb878f081f00549333edc260c306

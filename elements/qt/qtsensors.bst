@@ -26,5 +26,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtsensors-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: 861df58be8808cef777a1b531d7bec804d25733ec34e8ebbdafbe27040319090
+    version: 6.12.1
+    sha256sum: 68965b9ad073c4f535cb6028858f0217cca320a7fca087005d85d7750caaf7fb

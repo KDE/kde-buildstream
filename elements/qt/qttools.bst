@@ -56,5 +56,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qttools-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: 8dab8f3611496486a470ad5f115ceea584f36bc22a2b8b6f6ebdbafbb8160693
+    version: 6.12.1
+    sha256sum: 0d3d1a7eba32d1477f36211fb527c2c75f60cb10f3ddc41fdb804fd94147b640

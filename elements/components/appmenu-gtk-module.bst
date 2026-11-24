@@ -23,4 +23,4 @@ sources:
 - kind: git_repo
   url: gitlab:vala-panel-project/vala-panel-appmenu
   track: '*'
-  ref: 25.04-0-g8c8e788bf04c8c2911b72a24e3b79842d5b2b286
+  ref: 26.11.1-0-g427807ddd8a0c9594a7a4ffbe279d544911ce3bb

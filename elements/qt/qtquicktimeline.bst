@@ -25,5 +25,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtquicktimeline-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: 6919153c841478c113f0ad20526f40e606590968334762ec6ccbc96002f8da19
+    version: 6.12.1
+    sha256sum: 2dea872fa020f7f0b12a340127c88108cff00439e54f6bfe61853507e8f01617

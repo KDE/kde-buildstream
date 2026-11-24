@@ -27,5 +27,5 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtspeech-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: 9a60ce5bee54a9343740feab2582bffb996812f43d6c5585aade26dbd04933db
+    version: 6.12.1
+    sha256sum: 9df7bab664597abf09d5f3a012a487545125e2a2f8b585681ccfd184d9eacdbd

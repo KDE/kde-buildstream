@@ -72,8 +72,8 @@ sources:
   project-id: 7927
   url: qt:qt/{major}.{minor}/{version}/submodules/qtbase-everywhere-src-{version}.tar.xz
   ref:
-    version: 6.12.0
-    sha256sum: a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307
+    version: 6.12.1
+    sha256sum: cd837bb9fd631e20439a04eaa0c2f252f19ad92fdf5adf10229d0fbc2fab2d53
 - kind: patch
   path: elements/qt/patch/qtbase-find_package-paths.patch
 - kind: patch

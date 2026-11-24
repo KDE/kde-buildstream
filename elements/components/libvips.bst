@@ -30,4 +30,4 @@ sources:
 - kind: git_repo
   url: github:libvips/libvips
   track: 'v*'
-  ref: v8.19.0-rc1-0-g115df84b47247fb3d644de16bbb997f9edc4b5e3
+  ref: v8.19.0-rc2-0-g2801ef3d504f2ef42a5100adc20e8502e9777be1
