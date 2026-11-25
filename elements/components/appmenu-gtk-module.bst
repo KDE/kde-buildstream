@@ -9,10 +9,13 @@ description: Application Menu GTK Module
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
 - freedesktop-sdk.bst:components/vala.bst
+- freedesktop-sdk.bst:components/wayland-protocols.bst
 
 depends:
+- components/appmenu-glib-translator.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gtk3.bst
+- freedesktop-sdk.bst:components/wayland.bst
 
 variables:
   command-subdir: subprojects/appmenu-gtk-module
