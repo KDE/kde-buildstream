@@ -11,8 +11,6 @@ components/at-spi2-core.bst:
 - dbus-broker-launch
 components/dbus-broker.bst:
 - libdbus-typenum
-components/fastfetch.bst:
-- Python
 components/fprintd.bst:
 - dbus-1
 components/freerdp.bst:
