@@ -6,6 +6,7 @@ kind: cmake
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:sdk.bst
+- qt/qtwebsockets.bst
 depends:
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - qt/qtbase.bst

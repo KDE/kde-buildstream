@@ -8,6 +8,7 @@ description: PowerTOP
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+- freedesktop-sdk.bst:components/bash-completion.bst
 - freedesktop-sdk.bst:components/sed.bst
 
 depends:

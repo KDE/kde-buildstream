@@ -6,6 +6,7 @@ kind: meson
 # Forked from freedesktop-sdk as updating it breaks ABI
 
 build-depends:
+- components/dbus-broker.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst

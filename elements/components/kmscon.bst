@@ -10,12 +10,15 @@ build-depends:
 - freedesktop-sdk.bst:components/fontconfig.bst
 - freedesktop-sdk.bst:components/libglvnd.bst
 - freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/pango.bst
+- freedesktop-sdk.bst:components/systemd.bst
 
 depends:
 - components/libtsm.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
+- freedesktop-sdk.bst:components/libdbus.bst
 - freedesktop-sdk.bst:components/libdrm.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst

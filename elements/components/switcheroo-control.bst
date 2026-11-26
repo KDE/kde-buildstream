@@ -15,6 +15,10 @@ depends:
 - freedesktop-sdk.bst:components/libgudev.bst
 - freedesktop-sdk.bst:components/libdrm.bst
 - freedesktop-sdk.bst:components/systemd.bst
+- freedesktop-sdk.bst:extensions/mesa/libdrm.bst
+
+environment:
+  PKG_CONFIG_PATH: '/usr/lib/%{gcc_triplet}/GL/default/lib/pkgconfig:'
 
 sources:
 - kind: git_repo

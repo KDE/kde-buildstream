@@ -8,6 +8,7 @@ build-depends:
 - freedesktop-sdk.bst:sdk.bst
 depends:
 - freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/protobuf.bst
 - qt/qtbase.bst
 - qt/qtdeclarative.bst
 environment:

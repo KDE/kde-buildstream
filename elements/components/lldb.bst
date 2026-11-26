@@ -12,11 +12,14 @@ kind: cmake
 
 build-depends:
 - freedesktop-sdk.bst:components/_private/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/_private/python3-minimal.bst
+- freedesktop-sdk.bst:components/swig.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/libffi.bst
+- freedesktop-sdk.bst:components/libxml2.bst
+- freedesktop-sdk.bst:components/lua.bst
+- freedesktop-sdk.bst:components/python3.bst
 - freedesktop-sdk.bst:components/zlib.bst
 - freedesktop-sdk.bst:components/zstd.bst
 - freedesktop-sdk.bst:components/llvm.bst

@@ -8,6 +8,7 @@ description: Screen reader for individuals who are blind or visually impaired
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+- freedesktop-sdk.bst:components/systemd.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -15,6 +16,7 @@ depends:
 - freedesktop-sdk.bst:components/gtk3.bst
 - freedesktop-sdk.bst:components/pygobject.bst
 - freedesktop-sdk.bst:components/itstool.bst
+- freedesktop-sdk.bst:components/python3-psutil.bst
 - freedesktop-sdk-extra.bst:components/speech-dispatcher.bst
 - components/python-dasbus.bst
 - components/sonic.bst

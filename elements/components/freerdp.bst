@@ -25,6 +25,7 @@ depends:
 - freedesktop-sdk.bst:components/libusb.bst
 - freedesktop-sdk.bst:components/openjpeg.bst
 - freedesktop-sdk.bst:components/openssl.bst
+- freedesktop-sdk.bst:components/pcsc-lite.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

@@ -8,6 +8,7 @@ description: Application Menu GTK Module
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+- freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 
