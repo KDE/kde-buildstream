@@ -19,6 +19,17 @@ config:
   - "%{make-install}"
   - install -Dm644 libutempter.tmpfiles "%{install-root}%{prefix}/lib/tmpfiles.d/libutempter.conf"
 
+public:
+  initial-script:
+    script: |
+      #!/bin/sh
+      set -eu
+
+      sysroot="${1}"
+      helper="${sysroot}%{prefix}/lib/utempter/utempter"
+      chown root:utmp "$helper"
+      chmod 2755 "$helper"
+
 sources:
 - kind: git_repo
   url: github:altlinux/libutempter.git
